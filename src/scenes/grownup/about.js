@@ -1,5 +1,5 @@
 import { h } from '../../core/dom.js';
-import { cornerFrame } from './gate.js';
+import { cornerFrame, privacyLink } from './gate.js';
 import { PRINT_TIP } from './tips.js';
 
 export const TITLE = "Meadowlark's World: Syllable Quest";
@@ -44,7 +44,8 @@ export function mount(el, ctx, params = {}) {
       HOW_IT_WORKS.map(([heading, text]) => h('div', { class: 'gu-how' }, h('h3', { class: 'gu-setting-label' }, heading), h('p', {}, text)))),
     h('section', { class: 'gu-about', 'data-about': 'privacy' },
       h('h2', { class: 'gu-subtitle' }, 'Privacy'),
-      h('p', {}, PRIVACY)),
+      h('p', {}, PRIVACY),
+      privacyLink()),
     h('p', {}, PRINT_TIP),
     h('h2', { class: 'gu-subtitle' }, 'Notices'),
     h('p', {}, NOTICES[0]),

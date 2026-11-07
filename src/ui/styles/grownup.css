@@ -208,6 +208,9 @@
 .gu-hold-label { position: relative; }
 
 .gu-back { display: flex; justify-content: center; margin-top: 20px; }
+.gu-privacy-link { margin: 16px 0 0 !important; text-align: center; font-size: 18px; }
+.gu-about .gu-privacy-link { text-align: left; margin-top: 8px !important; }
+.gu-privacy-link a { color: #2f5f96; text-underline-offset: 3px; }
 
 .gu-start-choices { gap: 16px; margin-top: 24px; }
 

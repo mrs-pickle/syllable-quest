@@ -1,5 +1,5 @@
 {
-  "version": "01344e4f555d73d03602b12b635196d89c429aab55bd10c0897008172cc91c58",
+  "version": "d4cbc45f920399303606645194d9183ea31f9b9c6c2a3558af8e1699761d77b9",
   "files": [
     "assets/art/apprentice/black-cheer.webp",
     "assets/art/apprentice/black-point.webp",
@@ -1404,6 +1404,7 @@
     "content/words/vce.json",
     "index.html",
     "manifest.webmanifest",
+    "privacy.html",
     "src/activities/bridge.js",
     "src/activities/clansort.js",
     "src/activities/discovery.js",
@@ -1510,7 +1511,7 @@
   "packs": [
     {
       "id": "core",
-      "hash": "01344e4f555d73d03602b12b635196d89c429aab55bd10c0897008172cc91c58",
+      "hash": "d4cbc45f920399303606645194d9183ea31f9b9c6c2a3558af8e1699761d77b9",
       "files": [
         "assets/art/apprentice/black-cheer.webp",
         "assets/art/apprentice/black-point.webp",
@@ -2915,6 +2916,7 @@
         "content/words/vce.json",
         "index.html",
         "manifest.webmanifest",
+        "privacy.html",
         "src/activities/bridge.js",
         "src/activities/clansort.js",
         "src/activities/discovery.js",

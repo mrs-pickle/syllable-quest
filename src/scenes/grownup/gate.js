@@ -25,6 +25,13 @@ const PIN = /^\d{4,8}$/;
 
 export const PLACEMENT_RETAKE = Object.freeze({ retake: true });
 
+export const PRIVACY_URL = 'privacy.html';
+
+export function privacyLink() {
+  return h('p', { class: 'gu-privacy-link' },
+    h('a', { href: PRIVACY_URL, target: '_blank', rel: 'noopener' }, 'Privacy policy'));
+}
+
 const EXTRA_TITLES = Object.freeze({ tips: 'Tips for grown-ups' });
 
 export function routeFor(name) {
@@ -137,7 +144,8 @@ export function mount(el, ctx, params = {}) {
       message,
       h('p', { class: 'gu-or' }, 'or'),
       hold,
-      back)));
+      back,
+      privacyLink())));
   input.focus();
   return () => { holding.cancel(); };
 }
@@ -176,7 +184,8 @@ function mountChoosePin(el, ctx, { lock, message, back, open }) {
       h('p', {}, 'Four to eight digits. It keeps the grown-up corner for grown-ups. You can change it in Settings.'),
       form,
       message,
-      back)));
+      back,
+      privacyLink())));
   first.focus();
   return () => {};
 }
