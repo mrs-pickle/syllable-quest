@@ -17,7 +17,7 @@ export function mount(el, ctx) {
   el.append(h('div', { class: 'elsewhere' },
     h('img', { class: 'scene-bg', src: artUrl('bg/map'), alt: '' }),
     h('div', { class: 'elsewhere-card', role: 'alert' },
-      h('p', { class: 'elsewhere-text' }, "Syllable Quest is open in another window."),
+      h('p', { class: 'elsewhere-text' }, "Meadowlark's World: Syllable Quest is open in another window."),
       button)));
   ctx.setReplay(['v.window.elsewhere']);
   return () => {};

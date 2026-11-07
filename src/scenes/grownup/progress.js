@@ -1,45 +1,18 @@
 import { h } from '../../core/dom.js';
-import { STAGES } from '../../curriculum/stages.js';
-import { accuracyBySession, minutesByWeek } from '../../engine/dashboard.js';
+import { GATE_LABELS, accuracyBySession, chipOf, minutesByWeek, placedUpTo, shortDate, stageName } from '../../engine/dashboard.js';
 import { doseHours } from '../../engine/dose.js';
-import { GATE_KINDS, PASS_DAYS_NEEDED, STAGE_IDS, stageStatus } from '../../engine/mastery.js';
+import { GATE_KINDS, STAGE_IDS, stageStatus } from '../../engine/mastery.js';
 import { barGraph, lineGraph } from '../../ui/graphs.js';
 import { landName } from '../../ui/terms.js';
 import { cornerFrame } from './gate.js';
 
-const MS_PER_DAY = 86400000;
-
-export const GATE_LABELS = Object.freeze({ drill: 'Sounds', words: 'Words', write: 'Writing', story: 'Story' });
+export { GATE_LABELS, chipOf, placedUpTo, shortDate, stageName };
 
 const TEACHABLE = STAGE_IDS.filter((id) => !id.startsWith('city.'));
-
-export const shortDate = (day) => new Date(day * MS_PER_DAY).toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
-
-export const stageName = (id) => STAGES.find((s) => s.id === id)?.name ?? id;
 
 export function svgNode(markup) {
   const doc = new DOMParser().parseFromString(markup, 'image/svg+xml');
   return globalThis.document.importNode(doc.documentElement, true);
-}
-
-export function placedUpTo(profile) {
-  let top = 0;
-  for (const p of Array.isArray(profile?.placements) ? profile.placements : []) {
-    if (p && p.applied !== false && Number.isInteger(p.chosen)) top = Math.max(top, p.chosen);
-  }
-  for (const p of Array.isArray(profile?.pointerLog) ? profile.pointerLog : []) {
-    if (p && p.why === 'placement' && Number.isInteger(p.stage)) top = Math.max(top, p.stage);
-  }
-  return top;
-}
-
-export function chipOf(kind, status, placed) {
-  const label = (GATE_LABELS)[kind] ?? kind;
-  const days = status.passDays.map(shortDate).join(', ');
-  if (status.passDays.length >= PASS_DAYS_NEEDED) return { state: 'done', text: `✓ ${label}: ${days}` };
-  if (status.passDays.length > 0) return { state: 'some', text: `${label}: ${days} (${status.passDays.length} of ${PASS_DAYS_NEEDED} days)` };
-  if (placed) return { state: 'placed', text: `${label}: placed` };
-  return { state: 'none', text: `${label}: not yet` };
 }
 
 export const stallText = (stageId, kind, tries) => `Stuck on ${stageName(stageId)} (${ (GATE_LABELS)[kind]?.toLowerCase() ?? kind}) after ${tries} tries. Consider stepping back a stage, or ask your reader's teacher for ideas.`;

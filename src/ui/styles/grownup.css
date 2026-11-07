@@ -43,7 +43,8 @@
 
 .gu-tab {
   flex: 0 0 auto;
-  min-height: 50px;
+  min-height: 46px;
+  line-height: 1.2;
   padding: 4px 12px;
   border: 3px solid var(--ink);
   border-radius: 14px;
@@ -361,11 +362,46 @@
 @media print {
   .gu-screen-only { display: none !important; }
   .grownup[data-printing] .scene-bg, .grownup[data-printing] .gu-header, .grownup[data-printing] .gu-nav,
-  .grownup[data-printing] .gu-warning, .grownup[data-printing] .gu-main > :not(.gu-printable) { display: none !important; }
+  .grownup[data-printing] .gu-warning, .grownup[data-printing] .gu-main > :not(.gu-body),
+  .grownup[data-printing] .gu-body > :not(.gu-printable) { display: none !important; }
   .grownup[data-printing] { position: static; font-size: 14pt; color: #000; }
   .grownup[data-printing] .gu-main { position: static; overflow: visible; padding: 0; border: 0; background: #fff; }
   .grownup[data-printing] .gu-script-word { break-inside: avoid; }
+  @page { margin: 10mm; }
+  .grownup[data-printing="report"] { font-size: 9.5pt; line-height: 1.22; }
+  .grownup[data-printing="report"] .gu-report { padding: 0; border: 0; background: #fff; color: #000; }
+  .grownup[data-printing="report"] .gu-report-head { border-bottom: 0.4mm solid #000; margin-bottom: 2mm; }
+  .grownup[data-printing="report"] .gu-report-title { font-size: 15pt; }
+  .grownup[data-printing="report"] .gu-report-columns { column-count: 2; column-gap: 6mm; }
+  .grownup[data-printing="report"] .gu-report-section { margin: 0 0 2mm; }
+  .grownup[data-printing="report"] .gu-report-section .gu-subtitle { margin: 0 0 0.8mm; font-size: 11pt; break-after: avoid; }
+  .grownup[data-printing="report"] .gu-report-section p { margin: 0 0 0.8mm; break-inside: avoid; }
+  .grownup[data-printing="report"] .gu-report-table { width: 100%; margin: 0 0 1mm; font-size: 8pt; line-height: 1.12; }
+  .grownup[data-printing="report"] .gu-report-table th,
+  .grownup[data-printing="report"] .gu-report-table td { padding: 0.1mm 1.2mm 0.1mm 0; border-bottom: 0; white-space: normal; }
+  .grownup[data-printing="report"] .gu-report-table thead th { border-bottom: 0.3mm solid #000; }
+  .grownup[data-printing="report"] .gu-report-table tr { break-inside: avoid; }
+  .grownup[data-printing="report"] .gu-report-foot { margin-top: 2mm; border-top: 0.3mm solid #000; font-size: 8pt; }
 }
+
+
+.gu-report { margin: 16px 0 0; padding: 20px 24px; border: 2px solid #d8ccb7; border-radius: 12px; background: #fffdf8; }
+
+.gu-report-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; }
+
+.gu-report-title, .gu-report-dates, .gu-report-student { margin: 0 0 8px; }
+
+.gu-report-section { margin: 0 0 16px; break-inside: avoid-column; }
+
+.gu-report-table th { font-weight: 400; }
+
+.gu-report-table thead th { font-weight: 700; }
+
+.gu-report-blank { margin: 8px 0 0; }
+
+.gu-report-foot { margin: 12px 0 0; color: #4a423b; }
+
+.gu-report-foot p { margin: 0 0 4px; }
 
 
 .gu-group { margin: 0 0 12px; }

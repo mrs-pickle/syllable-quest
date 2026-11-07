@@ -5,7 +5,8 @@ import { isExtraPractice } from '../profile/profile.js';
 import { STAGES, landOf } from '../curriculum/stages.js';
 import { landName } from '../ui/terms.js';
 import { artImage, artUrl, bigButton, holdToActivate } from '../ui/components.js';
-import { apprenticeArt, readCoat, sayLine } from './start.js';
+import { apprenticeArt, sayLine } from './start.js';
+import { coatOf, isCoat, readCoat } from '../profile/coat.js';
 
 export const MAP_LANDS = Object.freeze(['closed', 'open', 'vce', 'team', 'r', 'le']);
 export const CITY = 'city';
@@ -81,8 +82,8 @@ export function mount(el, ctx, _params = {}) {
   };
 
   const apprentice = h('div', { class: 'map-apprentice', style: { left: `${MAP_SPOTS[here].x + STANCE[here].dx}px`, top: `${MAP_SPOTS[here].y + STANCE[here].dy}px` } },
-    artImage(apprenticeArt('black')));
-  readCoat(ctx).then((coat) => { if (alive) apprentice.replaceChildren(artImage(apprenticeArt(coat))); });
+    artImage(apprenticeArt(coatOf(ctx))));
+  if (!isCoat(ctx?.coat)) readCoat(ctx).then((coat) => { if (alive) apprentice.replaceChildren(artImage(apprenticeArt(coat))); });
 
   const nodes = MAP_LANDS.map((land) => {
     const record = landRecord(ctx.content, land);

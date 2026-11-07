@@ -1,5 +1,8 @@
 import { h } from '../../core/dom.js';
+import { passLabel } from '../../engine/passes.js';
 import { cornerFrame } from './gate.js';
+
+export { passLabel };
 
 
 const MS_PER_DAY = 86400000;
@@ -7,20 +10,6 @@ const MS_PER_DAY = 86400000;
 const shortDate = (day) => new Date(day * MS_PER_DAY).toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
 
 const HOW_WORDS = Object.freeze({ right: 'right', helped: 'with help', missed: 'not yet', self: 'checked by the reader', passed: 'passed again' });
-
-export function passLabel({ id, mode }) {
-  const at = id.indexOf(':');
-  const kind = id.slice(0, at);
-  const name = id.slice(at + 1);
-  switch (kind) {
-    case 'g': return `Sound: ${name} (${mode === 'hear' ? 'hearing' : 'saying'} it)`;
-    case 'n': return `Made-up word: ${name}`;
-    case 'w': return `${{ divide: 'Splitting', label: 'Naming the parts of', read: 'Reading', write: 'Writing' }[mode] ?? 'Word'}: ${name}`;
-    case 'y': return `Syllable sort: ${name}`;
-    case 'r': return `Sight word: ${name}`;
-    default: return id;
-  }
-}
 
 const howWords = (how) => (how === null ? '' : `: ${HOW_WORDS[how]}`);
 

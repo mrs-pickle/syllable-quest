@@ -4,9 +4,10 @@ import { flipSplit, gaps as gapsOf, syllableTypesOf, vowelTapTargets } from '../
 import { soundKind } from '../curriculum/phonemes.js';
 import { isDoubled } from '../curriculum/syllables.js';
 import { makeKey, parseKey } from '../engine/keys.js';
+import { pickProtege } from '../engine/protege.js';
 import { artImage, keysOnPage } from '../ui/components.js';
 import { coachText, termFor } from '../ui/terms.js';
-import { chooseOne, createActivityView, judgeAloud, offerPass, secondClick, showNext, sparkle } from './kit.js';
+import { chooseOne, createActivityView, judgeAloud, offerPass, sayPick, secondClick, showNext, sparkle } from './kit.js';
 
 export const ID = 'bridge';
 
@@ -85,22 +86,112 @@ export async function run(el, ctx, round, hooks) {
   const limit = ( a) => (Number.isFinite(a?.words) && a.words > 0 ? Math.min(a.words, items.length) : items.length);
   const planned = Math.max(1, limit(hooks.allowance?.()));
   let done = 0;
+  const known = [];
   for (const item of items) {
     const a = hooks.allowance?.();
     if (done > 0 && (done >= limit(a) || (Number.isFinite(a?.softMs) && a.softMs > 0 && clock() - began >= a.softMs))) break;
     const t0 = clock();
-    const shown = await runWord({ view, ctx, round, hooks }, item);
+    const shown = await runWord({ view, ctx, round, hooks, known }, item);
     if (!shown) continue;
     hooks.addDivisionMs?.(Math.min(MAX_WORD_MS, Math.max(0, clock() - t0)));
     done++;
     hooks.progress?.(Math.min(1, done / planned));
   }
   hooks.progress?.(1);
+  if (done > 0 && view.live() && typeof hooks.protege === 'function') {
+    const isWord = ( w) => { const r = lookup(ctx?.content, w); return Boolean(r) && r.real !== false; };
+    const picked = pickProtege(protegeWords(ctx, known), { rng: ctx?.rng, isWord });
+    if (picked && hooks.protege()) await apprenticeTries(view, ctx, picked);
+  }
   await view.sayKept();
   view.destroy();
 }
 
-async function runWord({ view, ctx, round, hooks }, item) {
+function protegeWords(ctx, known) {
+  const shuffle = ( a) => (typeof ctx?.rng?.shuffle === 'function' ? ctx.rng.shuffle(a) : a);
+  const mastered = [];
+  const states = ctx?.states;
+  const values = states instanceof Map ? [...states.values()] : (states && typeof states === 'object' ? Object.values(states) : []);
+  for (const s of values) {
+    if (s?.mastered !== true || typeof s.key !== 'string') continue;
+    const parsed = parseKey(s.key);
+    if (!parsed || parsed.prefix !== 'w' || (parsed.mode !== 'divide' && parsed.mode !== 'read')) continue;
+    const rec = lookup(ctx?.content, parsed.id);
+    if (rec) mastered.push(rec);
+  }
+  return [...shuffle([...known]), ...shuffle(mastered)].filter((r) => r && r.real !== false);
+}
+
+async function apprenticeTries(view, ctx, picked) {
+  const { word, right, wrong, gap } = picked;
+  const letters = [...word];
+  const tw = Math.max(TILE_MIN, Math.min(TILE_MAX, Math.floor(ROW_WIDTH / Math.max(1, letters.length))));
+  const voiceText = ( id) => ctx?.content?.voice?.[id]?.text ?? '';
+  const clip = wordId(word);
+  const lo = gap > 0 ? right[gap - 1] : 0;
+  const hi = gap < right.length - 1 ? right[gap + 1] : letters.length;
+  const spots = [];
+  for (let p = lo + 1; p < hi; p++) spots.push(p);
+  const answer = right[gap];
+  const S = { fixed: false, misses: 0, glow: false };
+  let onFixed = () => {};
+  const fixedNow = new Promise((resolve) => { onFixed = () => resolve(undefined); });
+
+  const instruction = h('p', { class: 'bridge-instruction', 'aria-live': 'polite' }, voiceText('v.bridge.protege-try'));
+  const main = h('div', { class: 'bridge-main' });
+  const adult = h('p', { class: 'bridge-adult' }, `Grown-up: practice only, nothing is scored. The apprentice split it ${cutAt(word, wrong).join('|')}; it breaks ${cutAt(word, right).join('|')}.`);
+
+  const planks = ( ats) => h('div', { class: ['bridge-planks', 'is-joined'], role: 'group', 'aria-label': 'The planks' },
+    cutAt(word, ats).map((part, i) => h('div', { class: 'bridge-plank', 'data-index': i, 'data-part': part },
+      h('div', { class: 'bridge-plank-letters' }, [...part].map((ch) => h('span', { class: 'bridge-letter' }, ch))))));
+
+  function draw() {
+    const tiles = letters.map((ch, k) => h('span', { class: 'bridge-tile', 'data-k': k, 'aria-hidden': 'true' }, ch));
+    const marks = right.map((r, i) => (i === gap ? null : h('span', { class: 'bridge-split', style: { '--k': r }, 'aria-hidden': 'true' })));
+    const herSplit = h('span', { class: ['bridge-split', 'is-hers'], style: { '--k': wrong[gap] }, 'aria-hidden': 'true' });
+    const slots = spots.map((p) => h('button', {
+      type: 'button', class: ['bridge-gap', S.glow && p === answer && 'glow'], 'data-gap': gap, 'data-at': p, style: { '--k': p },
+      'aria-label': `Break the word here: ${word.slice(0, p)} then ${word.slice(p)}`,
+      onClick: ( event) => onSlot(p, event, (event?.currentTarget ?? event?.target ?? null)),
+    }, h('span', { class: 'bridge-gap-post', 'aria-hidden': 'true' })));
+    main.replaceChildren(
+      planks(wrong),
+      h('div', { class: 'bridge-word', style: { '--tw': `${tw}px` }, role: 'group', 'aria-label': `The word ${word}` }, tiles, marks, herSplit, slots),
+    );
+  }
+
+  function onSlot(p, event, slotEl) {
+    if (S.fixed || secondClick(event)) return;
+    if (p === answer) {
+      S.fixed = true;
+      onFixed();
+      return;
+    }
+    S.misses++;
+    if (slotEl) wobble(slotEl);
+    if (S.misses >= 2 && !S.glow) {
+      S.glow = true;
+      draw();
+    }
+    void view.say([clip]);
+  }
+
+  view.show(h('div', { class: 'bridge bridge-protege' }, instruction, main, adult));
+  view.think(true);
+  draw();
+  view.choosing(true);
+  await view.prompt(['v.bridge.protege-try', clip, 'v.bridge.protege-ask']);
+  if (!S.fixed && view.live()) instruction.textContent = voiceText('v.bridge.protege-ask');
+  await fixedNow;
+  view.choosing(false);
+  view.think(false);
+  view.cheer();
+  instruction.textContent = voiceText('v.bridge.protege-thanks');
+  main.replaceChildren(planks(right));
+  await showNext(view, ['v.bridge.protege-thanks', clip]).pressed;
+}
+
+async function runWord({ view, ctx, round, hooks, known }, item) {
   const word = item?.data?.word ?? parseKey(item?.key)?.id;
   const content = ctx?.content;
   const rec = lookup(content, word);
@@ -240,8 +331,9 @@ async function runWord({ view, ctx, round, hooks }, item) {
     if (t) {
       if (S.tapped.has(t.seg)) return;
       S.tapped.add(t.seg);
-      if (S.tapped.size >= targets.length) { draw(); changed(); return; }
+      const heard = sayPick(view, segs[t.seg][0], { seg: segs[t.seg] });
       draw();
+      if (S.tapped.size >= targets.length) void heard.then(changed);
       return;
     }
     if (silentAt(k)) {
@@ -252,14 +344,21 @@ async function runWord({ view, ctx, round, hooks }, item) {
     S.vowelMisses++;
     hooks.monitor?.wrong?.();
     if (tileEl) wobble(tileEl);
+    const box = segAt(k);
+    const heard = box >= 0 ? sayPick(view, segs[box][0], { seg: segs[box] }) : Promise.resolve();
     if (S.vowelMisses >= 2 && !S.glow) {
       S.glow = true;
       draw();
       instruct('v.bridge.vowels-glow');
-      void view.say(['v.bridge.vowels-glow']);
+      void heard.then(() => view.say(['v.bridge.vowels-glow']));
     } else if (!S.glow) {
-      void view.say(['v.bridge.try-vowel']);
+      void heard.then(() => view.say(['v.bridge.try-vowel']));
     }
+  }
+
+  function segAt(k) {
+    for (let i = 0; i < segs.length; i++) if (k >= st[i] && k < st[i + 1]) return i;
+    return -1;
   }
 
   function onSlot(g, at, event, slotEl) {
@@ -356,6 +455,7 @@ async function runWord({ view, ctx, round, hooks }, item) {
     const clean = dgaps.length === 0 ? S.vowelMisses === 0 : S.wrongSplits === 0;
     hooks.record(dKey, 'divide', { correct: clean && !helped, helped, ...(S.said !== undefined ? { said: S.said } : {}) });
     if (clean && !helped) {
+      known.push(rec);
       const twin = dgaps.some((g) => g.twin);
       const fit = twin ? [1] : [2, 3];
       sparkle(ui.main, view.root);

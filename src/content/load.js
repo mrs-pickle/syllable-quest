@@ -2,7 +2,7 @@ export const LAND_IDS = Object.freeze(['closed', 'open', 'vce', 'team', 'r', 'le
 
 export const VOICE_AREAS = Object.freeze([
   'hub', 'map', 'story-closed', 'story-open', 'story-vce', 'story-team', 'story-r', 'story-le', 'soundcheck', 'discovery',
-  'bridge', 'clansort', 'trickster', 'wordbook', 'storypage', 'break', 'placement', 'grownup', 'praise', 'session',
+  'bridge', 'clansort', 'trickster', 'wordbook', 'storypage', 'break', 'placement', 'grownup', 'praise', 'session', 'letter',
 ]);
 
 

@@ -1,13 +1,15 @@
 import { h } from '../core/dom.js';
 import { madeUpId } from '../core/voice-ids.js';
-import { drillDeck, graphemeOf, soundClips } from '../curriculum/graphemes.js';
+import { GRAPHEMES, drillDeck, graphemeOf, soundClips } from '../curriculum/graphemes.js';
+import { PICK_GAP_MS, pickSoundClips } from '../curriculum/letter-sound.js';
 import { PHONEMES, phonemeCodes } from '../curriculum/phonemes.js';
 import { CONFUSIONS } from '../engine/tricky-pairs.js';
 import { parseKey } from '../engine/keys.js';
-import { artImage } from '../ui/components.js';
+import { createRng } from '../core/rng.js';
+import { artImage, tile } from '../ui/components.js';
 import { coachText } from '../ui/terms.js';
 import { PADS, usePaperToday, writesOnScreen, writingPad } from '../ui/writing-pad.js';
-import { createActivityView, createOnce, judgeAloud, runRound } from './kit.js';
+import { chooseOne, createActivityView, createOnce, judgeAloud, offerPass, runRound, secondClick, showNext, untilHerTurn } from './kit.js';
 
 export const ID = 'soundcheck';
 
@@ -84,6 +86,51 @@ export function mouthCards(codes) {
     if (slug && !ids.includes(`mouth/${slug}`)) ids.push(`mouth/${slug}`);
   }
   return ids.slice(0, 2);
+}
+
+export const NEAR_MISSES = Object.freeze({
+  b: Object.freeze(['d', 'p']), d: Object.freeze(['b', 't']), p: Object.freeze(['b']), t: Object.freeze(['d']),
+  m: Object.freeze(['n']), n: Object.freeze(['m']),
+  f: Object.freeze(['v', 'th']), v: Object.freeze(['f']), th: Object.freeze(['f']),
+  i: Object.freeze(['e']), e: Object.freeze(['i']),
+  sh: Object.freeze(['s', 'ch']), ch: Object.freeze(['sh']), s: Object.freeze(['sh']),
+  g: Object.freeze(['k']), k: Object.freeze(['g']),
+});
+
+const tileLabel = (e) => cardLabel(e);
+
+const isVowel = (e) => PHONEMES[phonemeCodes(e.p)[0]]?.kind === 'vowel';
+
+export function cardDistractors(gid, deck, rng) {
+  const target = graphemeOf(gid);
+  if (!target) return [];
+  const own = tileLabel(target);
+  const byLabel = new Map();
+  for (const e of deck ?? []) {
+    if (!e || typeof e.g !== 'string') continue;
+    const label = tileLabel(e);
+    byLabel.set(label, [...(byLabel.get(label) ?? []), e]);
+  }
+  const letters = ( label) => label.replace(/^-/, '');
+  const sameSound = new Set(GRAPHEMES.filter((e) => e.p === target.p).map((e) => letters(tileLabel(e))));
+  const allowed = [...byLabel.keys()].filter((label) => label !== own
+    && letters(label) !== letters(own)
+    && !sameSound.has(letters(label))
+    && !(byLabel.get(label) ?? []).some((e) => e.p === target.p));
+  const plain = own.replace(/^-/, '');
+  const partners = [...(NEAR_MISSES[plain] ?? []), ...partnersOf(plain)];
+  const near = [...new Set(partners)].filter((x) => allowed.includes(x));
+  const others = allowed.filter((x) => !near.includes(x));
+  const vowel = isVowel(target);
+  const sameKind = ( label) => (byLabel.get(label) ?? []).some((e) => isVowel(e) === vowel);
+  const sameLength = ( label) => label.replace(/^-/, '').length === plain.length;
+  const want = 2 + rng.int(2);
+  return [
+    ...near,
+    ...rng.shuffle(others.filter((x) => sameKind(x) && sameLength(x))),
+    ...rng.shuffle(others.filter((x) => sameKind(x) && !sameLength(x))),
+    ...rng.shuffle(others.filter((x) => !sameKind(x))),
+  ].slice(0, Math.min(3, Math.max(want, Math.min(near.length, 3))));
 }
 
 function praiseLinesFor(entry) {
@@ -179,60 +226,120 @@ export const CARD_COACH = Object.freeze({
 const WRITE_ON_SCREEN = 'Your reader writes a spelling for this sound on the screen. You look at it and mark it.';
 const WRITE_ON_PAPER = 'Your reader writes a spelling for this sound in the Word Book.';
 
-async function soundCard(view, item, shared, canUndo) {
-  const { ctx, round } = shared;
-  const parsed = parseKey(item.id);
-  const gid = item.data?.grapheme ?? parsed?.id;
+const copilotOn = (ctx) => ctx?.settings?.copilot !== false;
+
+const picksItself = (ctx, item) => !copilotOn(ctx) && (item?.data?.part ?? item?.mode) === 'hear';
+
+function cardOf(ctx, item) {
+  const gid = item.data?.grapheme ?? parseKey(item.id)?.id;
   const entry = gid ? graphemeOf(gid) : null;
-  if (!entry) {
+  if (!gid || !entry) {
     console.warn(`Sound Check cannot show ${item.id}; skipping it.`);
     return null;
   }
-  const hear = item.mode === 'hear';
   const codes = phonemeCodes(entry.p);
-  const labels = soundLabels(codes);
   const clips = soundClips(gid);
   const playable = clips.length > 0 && clips.every((clip) => hasClip(ctx, clip));
-  const sound = playable ? clips : [];
+  return { gid, entry, codes, labels: soundLabels(codes), playable, sound: playable ? clips : [] };
+}
 
-  const adult = h('div', { class: 'grownup-note sc-adult', style: { margin: '8px auto', maxWidth: '900px', textAlign: 'center' } });
-  const onScreen = hear && writesOnScreen(ctx);
-  const writeLine = adultLine(onScreen ? WRITE_ON_SCREEN : WRITE_ON_PAPER);
-  let target;
-  let padRow = null;
-  if (hear) {
-    target = h('button', { type: 'button', class: 'listen-disc', 'aria-label': 'Hear the sound again',
-      onClick: () => { if (!view.lock.locked() && sound.length) view.play(sound); } }, artImage('ui/speaker'));
-    if (onScreen) {
-      const writing = writingPad(PADS.sound, { height: 232, label: 'Write the spelling of the sound here.',
-        onPaper: () => {
-          usePaperToday(ctx);
-          writeLine.textContent = WRITE_ON_PAPER;
-          view.show(target, adult);
-        } });
-      padRow = h('div', { class: 'wp-hear' }, target, writing.el);
-    }
-    const { shown, older } = spellingsToShow(Array.isArray(item.data?.expected) && item.data.expected.length ? item.data.expected : [gid], round.stageIndex ?? 0);
-    adult.append(
-      writeLine,
-      adultLine(`Taught spellings: ${shown.join(', ')}. Any taught spelling is right.`, 'grownup-spellings'),
-      ...(older.length ? [adultLine(`Older spellings that are also right: ${older.join(', ')}.`, 'grownup-older')] : []));
-  } else {
-    target = h('div', { class: 'sound-card', role: 'img', 'aria-label': 'A letter card. Say its sound.' },
-      h('span', { class: 'sound-card-label' }, cardLabel(entry)));
-    const expected = Array.isArray(item.data?.expected) && item.data.expected.length ? item.data.expected : codes;
-    adult.append(adultLine(`${cardLabel(entry).replace(/^-/, '')}: ${soundLabels(expected)}`, 'grownup-sound'));
+const adultNote = () => h('div', { class: 'grownup-note sc-adult', style: { margin: '8px auto', maxWidth: '900px', textAlign: 'center' } });
+
+async function seeCard(view, item, shared, canUndo) {
+  const { ctx } = shared;
+  const card = cardOf(ctx, item);
+  if (!card) return null;
+  const { gid, entry, codes, labels, playable } = card;
+  const own = pickSoundClips(gid);
+  const model = playable && own.length > 0 && own.every((clip) => hasClip(ctx, clip)) ? own : card.sound;
+
+  let checked = () => {};
+  const clicked = new Promise((resolve) => { checked = resolve; });
+  let hearing = false;
+  let stopPass = () => {};
+  const target = h('button', { type: 'button', class: 'sound-card', 'aria-label': 'Check the sound of this card',
+    onClick: ( event) => {
+      if (hearing || secondClick(event)) return;
+      view.lock.run(async () => {
+        if (hearing) return;
+        hearing = true;
+        stopPass();
+        view.choosing(false);
+        target.classList.add('checked');
+        await view.say(model, 600, PICK_GAP_MS);
+        checked('checked');
+      });
+    } }, h('span', { class: 'sound-card-label' }, cardLabel(entry)));
+
+  const adult = adultNote();
+  const expected = Array.isArray(item.data?.expected) && item.data.expected.length ? item.data.expected : codes;
+  adult.append(adultLine(`${cardLabel(entry).replace(/^-/, '')}: ${soundLabels(expected)}`, 'grownup-sound'));
+  shared.grownUp.say = labels;
+  shared.grownUp.note = null;
+  view.show(target, adult);
+  if (!playable) shared.grownUp.note = needsGrownUp(adult, labels);
+
+  const told = shared.once('v.soundcheck.check');
+  const grownUpLine = playable ? [] : ['v.soundcheck.grownup'];
+  await view.prompt(['v.soundcheck.check', ...grownUpLine], { play: [...told, ...(playable ? [] : shared.once('v.soundcheck.grownup'))] });
+  if (!hearing) {
+    view.play([]);
+    view.choosing(true);
+    stopPass = offerPass(view, () => { view.choosing(false); checked('passed'); });
   }
+  if (await clicked === 'passed') return { pass: true };
+
+  if (!copilotOn(ctx)) {
+    const step = showNext(view, []);
+    await step.pressed;
+    return { correct: true, helped: false, selfChecked: true };
+  }
+  return judgeAloud(viewWithMouth(view, codes), {
+    kind: 'said',
+    model,
+    target,
+    praise: 'sound',
+    praiseLines: praiseLinesFor(entry),
+    canUndo,
+    coach: shared.coach('see'),
+    chips: confusionChips(entry.g),
+  });
+}
+
+async function hearCard(view, item, shared, canUndo) {
+  const { ctx, round } = shared;
+  const card = cardOf(ctx, item);
+  if (!card) return null;
+  const { gid, entry, codes, labels, playable, sound } = card;
+
+  const adult = adultNote();
+  const onScreen = writesOnScreen(ctx);
+  const writeLine = adultLine(onScreen ? WRITE_ON_SCREEN : WRITE_ON_PAPER);
+  const target = h('button', { type: 'button', class: 'listen-disc', 'aria-label': 'Hear the sound again',
+    onClick: () => { if (!view.lock.locked() && sound.length) view.play(sound); } }, artImage('ui/speaker'));
+  let padRow = null;
+  if (onScreen) {
+    const writing = writingPad(PADS.sound, { height: 232, label: 'Write the spelling of the sound here.',
+      onPaper: () => {
+        usePaperToday(ctx);
+        writeLine.textContent = WRITE_ON_PAPER;
+        view.show(target, adult);
+      } });
+    padRow = h('div', { class: 'wp-hear' }, target, writing.el);
+  }
+  const { shown, older } = spellingsToShow(Array.isArray(item.data?.expected) && item.data.expected.length ? item.data.expected : [gid], round.stageIndex ?? 0);
+  adult.append(
+    writeLine,
+    adultLine(`Taught spellings: ${shown.join(', ')}. Any taught spelling is right.`, 'grownup-spellings'),
+    ...(older.length ? [adultLine(`Older spellings that are also right: ${older.join(', ')}.`, 'grownup-older')] : []));
   shared.grownUp.say = labels;
   shared.grownUp.note = null;
   view.show(padRow ?? target, adult);
   if (!playable) shared.grownUp.note = needsGrownUp(adult, labels);
 
-  const line = hear ? 'v.soundcheck.hear' : 'v.soundcheck.see';
-  const told = shared.once(line);
+  const told = shared.once('v.soundcheck.hear');
   const grownUpLine = playable ? [] : ['v.soundcheck.grownup'];
-  const heard = hear && playable ? sound : [];
-  await view.prompt([line, ...heard, ...grownUpLine], { play: [...told, ...heard, ...(playable ? [] : shared.once('v.soundcheck.grownup'))] });
+  await view.prompt(['v.soundcheck.hear', ...sound, ...grownUpLine], { play: [...told, ...sound, ...(playable ? [] : shared.once('v.soundcheck.grownup'))] });
   view.play([]);
 
   const judging = judgeAloud(viewWithMouth(view, codes), {
@@ -242,11 +349,44 @@ async function soundCard(view, item, shared, canUndo) {
     praise: 'sound',
     praiseLines: praiseLinesFor(entry),
     canUndo,
-    coach: shared.coach(hear ? 'hear' : 'see'),
+    coach: shared.coach('hear'),
     chips: confusionChips(entry.g),
   });
-  if (hear) retitleBanner(view, "Grown-up's turn: did your reader write a taught spelling?");
+  retitleBanner(view, "Grown-up's turn: did your reader write a taught spelling?");
   return judging;
+}
+
+async function hearPick(view, item, shared, abandon) {
+  const { ctx, round } = shared;
+  const card = cardOf(ctx, item);
+  if (!card) return null;
+  const { gid, entry, labels, playable, sound } = card;
+  if (!playable) {
+    const adult = adultNote();
+    shared.grownUp.say = labels;
+    shared.grownUp.note = null;
+    view.show(adult);
+    shared.grownUp.note = needsGrownUp(adult, labels);
+    await view.prompt(['v.soundcheck.grownup'], { play: ['v.soundcheck.grownup'] });
+    const step = showNext(view, []);
+    await step.pressed;
+    return { correct: true, helped: false, selfChecked: true };
+  }
+  const rng = ctx.rng ?? shared.rng;
+  const answer = cardLabel(entry);
+  const options = rng.shuffle([answer, ...cardDistractors(gid, drillDeck(Math.max(round.stageIndex ?? 0, entry.stage)), rng)]);
+  const choices = untilHerTurn(options.map((label) => ({ value: label, el: tile({ label, onPick: () => {}, size: 130 }) })));
+  const disc = h('button', { type: 'button', class: 'listen-disc', 'aria-label': 'Hear the sound again',
+    onClick: () => { if (!view.lock.locked() && sound.length) view.play(sound, PICK_GAP_MS); } }, artImage('ui/speaker'));
+  const adult = adultNote();
+  shared.grownUp.say = labels;
+  shared.grownUp.note = null;
+  view.show(disc, h('div', { class: 'choice-row sc-pick' }, choices.map((c) => c.el)), adult);
+  if (!playable) shared.grownUp.note = needsGrownUp(adult, labels);
+
+  const told = shared.once('v.soundcheck.pick');
+  await view.prompt(['v.soundcheck.pick', ...sound], { play: [...told, ...sound], gap: PICK_GAP_MS });
+  return chooseOne(view, { choices, answer, hint: sound, hintGap: PICK_GAP_MS, reward: sound, praise: 'sound', praiseLines: praiseLinesFor(entry), keyboard: true, target: disc, abandon });
 }
 
 async function blendCard(view, item, shared, canUndo) {
@@ -329,6 +469,7 @@ export async function run(el, ctx, round, hooks) {
       return Array.isArray(lines) && lines.length ? coachText(lines[coached.blend++ % lines.length], round.terms ?? ctx.settings?.terms) || undefined : undefined;
     },
     grownUp: { note: null, say: '' },
+    rng: createRng(Date.now()),
   };
   const stopListening = ctx.voice?.onNeedsGrownUp?.(() => {
     if (shared.grownUp.note?.isConnected || !shared.grownUp.say) return;
@@ -339,11 +480,12 @@ export async function run(el, ctx, round, hooks) {
   try {
     await view.prompt(['v.soundcheck.start']);
     await runRound(view, { items: planItems }, ledger.hooks, {
-      play: ( item, { canUndo }) => {
+      play: ( item, { canUndo, abandon }) => {
         const own = byId.get(item.id) ?? item;
         const part = own.data?.part ?? own.mode;
         if (part === 'blend') return blendCard(view, own, shared, canUndo);
-        if (part === 'see' || part === 'hear') return soundCard(view, own, shared, canUndo);
+        if (part === 'see') return seeCard(view, own, shared, canUndo);
+        if (part === 'hear') return picksItself(ctx, own) ? hearPick(view, own, shared, abandon) : hearCard(view, own, shared, canUndo);
         console.warn(`Sound Check cannot show ${item.id} in mode ${item.mode}; skipping it.`);
         return Promise.resolve(null);
       },
@@ -353,7 +495,7 @@ export async function run(el, ctx, round, hooks) {
         return card;
       },
       undo: true,
-      judged: () => true,
+      judged: ( item) => !picksItself(ctx, byId.get(item.id) ?? item),
     });
     completed = view.live();
     if (completed) {

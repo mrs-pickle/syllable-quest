@@ -1,4 +1,4 @@
-.start-apprentice { position: absolute; left: 70px; top: 330px; width: 260px; height: 260px; }
+.start-apprentice { position: absolute; left: 110px; top: 330px; width: auto; height: 260px; aspect-ratio: 360 / 520; }
 .start-apprentice img, .start-student-art img, .coat-art img, .map-apprentice img, .land-apprentice img { width: 100%; height: 100%; object-fit: contain; display: block; }
 
 .start-heading {
@@ -16,7 +16,7 @@
 }
 .coat-choice[aria-pressed="true"] { background: var(--glow); box-shadow: 0 8px 0 var(--shadow), 0 0 0 8px var(--gold); }
 .coat-choice:active { transform: translateY(4px); }
-.coat-art { display: block; width: 200px; height: 200px; }
+.coat-art { display: block; width: auto; height: 200px; aspect-ratio: 360 / 520; }
 
 .start-actions { position: absolute; left: 0; right: 0; bottom: 60px; display: flex; justify-content: center; gap: 32px; }
 .start-panel .start-actions { position: static; margin-top: 28px; }
@@ -37,7 +37,7 @@
 .terms-title { font-size: 34px; font-weight: 700; }
 .terms-names { font-size: 24px; line-height: 1.4; }
 
-.start-student-art { display: block; width: 220px; height: 220px; }
+.start-student-art { display: block; width: auto; height: 220px; aspect-ratio: 360 / 520; }
 .start-student-name { font-size: 32px; font-weight: 700; }
 
 
@@ -58,7 +58,7 @@
 .map-land.locked { background: #e1ddd6; color: #3b3834; border-style: dashed; box-shadow: none; opacity: 0.9; padding-top: 18px; padding-bottom: 18px; }
 .map-land.locked:active { transform: none; }
 
-.map-apprentice { position: absolute; width: 140px; height: 140px; pointer-events: none; }
+.map-apprentice { position: absolute; width: auto; height: 140px; aspect-ratio: 360 / 520; margin-left: 22px; pointer-events: none; }
 
 .map-bar { position: absolute; left: 24px; right: 24px; bottom: 18px; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
 .map-bar > * { flex: none; white-space: nowrap; }
@@ -100,7 +100,7 @@
 .land-landmark.unlit .land-landmark-art { opacity: 0.8; }
 .land-landmark.current figcaption { background: var(--glow); box-shadow: 0 0 0 3px var(--gold); }
 
-.land-apprentice { position: absolute; left: 50px; bottom: 30px; width: 230px; height: 230px; pointer-events: none; }
+.land-apprentice { position: absolute; left: 85px; bottom: 30px; width: auto; height: 230px; aspect-ratio: 360 / 520; pointer-events: none; }
 
 .land-actions { position: absolute; left: 320px; right: 40px; bottom: 36px; display: flex; align-items: center; justify-content: flex-end; gap: 28px; }
 .land-back {
@@ -159,3 +159,8 @@
 .book-score { min-height: 56px; padding: 4px 18px; border: 4px solid var(--ink); border-radius: 16px; background: #fff; font-size: 22px; font-weight: 700; }
 .book-result { margin: 0; font-size: 30px; line-height: 1.5; }
 .book-reader.scorer { overflow-y: auto; }
+
+.start-title { font-size: 60px; line-height: 1.15; }
+.start-subtitle { display: block; font-size: 36px; font-weight: 400; line-height: 1.2; }
+
+.start-menu .big-button:not(:has(.big-button-icon)) { grid-template-columns: minmax(0, 1fr); }

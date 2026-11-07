@@ -1,9 +1,9 @@
 import { h } from '../core/dom.js';
 import { madeUpId, redId, sentenceId, wordId } from '../core/voice-ids.js';
 import { parseKey } from '../engine/keys.js';
-import { nextButton, scrollCue, speakerButton, tile } from '../ui/components.js';
+import { nextButton, scrollCue, speakerButton, takeBackButton, tile } from '../ui/components.js';
 import { inkThumbnail, PADS, syllableDividers, usePaperToday, writesOnScreen, writingPad } from '../ui/writing-pad.js';
-import { createActivityView, offerPass } from './kit.js';
+import { createActivityView, offerPass, sayPick, typeToPick } from './kit.js';
 
 export const ID = 'wordbook';
 
@@ -27,6 +27,19 @@ const partsOf = (content, word) => {
   return Array.isArray(parts) && parts.length > 0 ? parts : [];
 };
 
+function letterBoxes(content, word) {
+  const segs = content?.byWord?.get?.(word)?.segs;
+  if (!Array.isArray(segs)) return [];
+  const out = [];
+  for (const seg of segs) for (const _ of String(seg?.[0] ?? '')) out.push(seg);
+  return segs.map((seg) => String(seg?.[0] ?? '')).join('') === word ? out : [];
+}
+
+function tileContext(boxes, k, letter) {
+  const seg = boxes[k];
+  return seg && String(seg[0]).toLowerCase() === letter.toLowerCase() ? { seg } : undefined;
+}
+
 function coachLine(content, stage, n) {
   const lines = content?.coach?.[stage]?.wordbook;
   if (!Array.isArray(lines) || lines.length === 0) return '';
@@ -34,13 +47,45 @@ function coachLine(content, stage, n) {
   return typeof line === 'string' ? line : String(line?.text ?? '');
 }
 
-function paperTiles(word) {
+export function paperTiles(word, { onLetter = () => {}, paused = () => false } = {}) {
+  const letters = [...word];
+  const placed = [];
   const built = h('p', { class: 'wb-built', 'aria-live': 'polite' });
+  const back = takeBackButton({ onBack: () => takeBack() });
+  const draw = () => {
+    built.textContent = placed.map((k) => letters[k]).join('');
+    back.disabled = placed.length === 0 || paused();
+  };
+  const place = (k) => {
+    if (paused()) return;
+    placed.push(k);
+    draw();
+    onLetter(k, letters[k]);
+  };
+  const takeBack = () => {
+    if (paused() || placed.length === 0) return;
+    placed.pop();
+    draw();
+  };
+  const typed = (label) => {
+    const at = letters.findIndex((l, k) => l.toLowerCase() === label && !placed.includes(k));
+    const k = at >= 0 ? at : letters.findIndex((l) => l.toLowerCase() === label);
+    if (k >= 0) place(k);
+  };
   const tray = h('div', { class: 'wb-tiles', role: 'group', 'aria-label': 'Backup letter tiles' },
-    [...word].map((letter) => tile({ label: letter, size: 110, onPick: (label) => { built.textContent = `${built.textContent}${label}`; } })));
-  const clear = h('button', { type: 'button', class: 'wb-clear', onClick: () => { built.textContent = ''; } }, 'Clear');
-  return h('div', { class: 'wb-paper' },
-    h('p', { class: 'wb-paper-title' }, 'No paper handy? Use these tiles instead. They are not scored.'), tray, built, clear);
+    letters.map((letter, k) => tile({ label: letter, size: 110, onPick: () => place(k) })));
+  const clear = h('button', { type: 'button', class: 'wb-clear', onClick: () => { if (paused()) return; placed.length = 0; draw(); } }, 'Clear');
+  const el = h('div', { class: 'wb-paper' },
+    h('p', { class: 'wb-paper-title' }, 'No paper handy? Use these tiles instead, or type the letters. They are not scored.'), tray,
+    h('div', { class: 'wb-row' }, built, back), clear);
+  draw();
+  let listening = false;
+  const listen = () => {
+    if (listening) return;
+    listening = true;
+    typeToPick([...new Set(letters.map((l) => l.toLowerCase()))], typed, el, paused, takeBack);
+  };
+  return { el, listen };
 }
 
 export async function run(el, ctx, round, hooks) {
@@ -66,6 +111,7 @@ export async function run(el, ctx, round, hooks) {
       const word = String(item.data.word ?? '');
       const voice = sentence ? sentenceId(sentence.id) : wordVoice(item, content);
       const parts = sentence ? [] : partsOf(content, word);
+      const boxes = sentence ? [] : letterBoxes(content, word);
 
       const script = sentence
         ? [
@@ -81,17 +127,24 @@ export async function run(el, ctx, round, hooks) {
         ];
       const coach = coachLine(content, round.stage, i);
       const onScreen = writesOnScreen(ctx);
-      const card = (withPad) => scrollCue(h('section', { class: ['wb-card', withPad && 'wb-compact', withPad && sentence && 'wb-long'], 'aria-label': 'Word Book script' },
+      let paper = null;
+      const card = (withPad) => {
+        paper = !withPad && ctx?.settings?.paperBackup === true && !sentence
+          ? paperTiles(word, { onLetter: (k, letter) => { void sayPick(view, letter, tileContext(boxes, k, letter)); }, paused: () => view.lock.locked() })
+          : null;
+        return scrollCue(h('section', { class: ['wb-card', withPad && 'wb-compact', withPad && sentence && 'wb-long'], 'aria-label': 'Word Book script' },
         h('p', { class: 'wb-count' }, sentence ? 'The sentence' : `Word ${i + 1}`),
         script,
         coach ? h('p', { class: 'wb-coach' }, coach) : null,
         speakerButton({ onReplay: () => { say(voice); } }),
-        !withPad && ctx?.settings?.paperBackup === true && !sentence ? paperTiles(word) : null));
+        paper?.el ?? null));
+      };
       let writing = null;
       const toPaper = () => {
         usePaperToday(ctx);
         writing = null;
         view.show(card(false));
+        paper?.listen();
       };
       if (onScreen) {
         writing = writingPad(sentence ? PADS.sentence : { ...PADS.dictated, dividers: syllableDividers(parts, PADS.dictated.w) },
@@ -100,6 +153,7 @@ export async function run(el, ctx, round, hooks) {
         view.show(card(true), writing.el);
       } else {
         view.show(card(false));
+        paper?.listen();
       }
       say(voice);
 

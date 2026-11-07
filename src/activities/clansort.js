@@ -2,7 +2,7 @@ import { h } from '../core/dom.js';
 import { syllableId } from '../core/voice-ids.js';
 import { artImage } from '../ui/components.js';
 import { coachText, termFor, TYPES } from '../ui/terms.js';
-import { chooseOne, createActivityView, createOnce, offerPass, runRound, untilHerTurn } from './kit.js';
+import { chooseOne, createActivityView, createOnce, offerPass, runRound, sayPickedSyllable, untilHerTurn } from './kit.js';
 
 export const ID = 'clansort';
 
@@ -66,6 +66,7 @@ export async function run(el, ctx, round, hooks) {
     stopPass();
     if (first === 'pass') { ctx.audio?.stop?.(); return { pass: true }; }
     ctx.audio?.stop?.();
+    void sayPickedSyllable(view, syllableId(s, type));
 
     let misses = 0;
     for (const c of live) {

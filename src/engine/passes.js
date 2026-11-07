@@ -94,3 +94,17 @@ export function reviewRounds(items) {
   return REVIEW_ORDER.map((activity) => ({ activity, items: items.filter((item) => ownerOf(item) === activity) }))
     .filter((round) => round.items.length > 0);
 }
+
+export function passLabel({ id, mode }) {
+  const at = id.indexOf(':');
+  const kind = id.slice(0, at);
+  const name = id.slice(at + 1);
+  switch (kind) {
+    case 'g': return `Sound: ${name} (${mode === 'hear' ? 'hearing' : 'saying'} it)`;
+    case 'n': return `Made-up word: ${name}`;
+    case 'w': return `${{ divide: 'Splitting', label: 'Naming the parts of', read: 'Reading', write: 'Writing' }[mode] ?? 'Word'}: ${name}`;
+    case 'y': return `Syllable sort: ${name}`;
+    case 'r': return `Sight word: ${name}`;
+    default: return id;
+  }
+}

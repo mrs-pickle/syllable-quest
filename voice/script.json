@@ -19696,6 +19696,27 @@
     "source": "content/voice/bridge.json"
   },
   {
+    "id": "v.bridge.protege-ask",
+    "kind": "line",
+    "text": "Is this right? Tap the gap where it really breaks.",
+    "note": "unsure, asking for help",
+    "source": "content/voice/bridge.json"
+  },
+  {
+    "id": "v.bridge.protege-thanks",
+    "kind": "line",
+    "text": "Oh! Thank you! Now I know it.",
+    "note": "relieved, grateful",
+    "source": "content/voice/bridge.json"
+  },
+  {
+    "id": "v.bridge.protege-try",
+    "kind": "line",
+    "text": "Ooh, let me try one! I split this word all by myself...",
+    "note": "eager, a little proud",
+    "source": "content/voice/bridge.json"
+  },
+  {
     "id": "v.bridge.read-planks",
     "kind": "line",
     "text": "Read each plank, one at a time.",
@@ -20683,6 +20704,12 @@
     "source": "content/voice/grownup.json"
   },
   {
+    "id": "v.hub.check",
+    "kind": "line",
+    "text": "Reading check",
+    "source": "content/voice/hub.json"
+  },
+  {
     "id": "v.hub.coat",
     "kind": "line",
     "text": "Pick the coat your apprentice will wear.",
@@ -20713,6 +20740,188 @@
     "text": "Who is playing?",
     "note": "friendly, a real question",
     "source": "content/voice/hub.json"
+  },
+  {
+    "id": "v.letter.a",
+    "kind": "line",
+    "text": "A",
+    "note": "the letter name only, plain and even (said when a picked letter has no sound clip)",
+    "source": "content/voice/letter.json"
+  },
+  {
+    "id": "v.letter.b",
+    "kind": "line",
+    "text": "B",
+    "note": "the letter name only, plain and even (said when a picked letter has no sound clip)",
+    "source": "content/voice/letter.json"
+  },
+  {
+    "id": "v.letter.c",
+    "kind": "line",
+    "text": "C",
+    "note": "the letter name only, plain and even (said when a picked letter has no sound clip)",
+    "source": "content/voice/letter.json"
+  },
+  {
+    "id": "v.letter.d",
+    "kind": "line",
+    "text": "D",
+    "note": "the letter name only, plain and even (said when a picked letter has no sound clip)",
+    "source": "content/voice/letter.json"
+  },
+  {
+    "id": "v.letter.e",
+    "kind": "line",
+    "text": "E",
+    "note": "the letter name only, plain and even (said when a picked letter has no sound clip)",
+    "source": "content/voice/letter.json"
+  },
+  {
+    "id": "v.letter.f",
+    "kind": "line",
+    "text": "F",
+    "note": "the letter name only, plain and even (said when a picked letter has no sound clip)",
+    "source": "content/voice/letter.json"
+  },
+  {
+    "id": "v.letter.g",
+    "kind": "line",
+    "text": "G",
+    "note": "the letter name only, plain and even (said when a picked letter has no sound clip)",
+    "source": "content/voice/letter.json"
+  },
+  {
+    "id": "v.letter.h",
+    "kind": "line",
+    "text": "H",
+    "note": "the letter name only, plain and even (said when a picked letter has no sound clip)",
+    "source": "content/voice/letter.json"
+  },
+  {
+    "id": "v.letter.i",
+    "kind": "line",
+    "text": "I",
+    "note": "the letter name only, plain and even (said when a picked letter has no sound clip)",
+    "source": "content/voice/letter.json"
+  },
+  {
+    "id": "v.letter.j",
+    "kind": "line",
+    "text": "J",
+    "note": "the letter name only, plain and even (said when a picked letter has no sound clip)",
+    "source": "content/voice/letter.json"
+  },
+  {
+    "id": "v.letter.k",
+    "kind": "line",
+    "text": "K",
+    "note": "the letter name only, plain and even (said when a picked letter has no sound clip)",
+    "source": "content/voice/letter.json"
+  },
+  {
+    "id": "v.letter.l",
+    "kind": "line",
+    "text": "L",
+    "note": "the letter name only, plain and even (said when a picked letter has no sound clip)",
+    "source": "content/voice/letter.json"
+  },
+  {
+    "id": "v.letter.m",
+    "kind": "line",
+    "text": "M",
+    "note": "the letter name only, plain and even (said when a picked letter has no sound clip)",
+    "source": "content/voice/letter.json"
+  },
+  {
+    "id": "v.letter.n",
+    "kind": "line",
+    "text": "N",
+    "note": "the letter name only, plain and even (said when a picked letter has no sound clip)",
+    "source": "content/voice/letter.json"
+  },
+  {
+    "id": "v.letter.o",
+    "kind": "line",
+    "text": "O",
+    "note": "the letter name only, plain and even (said when a picked letter has no sound clip)",
+    "source": "content/voice/letter.json"
+  },
+  {
+    "id": "v.letter.p",
+    "kind": "line",
+    "text": "P",
+    "note": "the letter name only, plain and even (said when a picked letter has no sound clip)",
+    "source": "content/voice/letter.json"
+  },
+  {
+    "id": "v.letter.q",
+    "kind": "line",
+    "text": "Q",
+    "note": "the letter name only, plain and even (said when a picked letter has no sound clip)",
+    "source": "content/voice/letter.json"
+  },
+  {
+    "id": "v.letter.r",
+    "kind": "line",
+    "text": "R",
+    "note": "the letter name only, plain and even (said when a picked letter has no sound clip)",
+    "source": "content/voice/letter.json"
+  },
+  {
+    "id": "v.letter.s",
+    "kind": "line",
+    "text": "S",
+    "note": "the letter name only, plain and even (said when a picked letter has no sound clip)",
+    "source": "content/voice/letter.json"
+  },
+  {
+    "id": "v.letter.t",
+    "kind": "line",
+    "text": "T",
+    "note": "the letter name only, plain and even (said when a picked letter has no sound clip)",
+    "source": "content/voice/letter.json"
+  },
+  {
+    "id": "v.letter.u",
+    "kind": "line",
+    "text": "U",
+    "note": "the letter name only, plain and even (said when a picked letter has no sound clip)",
+    "source": "content/voice/letter.json"
+  },
+  {
+    "id": "v.letter.v",
+    "kind": "line",
+    "text": "V",
+    "note": "the letter name only, plain and even (said when a picked letter has no sound clip)",
+    "source": "content/voice/letter.json"
+  },
+  {
+    "id": "v.letter.w",
+    "kind": "line",
+    "text": "W",
+    "note": "the letter name only, plain and even (said when a picked letter has no sound clip)",
+    "source": "content/voice/letter.json"
+  },
+  {
+    "id": "v.letter.x",
+    "kind": "line",
+    "text": "X",
+    "note": "the letter name only, plain and even (said when a picked letter has no sound clip)",
+    "source": "content/voice/letter.json"
+  },
+  {
+    "id": "v.letter.y",
+    "kind": "line",
+    "text": "Y",
+    "note": "the letter name only, plain and even (said when a picked letter has no sound clip)",
+    "source": "content/voice/letter.json"
+  },
+  {
+    "id": "v.letter.z",
+    "kind": "line",
+    "text": "Z",
+    "note": "the letter name only, plain and even (said when a picked letter has no sound clip)",
+    "source": "content/voice/letter.json"
   },
   {
     "id": "v.map.book-open",
@@ -20978,6 +21187,13 @@
     "source": "content/voice/soundcheck.json"
   },
   {
+    "id": "v.soundcheck.check",
+    "kind": "line",
+    "text": "What sound does this card make? Say it, then click the card to check.",
+    "note": "calm, clear",
+    "source": "content/voice/soundcheck.json"
+  },
+  {
     "id": "v.soundcheck.grownup",
     "kind": "line",
     "text": "Your grown-up will say this one for you.",
@@ -20999,9 +21215,9 @@
     "source": "content/voice/soundcheck.json"
   },
   {
-    "id": "v.soundcheck.see",
+    "id": "v.soundcheck.pick",
     "kind": "line",
-    "text": "Look at the letters on the card. Say the sound they make.",
+    "text": "Listen to the sound. Then click the spelling that makes it.",
     "note": "calm, clear",
     "source": "content/voice/soundcheck.json"
   },

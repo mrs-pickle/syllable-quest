@@ -10,5 +10,8 @@
   "v.bridge.name-planks": { "text": "Now name each plank. Which clan does it belong to?", "note": "calm, clear" },
   "v.bridge.which-clan": { "text": "Look at the vowel. How is it held? Then pick the clan.", "note": "warm, a question" },
   "v.bridge.read-planks": { "text": "Read each plank, one at a time.", "note": "calm, clear" },
-  "v.bridge.walk": { "text": "Walk the bridge. Read the whole word.", "note": "warm, encouraging" }
+  "v.bridge.walk": { "text": "Walk the bridge. Read the whole word.", "note": "warm, encouraging" },
+  "v.bridge.protege-try": { "text": "Ooh, let me try one! I split this word all by myself...", "note": "eager, a little proud" },
+  "v.bridge.protege-ask": { "text": "Is this right? Tap the gap where it really breaks.", "note": "unsure, asking for help" },
+  "v.bridge.protege-thanks": { "text": "Oh! Thank you! Now I know it.", "note": "relieved, grateful" }
 }

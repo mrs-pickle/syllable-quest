@@ -19,6 +19,7 @@ export const PROFILE_FATES = Object.freeze({
   discoverySeen: 'reset',
   storySeen: 'reset',
   sweep: 'reset',
+  breaks: 'reset',
 });
 
 export function startedOverProfile(profile) {

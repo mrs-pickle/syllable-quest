@@ -84,6 +84,7 @@ export function restoreControls(ctx, { needsPin = false, onRestored } = {}) {
     ctx.profile = saved.profile;
     ctx.states = saved.states;
     ctx.today = saved.today;
+    ctx.coat = saved.coat;
     await ctx.audio?.reloadOverrides?.();
     await ctx.save();
     message.textContent = file.hasPin ? RESTORED_MESSAGE : RESTORED_KEPT_PIN;

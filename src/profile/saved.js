@@ -3,6 +3,7 @@ import { normalizeProfile } from './profile.js';
 import { normalizeItemState } from '../engine/itemstate.js';
 import { createStudentStore } from './students.js';
 import { upgrade } from './migrate.js';
+import { COAT_KEY, normalizeCoat } from './coat.js';
 
 
 const isPlainObject = (value) => value !== null && typeof value === 'object' && !Array.isArray(value);
@@ -28,5 +29,6 @@ export async function readSaved(store, id) {
   const profile = normalizeProfile(upgrade('profile', await safeGet(store, 'profile')));
   const states = new Map(Object.entries(normalizeStates(upgrade('states', await safeGet(store, 'states')))));
   const storedToday = await safeGet(store, 'today');
-  return { settings, profile, states, today: isPlainObject(storedToday) ? storedToday : null };
+  const coat = normalizeCoat(await safeGet(store, COAT_KEY));
+  return { settings, profile, states, today: isPlainObject(storedToday) ? storedToday : null, coat };
 }

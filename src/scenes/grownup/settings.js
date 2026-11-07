@@ -2,7 +2,7 @@ import { h } from '../../core/dom.js';
 import { TINTS } from '../../core/stage.js';
 import { STAGES } from '../../curriculum/stages.js';
 import { withPointer } from '../../profile/profile.js';
-import { LAST_STAGE, normalizeSettings } from '../../profile/settings.js';
+import { BREAK_STYLES, LAST_STAGE, MIX_IT_UP, normalizeSettings } from '../../profile/settings.js';
 import { checkPin, cornerFrame, hashPin, isValidPin, routeFor } from './gate.js';
 import { startOverSection } from './start-over.js';
 
@@ -23,10 +23,14 @@ export const SETTING_HELP = Object.freeze({
   voiceRate: { label: 'Placeholder voice speed', help: 'How fast the placeholder voice speaks.' },
   tint: { label: 'Background tint', help: 'A comfort option for reading. Letters keep their off-white backing.' },
   spacing: { label: 'Text spacing', help: 'Wide spreads the letters and words a little further apart.' },
+  pickSounds: { label: "Say each letter's sound when picked",
+    help: 'When your reader taps a letter tile, it says the sound it makes in that word (the a of cake says its long sound). Sounds without a recording are never guessed: the letter name is said instead.' },
   paperBackup: { label: 'Paper tile backups', help: 'Shows a printable paper-tile version of on-screen tiles.' },
   writeOnScreen: { label: 'Where your reader writes',
     help: 'On the screen: a writing pad on the Word Book, sound and Trickster screens, with an eraser. Her writing is never saved and the game never marks it; you look at it and mark the spelling. Or in the paper Word Book, as before. A small "Use paper today" on those screens switches for the day.' },
   doseOverride: { label: 'Long-word practice per session', help: 'Automatic follows how secure your reader is with splitting words. Or choose a fixed number of words.' },
+  breakStyle: { label: 'Movement break',
+    help: 'Mix it up takes all five in turn, none repeated until every one has played, across lessons too. Or choose one to play every time. You can always skip a break.' },
   muted: { label: 'Sound', help: 'Off silences the game on this device.' },
   tipsSeen: { label: 'Grown-up tips', help: 'Each tip shows once, the first time it is needed.' },
   pin: { label: 'Grown-up PIN', help: 'Four to eight digits. It keeps the grown-up corner for grown-ups.' },
@@ -46,10 +50,12 @@ const CHOICES = Object.freeze({
   voiceRate: [[0.75, 'Slower'], [0.9, 'Normal'], [1.1, 'Faster']],
   tint: TINTS.map((tint) => [tint, capitalized(tint)]),
   spacing: [['normal', 'Normal'], ['wide', 'Wide']],
+  pickSounds: [[true, 'On'], [false, 'Off']],
   paperBackup: [[true, 'On'], [false, 'Off']],
   writeOnScreen: [[true, 'Write on screen'], [false, 'Write in the paper Word Book']],
   doseOverride: [[null, 'Automatic'], [3, '3 words'], [6, '6 words']],
   muted: [[false, 'On'], [true, 'Off']],
+  breakStyle: [[MIX_IT_UP, 'Mix it up'], ...BREAK_STYLES.map((style) => [style, capitalized(style)])],
 });
 
 export function updateSetting(settings, key, value) {
@@ -165,9 +171,11 @@ export function mount(el, ctx, params = {}) {
     row('voiceRate', segmented('voiceRate')),
     row('tint', segmented('tint')),
     row('spacing', segmented('spacing')),
+    row('pickSounds', segmented('pickSounds')),
     row('paperBackup', segmented('paperBackup')),
     row('writeOnScreen', segmented('writeOnScreen')),
     row('doseOverride', segmented('doseOverride')),
+    row('breakStyle', segmented('breakStyle')),
     row('muted', segmented('muted')),
     row('tipsSeen', tipsAgain, tipsMessage),
     row('pin', pinForm),

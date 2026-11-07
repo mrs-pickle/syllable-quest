@@ -45,7 +45,7 @@ const stageRange = (first, last) => (first === last ? `Stage ${first}` : `Stages
 
 export function coverSheet() {
   return h('section', { class: 'pp-sheet pp-cover', 'data-sheet': 'cover' },
-    h('p', { class: 'pp-title' }, 'Syllable Quest'),
+    h('p', { class: 'pp-title' }, "Meadowlark's World: Syllable Quest"),
     h('p', { class: 'pp-sub' }, 'My Word Book'),
     h('p', {}, 'Six lands. Six crests. One word at a time.'),
     h('p', { class: 'pp-name' }, 'Name: ', h('span', { class: 'pp-line' })));

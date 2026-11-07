@@ -1,8 +1,10 @@
 import { h } from '../core/dom.js';
 import { createLock } from '../core/lock.js';
 import { artImage, artUrl, copilotBanner, copilotHold, copilotUndoAside, keysOnPage, nextButton, passButton, setUndo } from '../ui/components.js';
-import { apprenticeArt, readCoat } from '../scenes/start.js';
+import { apprenticeArt } from '../scenes/start.js';
+import { coatOf, isCoat, readCoat } from '../profile/coat.js';
 import { HELP_TIPS, markTipSeen, offerTips, TURN_TIPS } from '../ui/tips.js';
+import { PICK_GAP_MS, letterNameIds, pickSoundClips } from '../curriculum/letter-sound.js';
 
 
 export function createOnce() {
@@ -14,6 +16,35 @@ export function createOnce() {
   };
 }
 
+export const pickSoundsOn = (ctx) => ctx?.settings?.pickSounds !== false && ctx?.settings?.muted !== true;
+
+export async function sayPick(view, grapheme, context) {
+  const ctx = view?.ctx;
+  if (!pickSoundsOn(ctx) || !view.live()) return;
+  try {
+    const audio = ctx?.audio;
+    const clips = pickSoundClips(grapheme, context);
+    const has = ( id) => typeof audio?.has !== 'function' || audio.has(id) === true;
+    if (clips.length > 0 && clips.every(has)) { await audio.playSeq(clips, PICK_GAP_MS); return; }
+    const p = Array.isArray(context?.seg) ? context.seg[1] : context?.p;
+    if (typeof p === 'string' && p.trim() === '') return;
+    if (typeof ctx?.voice?.say !== 'function') return;
+    audio?.stop?.();
+    for (const id of letterNameIds(grapheme)) {
+      if (!view.live() || !pickSoundsOn(ctx)) return;
+      await ctx.voice.say(id);
+    }
+  } catch (err) {
+    console.error(`Could not say the sound of ${grapheme}`, err);
+  }
+}
+
+export async function sayPickedSyllable(view, id) {
+  const ctx = view?.ctx;
+  if (!pickSoundsOn(ctx) || !view.live() || typeof ctx?.audio?.has !== 'function' || ctx.audio.has(id) !== true) return;
+  try { await ctx.audio.playSeq([id]); } catch (err) { console.error(`Could not say ${id}`, err); }
+}
+
 export const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export const PRAISE = Object.freeze({ sound: 3, bridge: 3, sort: 3, catch: 3, word: 3, story: 3 });
@@ -22,7 +53,7 @@ const PRAISE_EVERY = 3;
 
 export function createActivityView(el, ctx, { name, bg = 'bg/map' }) {
   const lock = createLock();
-  let coat = 'black';
+  let coat = coatOf(ctx);
   const kittenArt = (pose) => artUrl(apprenticeArt(coat, pose === 'sit' ? 'stand' : pose));
   let kittenPose = 'sit';
   let prompt = [];
@@ -33,8 +64,8 @@ export function createActivityView(el, ctx, { name, bg = 'bg/map' }) {
   let successes = 0;
   let poseTimer;
 
-  const kittenImg = h('img', { src: kittenArt('sit'), alt: '', draggable: 'false' });
-  if (typeof ctx?.store?.get === 'function') {
+  const kittenImg = h('img', { class: 'portrait-art', src: kittenArt('sit'), alt: '', draggable: 'false' });
+  if (!isCoat(ctx?.coat) && typeof ctx?.store?.get === 'function') {
     readCoat(ctx).then((c) => { if (c !== coat) { coat = c; kittenImg.src = kittenArt(kittenPose); } });
   }
   const kitten = h('button', { type: 'button', class: 'activity-kitten', 'aria-label': 'Hear it again',

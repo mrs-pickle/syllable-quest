@@ -2,6 +2,8 @@ import { h } from '../../core/dom.js';
 import { cornerFrame } from './gate.js';
 import { PRINT_TIP } from './tips.js';
 
+export const TITLE = "Meadowlark's World: Syllable Quest";
+
 export const METHOD_LINE = 'Syllable Quest is built on Orton-Gillingham principles.';
 export const AUDIENCE_LINE = 'Syllable Quest is for readers who need more practice with long words.';
 
@@ -35,6 +37,7 @@ export function mount(el, ctx, params = {}) {
   if (!body) return () => {};
   body.append(
     h('section', { class: 'gu-about', 'data-about': 'what' },
+      h('h2', { class: 'gu-subtitle gu-about-title' }, TITLE),
       WHAT_IT_IS.map((line) => h('p', {}, line))),
     h('section', { class: 'gu-about', 'data-about': 'how' },
       h('h2', { class: 'gu-subtitle' }, 'How it works'),

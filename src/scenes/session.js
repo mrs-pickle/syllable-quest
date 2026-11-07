@@ -7,14 +7,14 @@ import { bridgeAllowance, withDivisionTime } from '../engine/dose.js';
 import { withError } from '../engine/tricky-pairs.js';
 import { createMonitor } from '../engine/frustration.js';
 import { withCrest, withLandmark, withPage, withPassageResult, withPointer, withSession, withSweep } from '../profile/profile.js';
-import { DEFAULT_COAT } from '../profile/coat.js';
+import { readCoat } from '../profile/coat.js';
 import { STAGES } from '../curriculum/stages.js';
 import { stageSlug } from '../core/voice-ids.js';
 import { landName } from '../ui/terms.js';
 import { HOLD_MS, artImage, artUrl, bigButton, copilotBanner, grownupNote, holdToActivate, lessonBar, setLessonBar } from '../ui/components.js';
 import { nextBreak, runBreak, runRest } from './break.js';
 import { crestArt, landRecord } from './map.js';
-import { apprenticeArt, readCoat } from './start.js';
+import { apprenticeArt } from './start.js';
 
 
 export const ACTIVITY_LOADERS = Object.freeze({
@@ -124,8 +124,13 @@ export function normalizePlan(raw, settings = {}) {
 
 export function lessonPercent(steps, at, fraction = 0) {
   if (steps.length === 0 || at >= steps.length) return 100;
-  const inside = Math.min(1, Math.max(0, Number.isFinite(fraction) ? fraction : 0));
-  return Math.min(99, Math.floor((100 * (at + inside)) / steps.length));
+  const list = Array.from(steps);
+  const work = ( s) => s?.activity !== 'break';
+  const total = list.filter(work).length;
+  if (total === 0) return 0;
+  const before = list.slice(0, Math.max(0, at)).filter(work).length;
+  const inside = work(list[at]) ? Math.min(1, Math.max(0, Number.isFinite(fraction) ? fraction : 0)) : 0;
+  return Math.min(99, Math.floor((100 * (before + inside)) / total));
 }
 
 
@@ -133,7 +138,7 @@ export function lessonPercent(steps, at, fraction = 0) {
 export function startToday(plan, day, settings) {
   return {
     day, stage: settings.stage, plan, done: 0, answered: 0, right: 0, ms: 0, applied: [], passed: [], gates: {}, gatesWritten: {},
-    passageDone: false, recorded: false, copilot: null, peak: 0,
+    passageDone: false, recorded: false, copilot: null, peak: 0, protege: false,
   };
 }
 
@@ -160,6 +165,7 @@ export function resumeToday(stored, day, settings) {
     recorded: stored.recorded === true,
     copilot: typeof stored.copilot === 'boolean' ? stored.copilot : null,
     peak: Number.isInteger(stored.peak) && stored.peak >= 0 && stored.peak <= 100 ? stored.peak : 0,
+    protege: stored.protege === true,
   };
 }
 
@@ -441,6 +447,13 @@ export function createRunner({ ctx, plan, today, deps = {}, handlers = {} }) {
     return bridgeAllowance(profile(), ctx.settings, states, landOf(plan.stage), ctx.content, plan.minutes);
   }
 
+  function protege() {
+    if (closed || t.protege === true || breakAsked) return false;
+    t.protege = true;
+    throttle.poke();
+    return true;
+  }
+
   function progress(fraction) {
     if (closed) return;
     stepFraction = Number.isFinite(fraction) ? Math.min(1, Math.max(0, fraction)) : 0;
@@ -464,6 +477,7 @@ export function createRunner({ ctx, plan, today, deps = {}, handlers = {} }) {
       signal: () => monitor.signal(),
     },
     progress,
+    protege,
   };
 
 
@@ -729,7 +743,7 @@ export function runSession(el, ctx, deps = {}) {
     short.hidden = true;
     strip.hidden = true;
     const pct = result.answered === 0 ? null : Math.round((100 * result.right) / result.answered);
-    const coat = ctx.store?.get ? await readCoat(ctx) : DEFAULT_COAT;
+    const coat = await readCoat(ctx);
     const brought = treasures(result);
     const land = landOf(String(plan()?.stage ?? ''));
     let go = () => {};

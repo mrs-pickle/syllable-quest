@@ -1,3 +1,6 @@
+export const MIX_IT_UP = 'mix';
+export const BREAK_STYLES = Object.freeze(['jumps', 'stretch', 'march', 'balance', 'shake']);
+
 export const LAST_STAGE = 27;
 
 
@@ -13,10 +16,12 @@ export const DEFAULT_SETTINGS = Object.freeze({
   voiceRate: 0.9,
   comfort: Object.freeze({ tint: 'paper', spacing: 'normal' }),
   paperBackup: false,
+  pickSounds: true,
   writeOnScreen: true,
   doseOverride: null,
   tipsSeen: Object.freeze({}),
   muted: false,
+  breakStyle: MIX_IT_UP,
 });
 
 export const SESSION_MINUTES = Object.freeze([15, 20, 25]);
@@ -60,7 +65,8 @@ function comfort(value) {
 const SETTING_TYPES = Object.freeze({
   version: 'number', stage: 'number', sessionMinutes: 'number', copilot: 'boolean', pin: 'string', terms: 'string',
   termsAsked: 'boolean', placeholderVoice: 'boolean', voiceRate: 'number', comfort: 'object', paperBackup: 'boolean',
-  writeOnScreen: 'boolean', doseOverride: 'number', tipsSeen: 'object', muted: 'boolean',
+  pickSounds: 'boolean', writeOnScreen: 'boolean', doseOverride: 'number', tipsSeen: 'object', muted: 'boolean',
+  breakStyle: 'string',
 });
 const NULLABLE = Object.freeze(['pin', 'doseOverride']);
 
@@ -88,9 +94,11 @@ export function normalizeSettings(raw) {
     voiceRate: rate,
     comfort: comfort(r.comfort),
     paperBackup: bool(r.paperBackup, d.paperBackup),
+    pickSounds: bool(r.pickSounds, d.pickSounds),
     writeOnScreen: bool(r.writeOnScreen, d.writeOnScreen),
     doseOverride: dose,
     tipsSeen: tipsSeen(r.tipsSeen),
     muted: bool(r.muted, d.muted),
+    breakStyle: oneOf(r.breakStyle, [MIX_IT_UP, ...BREAK_STYLES], d.breakStyle),
   };
 }

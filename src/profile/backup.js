@@ -61,7 +61,7 @@ async function recordingsOf(base, id) {
 const dayText = (now = new Date()) => now.toISOString().slice(0, 10);
 const EXPORTED = /^\d{4}-\d{2}-\d{2}/;
 
-const NOT_A_BACKUP = "That file isn't a Syllable Quest backup.";
+const NOT_A_BACKUP = "That file isn't a Meadowlark's World: Syllable Quest backup.";
 
 function tooBig(text) {
   if (text.length > MAX_BYTES) return true;
@@ -70,7 +70,7 @@ function tooBig(text) {
 
 function parse(text) {
   if (typeof text !== 'string') return { ok: false, error: NOT_A_BACKUP };
-  if (tooBig(text)) return { ok: false, error: 'That file is too big to be a Syllable Quest backup (over 20 MB), so nothing was changed.' };
+  if (tooBig(text)) return { ok: false, error: "That file is too big to be a Meadowlark's World: Syllable Quest backup (over 20 MB), so nothing was changed." };
   let data;
   try {
     data = JSON.parse(text);

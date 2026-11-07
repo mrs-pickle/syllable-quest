@@ -135,6 +135,9 @@
 
 .bridge-split.is-shown { box-shadow: 0 0 0 6px var(--glow), 0 0 22px 8px var(--gold); }
 
+.bridge-split.is-hers { background: repeating-linear-gradient(to bottom, var(--ink) 0 10px, transparent 10px 16px); }
+.bridge-protege .bridge-planks { margin-bottom: 28px; }
+
 
 .bridge-planks {
   display: flex;

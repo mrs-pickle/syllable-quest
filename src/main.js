@@ -104,7 +104,7 @@ async function boot() {
   if (playing) await migrateToStudents(store.base, { day: () => todayFrom(launch.dayOffset) });
   await store.reload();
   await audio.reloadOverrides();
-  const { settings, profile, states, today } = await readSaved(store);
+  const { settings, profile, states, today, coat } = await readSaved(store);
 
   let replay = null;
   let replayGap;
@@ -132,6 +132,7 @@ async function boot() {
     profile,
     states,
     today,
+    coat,
     audio,
     voice,
     router: (null),
@@ -208,6 +209,6 @@ async function boot() {
 }
 
 boot().catch((err) => {
-  console.error('Syllable Quest could not start.', err);
+  console.error("Meadowlark's World: Syllable Quest could not start.", err);
   document.body.append(h('p', { class: 'boot-error' }, 'The game could not start. Close this window and open the game again.'));
 }).finally(() => { window.dispatchEvent(new Event('game-settled')); });

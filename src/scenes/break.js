@@ -1,8 +1,10 @@
 import { h } from '../core/dom.js';
 import { artUrl, layeredArt } from '../ui/components.js';
-import { COATS, DEFAULT_COAT, apprenticeArt, readCoat } from './start.js';
+import { COATS, apprenticeArt } from './start.js';
+import { coatOf, isCoat, readCoat } from '../profile/coat.js';
+import { BREAK_STYLES, MIX_IT_UP } from '../profile/settings.js';
 
-export const BREAK_STYLES = Object.freeze(['jumps', 'stretch', 'march', 'balance', 'shake']);
+export { BREAK_STYLES };
 export const BREAK_COATS = COATS;
 const MOVES = 4;
 
@@ -36,21 +38,13 @@ export function nextInMix(played, rng) {
   return { style: pick, played: cycle };
 }
 
-export function nextCoatInMix(played, rng) {
-  const { pick, played: cycle } = nextOf(BREAK_COATS, played, rng);
-  return { coat: pick, played: cycle };
-}
-
 export function nextBreak(ctx) {
-  const { style, played } = nextInMix(ctx.breaks, ctx.rng);
-  ctx.breaks = played;
+  const chosen = ctx.settings?.breakStyle;
+  if (chosen !== MIX_IT_UP && BREAK_STYLES.includes(chosen)) return chosen;
+  const profile = ctx.profile && typeof ctx.profile === 'object' ? ctx.profile : {};
+  const { style, played } = nextInMix(profile.breaks, ctx.rng);
+  ctx.profile = { ...profile, breaks: played };
   return style;
-}
-
-export function nextBreakCoat(ctx) {
-  const { coat, played } = nextCoatInMix(ctx.breakCoats, ctx.rng ?? { pick: (list) => list[0] });
-  ctx.breakCoats = played;
-  return coat;
 }
 
 function breakView(el, ctx, className, fixedCoat) {
@@ -62,7 +56,7 @@ function breakView(el, ctx, className, fixedCoat) {
     ctx.audio.stop();
     skip();
   };
-  let coat = fixedCoat ?? DEFAULT_COAT;
+  let coat = fixedCoat ?? coatOf(ctx);
   let current = apprenticeArt(coat, STAND);
   const figure = layeredArt([current], 'break-kitten');
   const draw = (artId) => {
@@ -70,7 +64,7 @@ function breakView(el, ctx, className, fixedCoat) {
     const img = figure.querySelector('img');
     if (img) img.setAttribute('src', artUrl(artId));
   };
-  if (!fixedCoat && ctx?.store) {
+  if (!fixedCoat && !isCoat(ctx?.coat) && ctx?.store) {
     readCoat(ctx).then((c) => {
       coat = c;
       const pose = /^apprentice\/[a-z]+-(\w+)$/.exec(current)?.[1];
@@ -86,9 +80,12 @@ function breakView(el, ctx, className, fixedCoat) {
     root,
     figure,
     live,
+    coat: () => coat,
     async step(lineId, ms) {
       if (!live()) return false;
-      await Promise.race([Promise.all([ctx.say(lineId), wait(ms)]), skipped]);
+      let said;
+      try { said = Promise.resolve(ctx.say(lineId)).catch(() => {}); } catch { said = Promise.resolve(); }
+      await Promise.race([Promise.all([said, wait(ms)]), skipped]);
       return live();
     },
     show(artId) {
@@ -105,8 +102,7 @@ function breakView(el, ctx, className, fixedCoat) {
 
 export async function runBreak(el, ctx, { style, coat } = {}) {
   const s = breakStyle(style);
-  const c = typeof coat === 'string' && BREAK_COATS.includes(coat) ? coat : nextBreakCoat(ctx);
-  const view = breakView(el, ctx, `break-${s}`, c);
+  const view = breakView(el, ctx, `break-${s}`, isCoat(coat) ? coat : undefined);
   const [start, ...rest] = breakLines(s);
   const done = (rest.pop());
   const moves = async () => {
@@ -114,7 +110,7 @@ export async function runBreak(el, ctx, { style, coat } = {}) {
     view.show(CHEER);
     for (const [i, line] of rest.entries()) {
       view.figure.setAttribute('data-move', String(i + 1));
-      view.show(`break/${c}-${s}-${(i % 2) + 1}`);
+      view.show(`break/${view.coat()}-${s}-${(i % 2) + 1}`);
       if (!(await view.step(line, MOVE_MS))) return;
     }
     view.figure.removeAttribute('data-move');

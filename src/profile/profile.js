@@ -5,7 +5,7 @@ import { isPassRecord, normalizePasses } from '../engine/passes.js';
 
 const LISTS = Object.freeze({
   placements: 50, pointerLog: 200, sessions: 2000, gates: 2000, errors: 600, passes: 2000, crests: 20, landmarks: 100,
-  pages: 200, passageLog: 500, discoverySeen: 100, storySeen: 400,
+  pages: 200, passageLog: 500, discoverySeen: 100, storySeen: 400, breaks: 5,
 });
 
 const isPlainObject = (value) => value !== null && typeof value === 'object' && !Array.isArray(value);
@@ -54,6 +54,7 @@ const ELEMENT_OK = Object.freeze({
   passageLog: (e) => isPlainObject(e) && typeof e.passage === 'string' && isNumber(e.day),
   discoverySeen: (e) => typeof e === 'string',
   storySeen: (e) => typeof e === 'string',
+  breaks: (e) => typeof e === 'string',
 });
 
 export function normalizeProfile(stored, day = 0) {

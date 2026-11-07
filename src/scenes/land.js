@@ -4,7 +4,8 @@ import { STAGES } from '../curriculum/stages.js';
 import { stageSlug } from '../core/voice-ids.js';
 import { landName } from '../ui/terms.js';
 import { artImage, artUrl, bigButton } from '../ui/components.js';
-import { apprenticeArt, readCoat, sayLine } from './start.js';
+import { apprenticeArt, sayLine } from './start.js';
+import { coatOf, isCoat, readCoat } from '../profile/coat.js';
 import { MAP_LANDS, crestArt, currentLand, hasCrest, landProgress, landRecord, landmarkLit, questAction } from './map.js';
 
 export const unlitArt = (art) => art.replace(/-on$/, '-off');
@@ -42,8 +43,8 @@ export function mount(el, ctx, params = {}) {
   let alive = true;
 
   const root = h('div', { class: 'land', 'data-land': land });
-  const apprentice = h('div', { class: 'land-apprentice' }, artImage(apprenticeArt('black')));
-  readCoat(ctx).then((coat) => { if (alive) apprentice.replaceChildren(artImage(apprenticeArt(coat))); });
+  const apprentice = h('div', { class: 'land-apprentice' }, artImage(apprenticeArt(coatOf(ctx))));
+  if (!isCoat(ctx?.coat)) readCoat(ctx).then((coat) => { if (alive) apprentice.replaceChildren(artImage(apprenticeArt(coat))); });
 
   const go = (then) => (event) => {
     if (lock.locked() || !arrival.allows(event)) return;

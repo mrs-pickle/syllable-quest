@@ -1,7 +1,8 @@
 import { h } from '../core/dom.js';
 import { STAGE_IDS } from '../engine/mastery.js';
 import { makeKey } from '../engine/keys.js';
-import { ACTIVITY_IDS, createRunner, loadActivity, normalizePlan, startToday } from './session.js';
+import { lessonBar, setLessonBar } from '../ui/components.js';
+import { ACTIVITY_IDS, createRunner, lessonPercent, loadActivity, normalizePlan, startToday } from './session.js';
 
 export { ACTIVITY_IDS };
 
@@ -92,12 +93,24 @@ export async function runHarness(el, ctx, params, deps = {}) {
       console.info(`[activity] pass ${key}`);
       return base.pass(key);
     },
+    progress( fraction) {
+      base.progress(fraction);
+      showBar(lessonPercent(own.steps, 0, runner.stepFraction()));
+    },
   };
+  let peak = 0;
+  function showBar(percent) {
+    if (!deps.bar) return;
+    peak = Math.max(peak, percent);
+    setLessonBar(deps.bar, peak);
+  }
+  showBar(0);
   const mod = await (deps.loader ?? loadActivity)(a);
   runner.beginStep(step);
   await mod.run(el, shadow, {
     stage: plan.stage, stageIndex: plan.stageIndex, terms: shadow.settings.terms === 'classroom' ? 'classroom' : 'story', ...step.round, items: step.items,
   }, hooks);
+  showBar(100);
   return { results, gates, passes, step, shadow };
 }
 
@@ -111,7 +124,10 @@ export function mount(el, ctx, params = {}, deps = {}) {
     return () => { live = false; };
   }
 
-  runHarness(el, ctx, params, deps).then(({ results, gates, passes }) => {
+  const stepEl = h('div', { class: 'activity-debug-step', style: { position: 'absolute', inset: '0' } });
+  const bar = lessonBar();
+  el.replaceChildren(stepEl, bar);
+  runHarness(stepEl, ctx, params, { ...deps, bar }).then(({ results, gates, passes }) => {
     if (!live) return;
     panel(
       h('h2', {}, `Round over: ${a}`),

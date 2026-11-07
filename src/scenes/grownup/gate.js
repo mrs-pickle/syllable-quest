@@ -6,6 +6,7 @@ export const SCREENS = Object.freeze([
   ['today', 'Today'],
   ['progress', 'Progress'],
   ['tricky', 'Tricky pairs'],
+  ['report', 'Tutor report'],
   ['placement', 'Placement'],
   ['settings', 'Settings'],
   ['passes', 'Passes'],

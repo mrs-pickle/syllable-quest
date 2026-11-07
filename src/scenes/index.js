@@ -12,6 +12,7 @@ export const SCENES = Object.freeze({
   'grownup/today': () => import('./grownup/today.js'),
   'grownup/progress': () => import('./grownup/progress.js'),
   'grownup/tricky': () => import('./grownup/tricky.js'),
+  'grownup/report': () => import('./grownup/report.js'),
   'grownup/settings': () => import('./grownup/settings.js'),
   'grownup/passes': () => import('./grownup/passes.js'),
   'grownup/recordings': () => import('./grownup/recordings.js'),

@@ -1,24 +1,15 @@
 import { h } from '../core/dom.js';
 import { createArrivalGuard, createLock } from '../core/lock.js';
-import { COATS, COAT_KEY, DEFAULT_COAT, normalizeCoat } from '../profile/coat.js';
+import { COATS, COAT_KEY, DEFAULT_COAT, coatOf, isCoat, normalizeCoat, readCoat } from '../profile/coat.js';
 import { MAX_STUDENTS, studentPrefix } from '../profile/students.js';
 import { TERMS } from '../ui/terms.js';
 import { artImage, artUrl, bigButton } from '../ui/components.js';
 
-export { COATS, COAT_KEY, DEFAULT_COAT, normalizeCoat };
+export { COATS, COAT_KEY, DEFAULT_COAT, coatOf, normalizeCoat, readCoat };
 
 export const POSES = Object.freeze(['stand', 'walk', 'cheer', 'think', 'read', 'write', 'point']);
 
 export const apprenticeArt = (coat, pose = 'stand') => `apprentice/${normalizeCoat(coat)}-${pose}`;
-
-export async function readCoat(ctx) {
-  try {
-    return normalizeCoat(await ctx.store.get(COAT_KEY));
-  } catch (err) {
-    console.warn('The coat colour could not be read', err);
-    return DEFAULT_COAT;
-  }
-}
 
 export async function studentCoat(ctx, id) {
   try {
@@ -41,6 +32,7 @@ export async function sayLine(ctx, id) {
 export const START_VOICE = Object.freeze({
   newStudent: 'v.hub.new',
   continue: 'v.hub.continue',
+  check: 'v.hub.check',
   grownups: 'v.hub.grownups',
   who: 'v.hub.who',
   coat: 'v.hub.coat',
@@ -50,7 +42,11 @@ export const SAY_AT_MOST_MS = 2500;
 
 const COAT_LABELS = Object.freeze({ black: 'Black', calico: 'Calico', gray: 'Gray', orange: 'Orange' });
 
-export const startChoices = (students) => ({ newStudent: students < MAX_STUDENTS, glow: students === 0, continue: students > 0 });
+export const startChoices = (students) => ({
+  newStudent: students < MAX_STUDENTS, glow: students === 0, continue: students > 0, check: students > 0,
+});
+
+export const CHECK_GATE = Object.freeze({ next: 'placement' });
 
 export function mount(el, ctx) {
   const lock = createLock();
@@ -88,6 +84,8 @@ export function mount(el, ctx) {
   const toMap = () => ctx.router.go('map');
 
 
+  const menuCoat = () => (students.length > 0 && isCoat(ctx.coat) ? ctx.coat : DEFAULT_COAT);
+
   function menu() {
     const column = h('div', { class: 'start-menu' },
       choices.newStudent ? h('div', { class: ['start-new', choices.glow && 'glow'] }, bigButton({ label: 'New Student', onClick: press(async () => {
@@ -96,15 +94,19 @@ export function mount(el, ctx) {
       }, START_VOICE.newStudent) })) : null,
       choices.continue ? bigButton({ label: 'Continue', onClick: press(async () => {
         if (students.length === 1) await play(students[0].id);
-        else await picker();
+        else await picker(play);
       }, START_VOICE.continue) }) : null,
+      choices.check ? bigButton({ label: 'Reading check', onClick: press(async () => {
+        if (students.length === 1) await check(students[0].id);
+        else await picker(check);
+      }, START_VOICE.check) }) : null,
       bigButton({ label: 'Grown-ups', onClick: press(async () => {
         await settled();
         await ctx.router.go('grownup/gate');
       }, START_VOICE.grownups) }));
     show(
-      h('h1', { class: 'start-title' }, 'Syllable Quest'),
-      h('div', { class: 'start-apprentice' }, artImage(apprenticeArt(DEFAULT_COAT, 'walk'))),
+      h('h1', { class: 'start-title' }, "Meadowlark's World", h('span', { class: 'start-subtitle' }, 'Syllable Quest')),
+      h('div', { class: 'start-apprentice' }, artImage(apprenticeArt(menuCoat(), 'walk'))),
       column);
   }
 
@@ -114,16 +116,21 @@ export function mount(el, ctx) {
     else await toMap();
   }
 
-  async function picker() {
+  async function check(id) {
+    await ctx.useStudent(id);
+    await ctx.router.go('grownup/gate', { ...CHECK_GATE });
+  }
+
+  async function picker(then) {
     const coats = await Promise.all(students.map((s) => studentCoat(ctx, s.id)));
     if (!alive) return;
     show(
-      h('h1', { class: 'start-title' }, 'Syllable Quest'),
+      h('h1', { class: 'start-title' }, "Meadowlark's World", h('span', { class: 'start-subtitle' }, 'Syllable Quest')),
       h('div', { class: 'start-picker', role: 'group', 'aria-label': 'Who is playing?' },
         students.map((s, i) => h('button', { type: 'button', class: 'start-student', 'data-student': s.id,
           onClick: ( event) => {
             if (lock.locked() || !arrival.allows(event)) return;
-            lock.run(() => play(s.id)).catch((err) => console.warn('The student could not be opened', err));
+            lock.run(() => then(s.id)).catch((err) => console.warn('The student could not be opened', err));
           } },
         h('span', { class: 'start-student-art' }, artImage(apprenticeArt(coats[i]))),
         h('span', { class: 'start-student-name' }, s.label ?? `Student ${i + 1}`))),
@@ -180,6 +187,7 @@ export function mount(el, ctx) {
   async function saveNew() {
     if (typeof ctx.store?.registered === 'function' && !ctx.store.registered()) ctx.profile = { ...ctx.profile, createdDay: ctx.day };
     await ctx.save([[COAT_KEY, draft.coat]]);
+    ctx.coat = draft.coat;
   }
 
   function placementScreen() {

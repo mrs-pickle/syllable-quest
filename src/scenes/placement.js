@@ -1,6 +1,6 @@
 import { h } from '../core/dom.js';
 import { createLock } from '../core/lock.js';
-import { artImage, copilotBanner, passButton, setUndo } from '../ui/components.js';
+import { artImage, copilotBanner, lessonBar, passButton, setLessonBar, setUndo } from '../ui/components.js';
 import { landName } from '../ui/terms.js';
 import { STAGES } from '../curriculum/stages.js';
 import { phonemeCodes } from '../curriculum/phonemes.js';
@@ -8,9 +8,11 @@ import { graphemeOf } from '../curriculum/graphemes.js';
 import { LAST_STAGE } from '../profile/settings.js';
 import { wordId } from '../core/voice-ids.js';
 import { secondClick } from '../activities/kit.js';
+import { coatOf, isCoat, readCoat } from '../profile/coat.js';
+import { apprenticeArt } from './start.js';
 import { cardLabel, soundLabels } from '../activities/soundcheck.js';
 import {
-  PART_C_LOWER, applyPlacement, nextPlacementItem, partCWords, placementPlan, placementState, recordPlacement, suggestStage,
+  MAX_PROBE_ITEMS, PART_C_LOWER, applyPlacement, nextPlacementItem, partCWords, placementPlan, placementState, recordPlacement, suggestStage,
 } from '../engine/placement.js';
 
 export const GUESSES = Object.freeze([
@@ -48,6 +50,17 @@ export function findings(state, a, c) {
   };
 }
 
+export function placementPercent(part, { a = 0, aTotal = 0, b = 0, bMax = MAX_PROBE_ITEMS, c = 0, cTotal = 0 } = {}) {
+  const share = (n, of) => (of > 0 ? Math.min(1, Math.max(0, n / of)) : 1);
+  let thirds;
+  if (part === 'result') return 100;
+  if (part === 'A') thirds = share(a, aTotal);
+  else if (part === 'B') thirds = 1 + share(b, bMax);
+  else if (part === 'C') thirds = 2 + share(c, cTotal);
+  else return 0;
+  return Math.min(99, Math.round((100 * thirds) / 3));
+}
+
 export function mount(el, ctx, params = {}) {
   const retake = params.retake === true || params.retake === 'true' || params.retake === '1';
   const terms = ctx.settings?.terms;
@@ -59,7 +72,11 @@ export function mount(el, ctx, params = {}) {
     started: false, guess: guessFor(Number(ctx.settings?.stage) || 0), a: [], b: [], c: null, cDraft: [], chosen: null,
     stopping: false, thanks: false, busy: false,
   };
+  let coat = coatOf(ctx);
+  if (!isCoat(ctx?.coat)) readCoat(ctx).then((c) => { coat = c; }).catch(() => {});
   let homeLeave = null;
+  const bar = lessonBar({ className: 'placement-bar', label: 'How much of the check is done' });
+  let peak = 0;
 
   const backScene = () => (typeof params.back === 'string' && params.back !== '' ? params.back : retake ? 'grownup/today' : 'map');
   const go = (name) => {
@@ -100,7 +117,7 @@ export function mount(el, ctx, params = {}) {
 
   function stopButton() {
     return h('button', { type: 'button', class: 'gu-button gu-small placement-stop', 'data-act': 'stop',
-      style: { position: 'absolute', top: '10px', right: '10px', opacity: '0.8' },
+      style: { position: 'absolute', top: '16px', right: '96px', opacity: '0.8' },
       onClick: () => { st.stopping = true; render(); } }, 'Stop the check');
   }
 
@@ -147,6 +164,7 @@ export function mount(el, ctx, params = {}) {
     st.cDraft = [];
     st.chosen = null;
     st.thanks = false;
+    peak = 0;
     render();
     speak([LINES.sound]);
   }
@@ -171,7 +189,7 @@ export function mount(el, ctx, params = {}) {
     const help = banner.querySelector('.help');
     if (help) help.hidden = true;
     setUndo(banner, done);
-    const kitten = h('button', { type: 'button', class: 'activity-kitten', 'aria-label': 'Hear it again', onClick: () => speak(prompt) }, artImage('apprentice/black-stand'));
+    const kitten = h('button', { type: 'button', class: 'activity-kitten', 'aria-label': 'Hear it again', onClick: () => speak(prompt) }, artImage(apprenticeArt(coat)));
     return h('div', { class: ['activity', 'activity-placement'], 'data-part': part },
       artImage('bg/map', 'scene-bg'),
       h('div', { class: 'activity-work' },
@@ -335,7 +353,15 @@ export function mount(el, ctx, params = {}) {
       if (!screen) { render(); return; }
       replayOf([LINES.paper]);
     } else { screen = resultScreen(); replayOf(null); }
-    el.replaceChildren(screen);
+    if (st.started) {
+      const part = phase();
+      peak = Math.max(peak, placementPercent(part, {
+        a: st.a.length, aTotal: plan.partA.length, b: st.b.length, bMax: MAX_PROBE_ITEMS,
+        c: st.c ? st.c.length : st.cDraft.filter((m) => m !== null).length, cTotal: st.c ? st.c.length : st.cDraft.length,
+      }));
+      setLessonBar(bar, peak);
+      el.replaceChildren(screen, bar);
+    } else el.replaceChildren(screen);
   }
 
   render();

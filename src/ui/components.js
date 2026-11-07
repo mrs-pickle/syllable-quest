@@ -23,9 +23,11 @@ export function missingArtCard(id, className) {
     h('span', { class: 'art-missing-label' }, id.replace('/', ' · ')));
 }
 
+const PORTRAIT = /^(apprentice|break)\//;
+
 export function artImage(id, className) {
   if (artMissing(id)) return missingArtCard(id, className);
-  const img = h('img', { class: className, src: artUrl(id), alt: '', draggable: 'false' });
+  const img = h('img', { class: [PORTRAIT.test(id) && 'portrait-art', className], src: artUrl(id), alt: '', draggable: 'false' });
   img.addEventListener('error', () => img.replaceWith(missingArtCard(id, className)));
   return img;
 }
@@ -43,17 +45,20 @@ export function speakerButton({ onReplay }) {
     picture('ui/speaker'));
 }
 
-export function lessonBar() {
-  const bar = h('div', { class: 'lesson-bar', role: 'progressbar', 'aria-label': "How much of today's lesson is done", 'aria-valuemin': '0', 'aria-valuemax': '100' },
-    h('div', { class: 'lesson-bar-fill' }));
+export function lessonBar({ className, label = "How much of today's lesson is done" } = {}) {
+  const bar = h('div', { class: ['lesson-bar', className], role: 'progressbar', 'aria-label': label, 'aria-valuemin': '0', 'aria-valuemax': '100' },
+    h('div', { class: 'lesson-bar-fill' }),
+    h('span', { class: 'lesson-bar-label', 'aria-hidden': 'true' }, '0%'));
   setLessonBar(bar, 0);
   return bar;
 }
 
 export function setLessonBar(bar, percent) {
-  bar.setAttribute('aria-valuenow', String(percent));
-  bar.setAttribute('aria-valuetext', percent >= 100 ? 'All done' : percent >= 67 ? 'Nearly there' : percent >= 34 ? 'Part of the way' : 'Just starting');
-  bar.style.setProperty('--done', `${percent}%`);
+  const n = Math.min(100, Math.max(0, Math.floor(Number.isFinite(percent) ? percent : 0)));
+  bar.setAttribute('aria-valuenow', String(n));
+  bar.style.setProperty('--done', `${n}%`);
+  const label = bar.querySelector('.lesson-bar-label');
+  if (label) label.textContent = `${n}%`;
 }
 
 export function tile({ label, onPick, size = 120 }) {
@@ -61,6 +66,12 @@ export function tile({ label, onPick, size = 120 }) {
   const font = Math.min(130, Math.max(96, Math.round(face * 0.8)));
   return h('button', { type: 'button', class: 'tile', 'data-label': label, style: { '--tile': `${face}px`, '--tile-font': `${font}px` },
     onClick: () => onPick?.(label) }, h('span', { class: 'tile-label' }, label));
+}
+
+export function takeBackButton({ onBack }) {
+  const button = (h('button', { type: 'button', class: 'take-back', 'aria-label': 'Take back a letter', 'aria-keyshortcuts': 'Backspace',
+    onClick: () => { if (button.disabled) return; pop(button); onBack?.(); } }, h('span', { class: 'take-back-mark', 'aria-hidden': 'true' }, '⌫')));
+  return button;
 }
 
 export function keysOnPage(control, onKey) {
