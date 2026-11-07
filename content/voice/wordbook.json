@@ -1,4 +1,5 @@
 {
   "v.wordbook.start": { "text": "Open your Word Book to a fresh line. I will say each word, and you write it.", "note": "calm, clear" },
+  "v.wordbook.start-pad": { "text": "I will say each word, and you write it on the pad.", "note": "calm, clear" },
   "v.wordbook.check": { "text": "Now let's look at the page together.", "note": "calm, unhurried" }
 }

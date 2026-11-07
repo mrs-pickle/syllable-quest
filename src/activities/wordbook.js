@@ -2,7 +2,7 @@ import { h } from '../core/dom.js';
 import { madeUpId, redId, sentenceId, wordId } from '../core/voice-ids.js';
 import { parseKey } from '../engine/keys.js';
 import { nextButton, scrollCue, speakerButton, takeBackButton, tile } from '../ui/components.js';
-import { inkThumbnail, PADS, syllableDividers, usePaperToday, writesOnScreen, writingPad } from '../ui/writing-pad.js';
+import { inkThumbnail, PADS, syllableDividers, usePaperToday, writesOnScreen, writingLine, writingPad } from '../ui/writing-pad.js';
 import { createActivityView, offerPass, sayPick, typeToPick } from './kit.js';
 
 export const ID = 'wordbook';
@@ -100,7 +100,7 @@ export async function run(el, ctx, round, hooks) {
   const progress = (fraction) => hooks?.progress?.(fraction);
 
   try {
-    say('v.wordbook.start');
+    say(writingLine(ctx, writesOnScreen(ctx), 'v.wordbook.start', 'v.wordbook.start-pad'));
     const passed = new Set();
     const inks = new Map();
     for (let i = 0; i < items.length; i++) {

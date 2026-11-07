@@ -181,6 +181,10 @@ export function writesOnScreen(ctx) {
   return !(ctx && ctx.paperToday !== undefined && ctx.paperToday === (ctx.day ?? true));
 }
 
+export function writingLine(ctx, onScreen, paperId, padId) {
+  return onScreen && typeof ctx?.audio?.has === 'function' && ctx.audio.has(padId) === true ? padId : paperId;
+}
+
 export function usePaperToday(ctx) {
   if (ctx) ctx.paperToday = ctx.day ?? true;
 }

@@ -8,7 +8,7 @@ import { parseKey } from '../engine/keys.js';
 import { createRng } from '../core/rng.js';
 import { artImage, tile } from '../ui/components.js';
 import { coachText } from '../ui/terms.js';
-import { PADS, usePaperToday, writesOnScreen, writingPad } from '../ui/writing-pad.js';
+import { PADS, usePaperToday, writesOnScreen, writingLine, writingPad } from '../ui/writing-pad.js';
 import { chooseOne, createActivityView, createOnce, judgeAloud, offerPass, runRound, secondClick, showNext, untilHerTurn } from './kit.js';
 
 export const ID = 'soundcheck';
@@ -337,9 +337,10 @@ async function hearCard(view, item, shared, canUndo) {
   view.show(padRow ?? target, adult);
   if (!playable) shared.grownUp.note = needsGrownUp(adult, labels);
 
-  const told = shared.once('v.soundcheck.hear');
+  const hearId = writingLine(ctx, onScreen, 'v.soundcheck.hear', 'v.soundcheck.hear-pad');
+  const told = shared.once(hearId);
   const grownUpLine = playable ? [] : ['v.soundcheck.grownup'];
-  await view.prompt(['v.soundcheck.hear', ...sound, ...grownUpLine], { play: [...told, ...sound, ...(playable ? [] : shared.once('v.soundcheck.grownup'))] });
+  await view.prompt([hearId, ...sound, ...grownUpLine], { play: [...told, ...sound, ...(playable ? [] : shared.once('v.soundcheck.grownup'))] });
   view.play([]);
 
   const judging = judgeAloud(viewWithMouth(view, codes), {
