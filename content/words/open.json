@@ -1,0 +1,5503 @@
+[
+  {
+    "w": "be",
+    "segs": [
+      [
+        "b",
+        "b"
+      ],
+      [
+        "e",
+        "E"
+      ]
+    ],
+    "parts": [
+      "be"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.one",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "he",
+    "segs": [
+      [
+        "h",
+        "h"
+      ],
+      [
+        "e",
+        "E"
+      ]
+    ],
+    "parts": [
+      "he"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.one",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "me",
+    "segs": [
+      [
+        "m",
+        "m"
+      ],
+      [
+        "e",
+        "E"
+      ]
+    ],
+    "parts": [
+      "me"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.one",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "we",
+    "segs": [
+      [
+        "w",
+        "w"
+      ],
+      [
+        "e",
+        "E"
+      ]
+    ],
+    "parts": [
+      "we"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.one",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "she",
+    "segs": [
+      [
+        "sh",
+        "sh"
+      ],
+      [
+        "e",
+        "E"
+      ]
+    ],
+    "parts": [
+      "she"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.one",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "go",
+    "segs": [
+      [
+        "g",
+        "g"
+      ],
+      [
+        "o",
+        "O"
+      ]
+    ],
+    "parts": [
+      "go"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.one",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "no",
+    "segs": [
+      [
+        "n",
+        "n"
+      ],
+      [
+        "o",
+        "O"
+      ]
+    ],
+    "parts": [
+      "no"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.one",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "so",
+    "segs": [
+      [
+        "s",
+        "s"
+      ],
+      [
+        "o",
+        "O"
+      ]
+    ],
+    "parts": [
+      "so"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.one",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "hi",
+    "segs": [
+      [
+        "h",
+        "h"
+      ],
+      [
+        "i",
+        "I"
+      ]
+    ],
+    "parts": [
+      "hi"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.one",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "pro",
+    "segs": [
+      [
+        "p",
+        "p"
+      ],
+      [
+        "r",
+        "r"
+      ],
+      [
+        "o",
+        "O"
+      ]
+    ],
+    "parts": [
+      "pro"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.one",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "pros",
+    "segs": [
+      [
+        "p",
+        "p"
+      ],
+      [
+        "r",
+        "r"
+      ],
+      [
+        "o",
+        "O"
+      ],
+      [
+        "s",
+        "z"
+      ]
+    ],
+    "parts": [
+      "pros"
+    ],
+    "types": [
+      "closed"
+    ],
+    "pattern": "one",
+    "stage": "open.one",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": "pro",
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "fro",
+    "segs": [
+      [
+        "f",
+        "f"
+      ],
+      [
+        "r",
+        "r"
+      ],
+      [
+        "o",
+        "O"
+      ]
+    ],
+    "parts": [
+      "fro"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.one",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": true,
+    "mean": "back; it only shows up in \"to and fro\"",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "lo",
+    "segs": [
+      [
+        "l",
+        "l"
+      ],
+      [
+        "o",
+        "O"
+      ]
+    ],
+    "parts": [
+      "lo"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.one",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": true,
+    "mean": "look; an old word people say to point something out",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "blo",
+    "segs": [
+      [
+        "b",
+        "b"
+      ],
+      [
+        "l",
+        "l"
+      ],
+      [
+        "o",
+        "O"
+      ]
+    ],
+    "parts": [
+      "blo"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.one",
+    "real": false,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "bru",
+    "segs": [
+      [
+        "b",
+        "b"
+      ],
+      [
+        "r",
+        "r"
+      ],
+      [
+        "u",
+        "U"
+      ]
+    ],
+    "parts": [
+      "bru"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.one",
+    "real": false,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "gri",
+    "segs": [
+      [
+        "g",
+        "g"
+      ],
+      [
+        "r",
+        "r"
+      ],
+      [
+        "i",
+        "I"
+      ]
+    ],
+    "parts": [
+      "gri"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.one",
+    "real": false,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "spo",
+    "segs": [
+      [
+        "s",
+        "s"
+      ],
+      [
+        "p",
+        "p"
+      ],
+      [
+        "o",
+        "O"
+      ]
+    ],
+    "parts": [
+      "spo"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.one",
+    "real": false,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "tro",
+    "segs": [
+      [
+        "t",
+        "t"
+      ],
+      [
+        "r",
+        "r"
+      ],
+      [
+        "o",
+        "O"
+      ]
+    ],
+    "parts": [
+      "tro"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.one",
+    "real": false,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "fli",
+    "segs": [
+      [
+        "f",
+        "f"
+      ],
+      [
+        "l",
+        "l"
+      ],
+      [
+        "i",
+        "I"
+      ]
+    ],
+    "parts": [
+      "fli"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.one",
+    "real": false,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "sle",
+    "segs": [
+      [
+        "s",
+        "s"
+      ],
+      [
+        "l",
+        "l"
+      ],
+      [
+        "e",
+        "E"
+      ]
+    ],
+    "parts": [
+      "sle"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.one",
+    "real": false,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "cre",
+    "segs": [
+      [
+        "c",
+        "k"
+      ],
+      [
+        "r",
+        "r"
+      ],
+      [
+        "e",
+        "E"
+      ]
+    ],
+    "parts": [
+      "cre"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.one",
+    "real": false,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "robot",
+    "segs": [
+      [
+        "r",
+        "r"
+      ],
+      [
+        "o",
+        "O"
+      ],
+      [
+        "b",
+        "b"
+      ],
+      [
+        "o",
+        "o"
+      ],
+      [
+        "t",
+        "t"
+      ]
+    ],
+    "parts": [
+      "ro",
+      "bot"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "music",
+    "segs": [
+      [
+        "m",
+        "m"
+      ],
+      [
+        "u",
+        "U"
+      ],
+      [
+        "s",
+        "z"
+      ],
+      [
+        "i",
+        "i"
+      ],
+      [
+        "c",
+        "k"
+      ]
+    ],
+    "parts": [
+      "mu",
+      "sic"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "tulip",
+    "segs": [
+      [
+        "t",
+        "t"
+      ],
+      [
+        "u",
+        "oo"
+      ],
+      [
+        "l",
+        "l"
+      ],
+      [
+        "i",
+        "i"
+      ],
+      [
+        "p",
+        "p"
+      ]
+    ],
+    "parts": [
+      "tu",
+      "lip"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "pilot",
+    "segs": [
+      [
+        "p",
+        "p"
+      ],
+      [
+        "i",
+        "I"
+      ],
+      [
+        "l",
+        "l"
+      ],
+      [
+        "o",
+        "o"
+      ],
+      [
+        "t",
+        "t"
+      ]
+    ],
+    "parts": [
+      "pi",
+      "lot"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "silent",
+    "segs": [
+      [
+        "s",
+        "s"
+      ],
+      [
+        "i",
+        "I"
+      ],
+      [
+        "l",
+        "l"
+      ],
+      [
+        "e",
+        "e"
+      ],
+      [
+        "n",
+        "n"
+      ],
+      [
+        "t",
+        "t"
+      ]
+    ],
+    "parts": [
+      "si",
+      "lent"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "bonus",
+    "segs": [
+      [
+        "b",
+        "b"
+      ],
+      [
+        "o",
+        "O"
+      ],
+      [
+        "n",
+        "n"
+      ],
+      [
+        "u",
+        "u"
+      ],
+      [
+        "s",
+        "s"
+      ]
+    ],
+    "parts": [
+      "bo",
+      "nus"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "basin",
+    "segs": [
+      [
+        "b",
+        "b"
+      ],
+      [
+        "a",
+        "A"
+      ],
+      [
+        "s",
+        "s"
+      ],
+      [
+        "i",
+        "i"
+      ],
+      [
+        "n",
+        "n"
+      ]
+    ],
+    "parts": [
+      "ba",
+      "sin"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": true,
+    "mean": "a wide bowl for washing or holding water",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "label",
+    "segs": [
+      [
+        "l",
+        "l"
+      ],
+      [
+        "a",
+        "A"
+      ],
+      [
+        "b",
+        "b"
+      ],
+      [
+        "e",
+        "e"
+      ],
+      [
+        "l",
+        "l"
+      ]
+    ],
+    "parts": [
+      "la",
+      "bel"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "hotel",
+    "segs": [
+      [
+        "h",
+        "h"
+      ],
+      [
+        "o",
+        "O"
+      ],
+      [
+        "t",
+        "t"
+      ],
+      [
+        "e",
+        "e"
+      ],
+      [
+        "l",
+        "l"
+      ]
+    ],
+    "parts": [
+      "ho",
+      "tel"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "motel",
+    "segs": [
+      [
+        "m",
+        "m"
+      ],
+      [
+        "o",
+        "O"
+      ],
+      [
+        "t",
+        "t"
+      ],
+      [
+        "e",
+        "e"
+      ],
+      [
+        "l",
+        "l"
+      ]
+    ],
+    "parts": [
+      "mo",
+      "tel"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "pupil",
+    "segs": [
+      [
+        "p",
+        "p"
+      ],
+      [
+        "u",
+        "U"
+      ],
+      [
+        "p",
+        "p"
+      ],
+      [
+        "i",
+        "i"
+      ],
+      [
+        "l",
+        "l"
+      ]
+    ],
+    "parts": [
+      "pu",
+      "pil"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "final",
+    "segs": [
+      [
+        "f",
+        "f"
+      ],
+      [
+        "i",
+        "I"
+      ],
+      [
+        "n",
+        "n"
+      ],
+      [
+        "a",
+        "a"
+      ],
+      [
+        "l",
+        "l"
+      ]
+    ],
+    "parts": [
+      "fi",
+      "nal"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "local",
+    "segs": [
+      [
+        "l",
+        "l"
+      ],
+      [
+        "o",
+        "O"
+      ],
+      [
+        "c",
+        "k"
+      ],
+      [
+        "a",
+        "a"
+      ],
+      [
+        "l",
+        "l"
+      ]
+    ],
+    "parts": [
+      "lo",
+      "cal"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "total",
+    "segs": [
+      [
+        "t",
+        "t"
+      ],
+      [
+        "o",
+        "O"
+      ],
+      [
+        "t",
+        "t"
+      ],
+      [
+        "a",
+        "a"
+      ],
+      [
+        "l",
+        "l"
+      ]
+    ],
+    "parts": [
+      "to",
+      "tal"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "focus",
+    "segs": [
+      [
+        "f",
+        "f"
+      ],
+      [
+        "o",
+        "O"
+      ],
+      [
+        "c",
+        "k"
+      ],
+      [
+        "u",
+        "u"
+      ],
+      [
+        "s",
+        "s"
+      ]
+    ],
+    "parts": [
+      "fo",
+      "cus"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "even",
+    "segs": [
+      [
+        "e",
+        "E"
+      ],
+      [
+        "v",
+        "v"
+      ],
+      [
+        "e",
+        "e"
+      ],
+      [
+        "n",
+        "n"
+      ]
+    ],
+    "parts": [
+      "e",
+      "ven"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "legal",
+    "segs": [
+      [
+        "l",
+        "l"
+      ],
+      [
+        "e",
+        "E"
+      ],
+      [
+        "g",
+        "g"
+      ],
+      [
+        "a",
+        "a"
+      ],
+      [
+        "l",
+        "l"
+      ]
+    ],
+    "parts": [
+      "le",
+      "gal"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": true,
+    "mean": "allowed by the law",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "moment",
+    "segs": [
+      [
+        "m",
+        "m"
+      ],
+      [
+        "o",
+        "O"
+      ],
+      [
+        "m",
+        "m"
+      ],
+      [
+        "e",
+        "e"
+      ],
+      [
+        "n",
+        "n"
+      ],
+      [
+        "t",
+        "t"
+      ]
+    ],
+    "parts": [
+      "mo",
+      "ment"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "humid",
+    "segs": [
+      [
+        "h",
+        "h"
+      ],
+      [
+        "u",
+        "U"
+      ],
+      [
+        "m",
+        "m"
+      ],
+      [
+        "i",
+        "i"
+      ],
+      [
+        "d",
+        "d"
+      ]
+    ],
+    "parts": [
+      "hu",
+      "mid"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": true,
+    "mean": "warm and damp, so the air feels sticky",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "bacon",
+    "segs": [
+      [
+        "b",
+        "b"
+      ],
+      [
+        "a",
+        "A"
+      ],
+      [
+        "c",
+        "k"
+      ],
+      [
+        "o",
+        "o"
+      ],
+      [
+        "n",
+        "n"
+      ]
+    ],
+    "parts": [
+      "ba",
+      "con"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "basic",
+    "segs": [
+      [
+        "b",
+        "b"
+      ],
+      [
+        "a",
+        "A"
+      ],
+      [
+        "s",
+        "s"
+      ],
+      [
+        "i",
+        "i"
+      ],
+      [
+        "c",
+        "k"
+      ]
+    ],
+    "parts": [
+      "ba",
+      "sic"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "bison",
+    "segs": [
+      [
+        "b",
+        "b"
+      ],
+      [
+        "i",
+        "I"
+      ],
+      [
+        "s",
+        "s"
+      ],
+      [
+        "o",
+        "o"
+      ],
+      [
+        "n",
+        "n"
+      ]
+    ],
+    "parts": [
+      "bi",
+      "son"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "prefix",
+    "segs": [
+      [
+        "p",
+        "p"
+      ],
+      [
+        "r",
+        "r"
+      ],
+      [
+        "e",
+        "E"
+      ],
+      [
+        "f",
+        "f"
+      ],
+      [
+        "i",
+        "i"
+      ],
+      [
+        "x",
+        "k s"
+      ]
+    ],
+    "parts": [
+      "pre",
+      "fix"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "robots",
+    "segs": [
+      [
+        "r",
+        "r"
+      ],
+      [
+        "o",
+        "O"
+      ],
+      [
+        "b",
+        "b"
+      ],
+      [
+        "o",
+        "o"
+      ],
+      [
+        "t",
+        "t"
+      ],
+      [
+        "s",
+        "s"
+      ]
+    ],
+    "parts": [
+      "ro",
+      "bots"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": "robot",
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "tulips",
+    "segs": [
+      [
+        "t",
+        "t"
+      ],
+      [
+        "u",
+        "oo"
+      ],
+      [
+        "l",
+        "l"
+      ],
+      [
+        "i",
+        "i"
+      ],
+      [
+        "p",
+        "p"
+      ],
+      [
+        "s",
+        "s"
+      ]
+    ],
+    "parts": [
+      "tu",
+      "lips"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": "tulip",
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "pilots",
+    "segs": [
+      [
+        "p",
+        "p"
+      ],
+      [
+        "i",
+        "I"
+      ],
+      [
+        "l",
+        "l"
+      ],
+      [
+        "o",
+        "o"
+      ],
+      [
+        "t",
+        "t"
+      ],
+      [
+        "s",
+        "s"
+      ]
+    ],
+    "parts": [
+      "pi",
+      "lots"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": "pilot",
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "fotep",
+    "segs": [
+      [
+        "f",
+        "f"
+      ],
+      [
+        "o",
+        "O"
+      ],
+      [
+        "t",
+        "t"
+      ],
+      [
+        "e",
+        "e"
+      ],
+      [
+        "p",
+        "p"
+      ]
+    ],
+    "parts": [
+      "fo",
+      "tep"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": false,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "nibot",
+    "segs": [
+      [
+        "n",
+        "n"
+      ],
+      [
+        "i",
+        "I"
+      ],
+      [
+        "b",
+        "b"
+      ],
+      [
+        "o",
+        "o"
+      ],
+      [
+        "t",
+        "t"
+      ]
+    ],
+    "parts": [
+      "ni",
+      "bot"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": false,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "tomis",
+    "segs": [
+      [
+        "t",
+        "t"
+      ],
+      [
+        "o",
+        "O"
+      ],
+      [
+        "m",
+        "m"
+      ],
+      [
+        "i",
+        "i"
+      ],
+      [
+        "s",
+        "s"
+      ]
+    ],
+    "parts": [
+      "to",
+      "mis"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": false,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "lumit",
+    "segs": [
+      [
+        "l",
+        "l"
+      ],
+      [
+        "u",
+        "U"
+      ],
+      [
+        "m",
+        "m"
+      ],
+      [
+        "i",
+        "i"
+      ],
+      [
+        "t",
+        "t"
+      ]
+    ],
+    "parts": [
+      "lu",
+      "mit"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": false,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "sidap",
+    "segs": [
+      [
+        "s",
+        "s"
+      ],
+      [
+        "i",
+        "I"
+      ],
+      [
+        "d",
+        "d"
+      ],
+      [
+        "a",
+        "a"
+      ],
+      [
+        "p",
+        "p"
+      ]
+    ],
+    "parts": [
+      "si",
+      "dap"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": false,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "pazim",
+    "segs": [
+      [
+        "p",
+        "p"
+      ],
+      [
+        "a",
+        "A"
+      ],
+      [
+        "z",
+        "z"
+      ],
+      [
+        "i",
+        "i"
+      ],
+      [
+        "m",
+        "m"
+      ]
+    ],
+    "parts": [
+      "pa",
+      "zim"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": false,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "hofid",
+    "segs": [
+      [
+        "h",
+        "h"
+      ],
+      [
+        "o",
+        "O"
+      ],
+      [
+        "f",
+        "f"
+      ],
+      [
+        "i",
+        "i"
+      ],
+      [
+        "d",
+        "d"
+      ]
+    ],
+    "parts": [
+      "ho",
+      "fid"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": false,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "dabun",
+    "segs": [
+      [
+        "d",
+        "d"
+      ],
+      [
+        "a",
+        "A"
+      ],
+      [
+        "b",
+        "b"
+      ],
+      [
+        "u",
+        "u"
+      ],
+      [
+        "n",
+        "n"
+      ]
+    ],
+    "parts": [
+      "da",
+      "bun"
+    ],
+    "types": [
+      "open",
+      "closed"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.vcv",
+    "real": false,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "my",
+    "segs": [
+      [
+        "m",
+        "m"
+      ],
+      [
+        "y",
+        "I"
+      ]
+    ],
+    "parts": [
+      "my"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "by",
+    "segs": [
+      [
+        "b",
+        "b"
+      ],
+      [
+        "y",
+        "I"
+      ]
+    ],
+    "parts": [
+      "by"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "fly",
+    "segs": [
+      [
+        "f",
+        "f"
+      ],
+      [
+        "l",
+        "l"
+      ],
+      [
+        "y",
+        "I"
+      ]
+    ],
+    "parts": [
+      "fly"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "try",
+    "segs": [
+      [
+        "t",
+        "t"
+      ],
+      [
+        "r",
+        "r"
+      ],
+      [
+        "y",
+        "I"
+      ]
+    ],
+    "parts": [
+      "try"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "cry",
+    "segs": [
+      [
+        "c",
+        "k"
+      ],
+      [
+        "r",
+        "r"
+      ],
+      [
+        "y",
+        "I"
+      ]
+    ],
+    "parts": [
+      "cry"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "dry",
+    "segs": [
+      [
+        "d",
+        "d"
+      ],
+      [
+        "r",
+        "r"
+      ],
+      [
+        "y",
+        "I"
+      ]
+    ],
+    "parts": [
+      "dry"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "sky",
+    "segs": [
+      [
+        "s",
+        "s"
+      ],
+      [
+        "k",
+        "k"
+      ],
+      [
+        "y",
+        "I"
+      ]
+    ],
+    "parts": [
+      "sky"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "spy",
+    "segs": [
+      [
+        "s",
+        "s"
+      ],
+      [
+        "p",
+        "p"
+      ],
+      [
+        "y",
+        "I"
+      ]
+    ],
+    "parts": [
+      "spy"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "shy",
+    "segs": [
+      [
+        "sh",
+        "sh"
+      ],
+      [
+        "y",
+        "I"
+      ]
+    ],
+    "parts": [
+      "shy"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "sly",
+    "segs": [
+      [
+        "s",
+        "s"
+      ],
+      [
+        "l",
+        "l"
+      ],
+      [
+        "y",
+        "I"
+      ]
+    ],
+    "parts": [
+      "sly"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "fry",
+    "segs": [
+      [
+        "f",
+        "f"
+      ],
+      [
+        "r",
+        "r"
+      ],
+      [
+        "y",
+        "I"
+      ]
+    ],
+    "parts": [
+      "fry"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "why",
+    "segs": [
+      [
+        "wh",
+        "w"
+      ],
+      [
+        "y",
+        "I"
+      ]
+    ],
+    "parts": [
+      "why"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "baby",
+    "segs": [
+      [
+        "b",
+        "b"
+      ],
+      [
+        "a",
+        "A"
+      ],
+      [
+        "b",
+        "b"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "ba",
+      "by"
+    ],
+    "types": [
+      "open",
+      "open"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "tidy",
+    "segs": [
+      [
+        "t",
+        "t"
+      ],
+      [
+        "i",
+        "I"
+      ],
+      [
+        "d",
+        "d"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "ti",
+      "dy"
+    ],
+    "types": [
+      "open",
+      "open"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "lady",
+    "segs": [
+      [
+        "l",
+        "l"
+      ],
+      [
+        "a",
+        "A"
+      ],
+      [
+        "d",
+        "d"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "la",
+      "dy"
+    ],
+    "types": [
+      "open",
+      "open"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "tiny",
+    "segs": [
+      [
+        "t",
+        "t"
+      ],
+      [
+        "i",
+        "I"
+      ],
+      [
+        "n",
+        "n"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "ti",
+      "ny"
+    ],
+    "types": [
+      "open",
+      "open"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "navy",
+    "segs": [
+      [
+        "n",
+        "n"
+      ],
+      [
+        "a",
+        "A"
+      ],
+      [
+        "v",
+        "v"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "na",
+      "vy"
+    ],
+    "types": [
+      "open",
+      "open"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "lazy",
+    "segs": [
+      [
+        "l",
+        "l"
+      ],
+      [
+        "a",
+        "A"
+      ],
+      [
+        "z",
+        "z"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "la",
+      "zy"
+    ],
+    "types": [
+      "open",
+      "open"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "crazy",
+    "segs": [
+      [
+        "c",
+        "k"
+      ],
+      [
+        "r",
+        "r"
+      ],
+      [
+        "a",
+        "A"
+      ],
+      [
+        "z",
+        "z"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "cra",
+      "zy"
+    ],
+    "types": [
+      "open",
+      "open"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "shady",
+    "segs": [
+      [
+        "sh",
+        "sh"
+      ],
+      [
+        "a",
+        "A"
+      ],
+      [
+        "d",
+        "d"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "sha",
+      "dy"
+    ],
+    "types": [
+      "open",
+      "open"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "hazy",
+    "segs": [
+      [
+        "h",
+        "h"
+      ],
+      [
+        "a",
+        "A"
+      ],
+      [
+        "z",
+        "z"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "ha",
+      "zy"
+    ],
+    "types": [
+      "open",
+      "open"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "pony",
+    "segs": [
+      [
+        "p",
+        "p"
+      ],
+      [
+        "o",
+        "O"
+      ],
+      [
+        "n",
+        "n"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "po",
+      "ny"
+    ],
+    "types": [
+      "open",
+      "open"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "ivy",
+    "segs": [
+      [
+        "i",
+        "I"
+      ],
+      [
+        "v",
+        "v"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "i",
+      "vy"
+    ],
+    "types": [
+      "open",
+      "open"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "puppy",
+    "segs": [
+      [
+        "p",
+        "p"
+      ],
+      [
+        "u",
+        "u"
+      ],
+      [
+        "pp",
+        "p"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "pup",
+      "py"
+    ],
+    "types": [
+      "closed",
+      "open"
+    ],
+    "pattern": "VC/CV",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "happy",
+    "segs": [
+      [
+        "h",
+        "h"
+      ],
+      [
+        "a",
+        "a"
+      ],
+      [
+        "pp",
+        "p"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "hap",
+      "py"
+    ],
+    "types": [
+      "closed",
+      "open"
+    ],
+    "pattern": "VC/CV",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "kitty",
+    "segs": [
+      [
+        "k",
+        "k"
+      ],
+      [
+        "i",
+        "i"
+      ],
+      [
+        "tt",
+        "t"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "kit",
+      "ty"
+    ],
+    "types": [
+      "closed",
+      "open"
+    ],
+    "pattern": "VC/CV",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "silly",
+    "segs": [
+      [
+        "s",
+        "s"
+      ],
+      [
+        "i",
+        "i"
+      ],
+      [
+        "ll",
+        "l"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "sil",
+      "ly"
+    ],
+    "types": [
+      "closed",
+      "open"
+    ],
+    "pattern": "VC/CV",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "funny",
+    "segs": [
+      [
+        "f",
+        "f"
+      ],
+      [
+        "u",
+        "u"
+      ],
+      [
+        "nn",
+        "n"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "fun",
+      "ny"
+    ],
+    "types": [
+      "closed",
+      "open"
+    ],
+    "pattern": "VC/CV",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "bunny",
+    "segs": [
+      [
+        "b",
+        "b"
+      ],
+      [
+        "u",
+        "u"
+      ],
+      [
+        "nn",
+        "n"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "bun",
+      "ny"
+    ],
+    "types": [
+      "closed",
+      "open"
+    ],
+    "pattern": "VC/CV",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "jelly",
+    "segs": [
+      [
+        "j",
+        "j"
+      ],
+      [
+        "e",
+        "e"
+      ],
+      [
+        "ll",
+        "l"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "jel",
+      "ly"
+    ],
+    "types": [
+      "closed",
+      "open"
+    ],
+    "pattern": "VC/CV",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "penny",
+    "segs": [
+      [
+        "p",
+        "p"
+      ],
+      [
+        "e",
+        "e"
+      ],
+      [
+        "nn",
+        "n"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "pen",
+      "ny"
+    ],
+    "types": [
+      "closed",
+      "open"
+    ],
+    "pattern": "VC/CV",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "windy",
+    "segs": [
+      [
+        "w",
+        "w"
+      ],
+      [
+        "i",
+        "i"
+      ],
+      [
+        "n",
+        "n"
+      ],
+      [
+        "d",
+        "d"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "win",
+      "dy"
+    ],
+    "types": [
+      "closed",
+      "open"
+    ],
+    "pattern": "VC/CV",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "candy",
+    "segs": [
+      [
+        "c",
+        "k"
+      ],
+      [
+        "a",
+        "a"
+      ],
+      [
+        "n",
+        "n"
+      ],
+      [
+        "d",
+        "d"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "can",
+      "dy"
+    ],
+    "types": [
+      "closed",
+      "open"
+    ],
+    "pattern": "VC/CV",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "dusty",
+    "segs": [
+      [
+        "d",
+        "d"
+      ],
+      [
+        "u",
+        "u"
+      ],
+      [
+        "s",
+        "s"
+      ],
+      [
+        "t",
+        "t"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "dus",
+      "ty"
+    ],
+    "types": [
+      "closed",
+      "open"
+    ],
+    "pattern": "VC/CV",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "misty",
+    "segs": [
+      [
+        "m",
+        "m"
+      ],
+      [
+        "i",
+        "i"
+      ],
+      [
+        "s",
+        "s"
+      ],
+      [
+        "t",
+        "t"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "mis",
+      "ty"
+    ],
+    "types": [
+      "closed",
+      "open"
+    ],
+    "pattern": "VC/CV",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "nasty",
+    "segs": [
+      [
+        "n",
+        "n"
+      ],
+      [
+        "a",
+        "a"
+      ],
+      [
+        "s",
+        "s"
+      ],
+      [
+        "t",
+        "t"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "nas",
+      "ty"
+    ],
+    "types": [
+      "closed",
+      "open"
+    ],
+    "pattern": "VC/CV",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "bumpy",
+    "segs": [
+      [
+        "b",
+        "b"
+      ],
+      [
+        "u",
+        "u"
+      ],
+      [
+        "m",
+        "m"
+      ],
+      [
+        "p",
+        "p"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "bum",
+      "py"
+    ],
+    "types": [
+      "closed",
+      "open"
+    ],
+    "pattern": "VC/CV",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "messy",
+    "segs": [
+      [
+        "m",
+        "m"
+      ],
+      [
+        "e",
+        "e"
+      ],
+      [
+        "ss",
+        "s"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "mes",
+      "sy"
+    ],
+    "types": [
+      "closed",
+      "open"
+    ],
+    "pattern": "VC/CV",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "sixty",
+    "segs": [
+      [
+        "s",
+        "s"
+      ],
+      [
+        "i",
+        "i"
+      ],
+      [
+        "x",
+        "k s"
+      ],
+      [
+        "t",
+        "t"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "six",
+      "ty"
+    ],
+    "types": [
+      "closed",
+      "open"
+    ],
+    "pattern": "VC/CV",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "belly",
+    "segs": [
+      [
+        "b",
+        "b"
+      ],
+      [
+        "e",
+        "e"
+      ],
+      [
+        "ll",
+        "l"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "bel",
+      "ly"
+    ],
+    "types": [
+      "closed",
+      "open"
+    ],
+    "pattern": "VC/CV",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "empty",
+    "segs": [
+      [
+        "e",
+        "e"
+      ],
+      [
+        "m",
+        "m"
+      ],
+      [
+        "p",
+        "p"
+      ],
+      [
+        "t",
+        "t"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "emp",
+      "ty"
+    ],
+    "types": [
+      "closed",
+      "open"
+    ],
+    "pattern": "VCCCV",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "grumpy",
+    "segs": [
+      [
+        "g",
+        "g"
+      ],
+      [
+        "r",
+        "r"
+      ],
+      [
+        "u",
+        "u"
+      ],
+      [
+        "m",
+        "m"
+      ],
+      [
+        "p",
+        "p"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "grum",
+      "py"
+    ],
+    "types": [
+      "closed",
+      "open"
+    ],
+    "pattern": "VC/CV",
+    "stage": "open.y",
+    "real": true,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "sny",
+    "segs": [
+      [
+        "s",
+        "s"
+      ],
+      [
+        "n",
+        "n"
+      ],
+      [
+        "y",
+        "I"
+      ]
+    ],
+    "parts": [
+      "sny"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.y",
+    "real": false,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "gly",
+    "segs": [
+      [
+        "g",
+        "g"
+      ],
+      [
+        "l",
+        "l"
+      ],
+      [
+        "y",
+        "I"
+      ]
+    ],
+    "parts": [
+      "gly"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.y",
+    "real": false,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "thry",
+    "segs": [
+      [
+        "th",
+        "th"
+      ],
+      [
+        "r",
+        "r"
+      ],
+      [
+        "y",
+        "I"
+      ]
+    ],
+    "parts": [
+      "thry"
+    ],
+    "types": [
+      "open"
+    ],
+    "pattern": "one",
+    "stage": "open.y",
+    "real": false,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "zaby",
+    "segs": [
+      [
+        "z",
+        "z"
+      ],
+      [
+        "a",
+        "A"
+      ],
+      [
+        "b",
+        "b"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "za",
+      "by"
+    ],
+    "types": [
+      "open",
+      "open"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.y",
+    "real": false,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "fidy",
+    "segs": [
+      [
+        "f",
+        "f"
+      ],
+      [
+        "i",
+        "I"
+      ],
+      [
+        "d",
+        "d"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "fi",
+      "dy"
+    ],
+    "types": [
+      "open",
+      "open"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.y",
+    "real": false,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "nuzy",
+    "segs": [
+      [
+        "n",
+        "n"
+      ],
+      [
+        "u",
+        "U"
+      ],
+      [
+        "z",
+        "z"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "nu",
+      "zy"
+    ],
+    "types": [
+      "open",
+      "open"
+    ],
+    "pattern": "V/CV",
+    "stage": "open.y",
+    "real": false,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "pibby",
+    "segs": [
+      [
+        "p",
+        "p"
+      ],
+      [
+        "i",
+        "i"
+      ],
+      [
+        "bb",
+        "b"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "pib",
+      "by"
+    ],
+    "types": [
+      "closed",
+      "open"
+    ],
+    "pattern": "VC/CV",
+    "stage": "open.y",
+    "real": false,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "wuppy",
+    "segs": [
+      [
+        "w",
+        "w"
+      ],
+      [
+        "u",
+        "u"
+      ],
+      [
+        "pp",
+        "p"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "wup",
+      "py"
+    ],
+    "types": [
+      "closed",
+      "open"
+    ],
+    "pattern": "VC/CV",
+    "stage": "open.y",
+    "real": false,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "gimby",
+    "segs": [
+      [
+        "g",
+        "g"
+      ],
+      [
+        "i",
+        "i"
+      ],
+      [
+        "m",
+        "m"
+      ],
+      [
+        "b",
+        "b"
+      ],
+      [
+        "y",
+        "E"
+      ]
+    ],
+    "parts": [
+      "gim",
+      "by"
+    ],
+    "types": [
+      "closed",
+      "open"
+    ],
+    "pattern": "VC/CV",
+    "stage": "open.y",
+    "real": false,
+    "schwa": false,
+    "flex": null,
+    "base": null,
+    "rare": false,
+    "mean": null,
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "cabin",
+    "segs": [
+      [
+        "c",
+        "k"
+      ],
+      [
+        "a",
+        "a"
+      ],
+      [
+        "b",
+        "b"
+      ],
+      [
+        "i",
+        "@"
+      ],
+      [
+        "n",
+        "n"
+      ]
+    ],
+    "parts": [
+      "cab",
+      "in"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": true,
+    "schwa": true,
+    "flex": "ca|bin",
+    "base": null,
+    "rare": false,
+    "mean": "a small wooden house, often in the woods",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "lemon",
+    "segs": [
+      [
+        "l",
+        "l"
+      ],
+      [
+        "e",
+        "e"
+      ],
+      [
+        "m",
+        "m"
+      ],
+      [
+        "o",
+        "@"
+      ],
+      [
+        "n",
+        "n"
+      ]
+    ],
+    "parts": [
+      "lem",
+      "on"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": true,
+    "schwa": true,
+    "flex": "le|mon",
+    "base": null,
+    "rare": false,
+    "mean": "a sour yellow fruit",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "robin",
+    "segs": [
+      [
+        "r",
+        "r"
+      ],
+      [
+        "o",
+        "o"
+      ],
+      [
+        "b",
+        "b"
+      ],
+      [
+        "i",
+        "@"
+      ],
+      [
+        "n",
+        "n"
+      ]
+    ],
+    "parts": [
+      "rob",
+      "in"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": true,
+    "schwa": true,
+    "flex": "ro|bin",
+    "base": null,
+    "rare": false,
+    "mean": "a small bird with a red chest",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "panic",
+    "segs": [
+      [
+        "p",
+        "p"
+      ],
+      [
+        "a",
+        "a"
+      ],
+      [
+        "n",
+        "n"
+      ],
+      [
+        "i",
+        "@"
+      ],
+      [
+        "c",
+        "k"
+      ]
+    ],
+    "parts": [
+      "pan",
+      "ic"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": true,
+    "schwa": true,
+    "flex": "pa|nic",
+    "base": null,
+    "rare": false,
+    "mean": "a sudden rush of worry",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "wagon",
+    "segs": [
+      [
+        "w",
+        "w"
+      ],
+      [
+        "a",
+        "a"
+      ],
+      [
+        "g",
+        "g"
+      ],
+      [
+        "o",
+        "@"
+      ],
+      [
+        "n",
+        "n"
+      ]
+    ],
+    "parts": [
+      "wag",
+      "on"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": true,
+    "schwa": true,
+    "flex": "wa|gon",
+    "base": null,
+    "rare": false,
+    "mean": "a cart with four wheels",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "camel",
+    "segs": [
+      [
+        "c",
+        "k"
+      ],
+      [
+        "a",
+        "a"
+      ],
+      [
+        "m",
+        "m"
+      ],
+      [
+        "e",
+        "@"
+      ],
+      [
+        "l",
+        "l"
+      ]
+    ],
+    "parts": [
+      "cam",
+      "el"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": true,
+    "schwa": true,
+    "flex": "ca|mel",
+    "base": null,
+    "rare": false,
+    "mean": "a desert animal with a hump on its back",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "melon",
+    "segs": [
+      [
+        "m",
+        "m"
+      ],
+      [
+        "e",
+        "e"
+      ],
+      [
+        "l",
+        "l"
+      ],
+      [
+        "o",
+        "@"
+      ],
+      [
+        "n",
+        "n"
+      ]
+    ],
+    "parts": [
+      "mel",
+      "on"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": true,
+    "schwa": true,
+    "flex": "me|lon",
+    "base": null,
+    "rare": false,
+    "mean": "a big sweet fruit with a thick rind",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "planet",
+    "segs": [
+      [
+        "p",
+        "p"
+      ],
+      [
+        "l",
+        "l"
+      ],
+      [
+        "a",
+        "a"
+      ],
+      [
+        "n",
+        "n"
+      ],
+      [
+        "e",
+        "@"
+      ],
+      [
+        "t",
+        "t"
+      ]
+    ],
+    "parts": [
+      "plan",
+      "et"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": true,
+    "schwa": true,
+    "flex": "pla|net",
+    "base": null,
+    "rare": false,
+    "mean": "a big world that circles a star",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "salad",
+    "segs": [
+      [
+        "s",
+        "s"
+      ],
+      [
+        "a",
+        "a"
+      ],
+      [
+        "l",
+        "l"
+      ],
+      [
+        "a",
+        "@"
+      ],
+      [
+        "d",
+        "d"
+      ]
+    ],
+    "parts": [
+      "sal",
+      "ad"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": true,
+    "schwa": true,
+    "flex": "sa|lad",
+    "base": null,
+    "rare": false,
+    "mean": "a bowl of cold leaves and veggies",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "comic",
+    "segs": [
+      [
+        "c",
+        "k"
+      ],
+      [
+        "o",
+        "o"
+      ],
+      [
+        "m",
+        "m"
+      ],
+      [
+        "i",
+        "@"
+      ],
+      [
+        "c",
+        "k"
+      ]
+    ],
+    "parts": [
+      "com",
+      "ic"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": true,
+    "schwa": true,
+    "flex": "co|mic",
+    "base": null,
+    "rare": false,
+    "mean": "a funny story told in pictures",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "habit",
+    "segs": [
+      [
+        "h",
+        "h"
+      ],
+      [
+        "a",
+        "a"
+      ],
+      [
+        "b",
+        "b"
+      ],
+      [
+        "i",
+        "@"
+      ],
+      [
+        "t",
+        "t"
+      ]
+    ],
+    "parts": [
+      "hab",
+      "it"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": true,
+    "schwa": true,
+    "flex": "ha|bit",
+    "base": null,
+    "rare": false,
+    "mean": "something you do again and again",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "visit",
+    "segs": [
+      [
+        "v",
+        "v"
+      ],
+      [
+        "i",
+        "i"
+      ],
+      [
+        "s",
+        "z"
+      ],
+      [
+        "i",
+        "@"
+      ],
+      [
+        "t",
+        "t"
+      ]
+    ],
+    "parts": [
+      "vis",
+      "it"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": true,
+    "schwa": true,
+    "flex": "vi|sit",
+    "base": null,
+    "rare": false,
+    "mean": "to go and spend time with someone",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "limit",
+    "segs": [
+      [
+        "l",
+        "l"
+      ],
+      [
+        "i",
+        "i"
+      ],
+      [
+        "m",
+        "m"
+      ],
+      [
+        "i",
+        "@"
+      ],
+      [
+        "t",
+        "t"
+      ]
+    ],
+    "parts": [
+      "lim",
+      "it"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": true,
+    "schwa": true,
+    "flex": "li|mit",
+    "base": null,
+    "rare": false,
+    "mean": "the most that is allowed",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "level",
+    "segs": [
+      [
+        "l",
+        "l"
+      ],
+      [
+        "e",
+        "e"
+      ],
+      [
+        "v",
+        "v"
+      ],
+      [
+        "e",
+        "@"
+      ],
+      [
+        "l",
+        "l"
+      ]
+    ],
+    "parts": [
+      "lev",
+      "el"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": true,
+    "schwa": true,
+    "flex": "le|vel",
+    "base": null,
+    "rare": false,
+    "mean": "flat, with no bumps",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "novel",
+    "segs": [
+      [
+        "n",
+        "n"
+      ],
+      [
+        "o",
+        "o"
+      ],
+      [
+        "v",
+        "v"
+      ],
+      [
+        "e",
+        "@"
+      ],
+      [
+        "l",
+        "l"
+      ]
+    ],
+    "parts": [
+      "nov",
+      "el"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": true,
+    "schwa": true,
+    "flex": "no|vel",
+    "base": null,
+    "rare": false,
+    "mean": "a long book that tells a made-up story",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "model",
+    "segs": [
+      [
+        "m",
+        "m"
+      ],
+      [
+        "o",
+        "o"
+      ],
+      [
+        "d",
+        "d"
+      ],
+      [
+        "e",
+        "@"
+      ],
+      [
+        "l",
+        "l"
+      ]
+    ],
+    "parts": [
+      "mod",
+      "el"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": true,
+    "schwa": true,
+    "flex": "mo|del",
+    "base": null,
+    "rare": false,
+    "mean": "a small copy of a real thing",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "travel",
+    "segs": [
+      [
+        "t",
+        "t"
+      ],
+      [
+        "r",
+        "r"
+      ],
+      [
+        "a",
+        "a"
+      ],
+      [
+        "v",
+        "v"
+      ],
+      [
+        "e",
+        "@"
+      ],
+      [
+        "l",
+        "l"
+      ]
+    ],
+    "parts": [
+      "trav",
+      "el"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": true,
+    "schwa": true,
+    "flex": "tra|vel",
+    "base": null,
+    "rare": false,
+    "mean": "to go from one place to another",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "talent",
+    "segs": [
+      [
+        "t",
+        "t"
+      ],
+      [
+        "a",
+        "a"
+      ],
+      [
+        "l",
+        "l"
+      ],
+      [
+        "e",
+        "@"
+      ],
+      [
+        "n",
+        "n"
+      ],
+      [
+        "t",
+        "t"
+      ]
+    ],
+    "parts": [
+      "tal",
+      "ent"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": true,
+    "schwa": true,
+    "flex": "ta|lent",
+    "base": null,
+    "rare": false,
+    "mean": "something you are really good at",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "seven",
+    "segs": [
+      [
+        "s",
+        "s"
+      ],
+      [
+        "e",
+        "e"
+      ],
+      [
+        "v",
+        "v"
+      ],
+      [
+        "e",
+        "@"
+      ],
+      [
+        "n",
+        "n"
+      ]
+    ],
+    "parts": [
+      "sev",
+      "en"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": true,
+    "schwa": true,
+    "flex": "se|ven",
+    "base": null,
+    "rare": false,
+    "mean": "the number after six",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "pedal",
+    "segs": [
+      [
+        "p",
+        "p"
+      ],
+      [
+        "e",
+        "e"
+      ],
+      [
+        "d",
+        "d"
+      ],
+      [
+        "a",
+        "@"
+      ],
+      [
+        "l",
+        "l"
+      ]
+    ],
+    "parts": [
+      "ped",
+      "al"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": true,
+    "schwa": true,
+    "flex": "pe|dal",
+    "base": null,
+    "rare": false,
+    "mean": "the part you push with your foot on a bike",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "metal",
+    "segs": [
+      [
+        "m",
+        "m"
+      ],
+      [
+        "e",
+        "e"
+      ],
+      [
+        "t",
+        "t"
+      ],
+      [
+        "a",
+        "@"
+      ],
+      [
+        "l",
+        "l"
+      ]
+    ],
+    "parts": [
+      "met",
+      "al"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": true,
+    "schwa": true,
+    "flex": "me|tal",
+    "base": null,
+    "rare": false,
+    "mean": "a hard, shiny stuff like iron or steel",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "petal",
+    "segs": [
+      [
+        "p",
+        "p"
+      ],
+      [
+        "e",
+        "e"
+      ],
+      [
+        "t",
+        "t"
+      ],
+      [
+        "a",
+        "@"
+      ],
+      [
+        "l",
+        "l"
+      ]
+    ],
+    "parts": [
+      "pet",
+      "al"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": true,
+    "schwa": true,
+    "flex": "pe|tal",
+    "base": null,
+    "rare": false,
+    "mean": "a soft, colorful part of a flower",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "rapid",
+    "segs": [
+      [
+        "r",
+        "r"
+      ],
+      [
+        "a",
+        "a"
+      ],
+      [
+        "p",
+        "p"
+      ],
+      [
+        "i",
+        "@"
+      ],
+      [
+        "d",
+        "d"
+      ]
+    ],
+    "parts": [
+      "rap",
+      "id"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": true,
+    "schwa": true,
+    "flex": "ra|pid",
+    "base": null,
+    "rare": false,
+    "mean": "very fast",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "closet",
+    "segs": [
+      [
+        "c",
+        "k"
+      ],
+      [
+        "l",
+        "l"
+      ],
+      [
+        "o",
+        "o"
+      ],
+      [
+        "s",
+        "z"
+      ],
+      [
+        "e",
+        "@"
+      ],
+      [
+        "t",
+        "t"
+      ]
+    ],
+    "parts": [
+      "clos",
+      "et"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": true,
+    "schwa": true,
+    "flex": "clo|set",
+    "base": null,
+    "rare": false,
+    "mean": "a small room for hanging clothes",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "comet",
+    "segs": [
+      [
+        "c",
+        "k"
+      ],
+      [
+        "o",
+        "o"
+      ],
+      [
+        "m",
+        "m"
+      ],
+      [
+        "e",
+        "@"
+      ],
+      [
+        "t",
+        "t"
+      ]
+    ],
+    "parts": [
+      "com",
+      "et"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": true,
+    "schwa": true,
+    "flex": "co|met",
+    "base": null,
+    "rare": false,
+    "mean": "a ball of ice that glows with a tail in space",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "finish",
+    "segs": [
+      [
+        "f",
+        "f"
+      ],
+      [
+        "i",
+        "i"
+      ],
+      [
+        "n",
+        "n"
+      ],
+      [
+        "i",
+        "@"
+      ],
+      [
+        "sh",
+        "sh"
+      ]
+    ],
+    "parts": [
+      "fin",
+      "ish"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": true,
+    "schwa": true,
+    "flex": "fi|nish",
+    "base": null,
+    "rare": false,
+    "mean": "to come to the end of something",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "zabin",
+    "segs": [
+      [
+        "z",
+        "z"
+      ],
+      [
+        "a",
+        "a"
+      ],
+      [
+        "b",
+        "b"
+      ],
+      [
+        "i",
+        "i"
+      ],
+      [
+        "n",
+        "n"
+      ]
+    ],
+    "parts": [
+      "zab",
+      "in"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": false,
+    "schwa": false,
+    "flex": "za|bin",
+    "base": null,
+    "rare": false,
+    "mean": "a made-up word, so either split is fine",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "tenom",
+    "segs": [
+      [
+        "t",
+        "t"
+      ],
+      [
+        "e",
+        "e"
+      ],
+      [
+        "n",
+        "n"
+      ],
+      [
+        "o",
+        "o"
+      ],
+      [
+        "m",
+        "m"
+      ]
+    ],
+    "parts": [
+      "ten",
+      "om"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": false,
+    "schwa": false,
+    "flex": "te|nom",
+    "base": null,
+    "rare": false,
+    "mean": "a made-up word, so either split is fine",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "komit",
+    "segs": [
+      [
+        "k",
+        "k"
+      ],
+      [
+        "o",
+        "o"
+      ],
+      [
+        "m",
+        "m"
+      ],
+      [
+        "i",
+        "i"
+      ],
+      [
+        "t",
+        "t"
+      ]
+    ],
+    "parts": [
+      "kom",
+      "it"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": false,
+    "schwa": false,
+    "flex": "ko|mit",
+    "base": null,
+    "rare": false,
+    "mean": "a made-up word, so either split is fine",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "nipan",
+    "segs": [
+      [
+        "n",
+        "n"
+      ],
+      [
+        "i",
+        "i"
+      ],
+      [
+        "p",
+        "p"
+      ],
+      [
+        "a",
+        "a"
+      ],
+      [
+        "n",
+        "n"
+      ]
+    ],
+    "parts": [
+      "nip",
+      "an"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": false,
+    "schwa": false,
+    "flex": "ni|pan",
+    "base": null,
+    "rare": false,
+    "mean": "a made-up word, so either split is fine",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "fanit",
+    "segs": [
+      [
+        "f",
+        "f"
+      ],
+      [
+        "a",
+        "a"
+      ],
+      [
+        "n",
+        "n"
+      ],
+      [
+        "i",
+        "i"
+      ],
+      [
+        "t",
+        "t"
+      ]
+    ],
+    "parts": [
+      "fan",
+      "it"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": false,
+    "schwa": false,
+    "flex": "fa|nit",
+    "base": null,
+    "rare": false,
+    "mean": "a made-up word, so either split is fine",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "bevon",
+    "segs": [
+      [
+        "b",
+        "b"
+      ],
+      [
+        "e",
+        "e"
+      ],
+      [
+        "v",
+        "v"
+      ],
+      [
+        "o",
+        "o"
+      ],
+      [
+        "n",
+        "n"
+      ]
+    ],
+    "parts": [
+      "bev",
+      "on"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": false,
+    "schwa": false,
+    "flex": "be|von",
+    "base": null,
+    "rare": false,
+    "mean": "a made-up word, so either split is fine",
+    "pic": null,
+    "note": ""
+  },
+  {
+    "w": "radun",
+    "segs": [
+      [
+        "r",
+        "r"
+      ],
+      [
+        "a",
+        "a"
+      ],
+      [
+        "d",
+        "d"
+      ],
+      [
+        "u",
+        "u"
+      ],
+      [
+        "n",
+        "n"
+      ]
+    ],
+    "parts": [
+      "rad",
+      "un"
+    ],
+    "types": [
+      "closed",
+      "closed"
+    ],
+    "pattern": "VC/V",
+    "stage": "open.flex",
+    "real": false,
+    "schwa": false,
+    "flex": "ra|dun",
+    "base": null,
+    "rare": false,
+    "mean": "a made-up word, so either split is fine",
+    "pic": null,
+    "note": ""
+  }
+]

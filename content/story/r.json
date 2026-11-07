@@ -1,0 +1,35 @@
+{
+  "land": "r",
+  "intro": [
+    "v.story-r.intro.1",
+    "v.story-r.intro.2",
+    "v.story-r.intro.3"
+  ],
+  "stages": {
+    "r.ar-or": {
+      "beat": "A garden on the mountainside and a fork at the picnic table show ar and or with the bossy r.",
+      "lines": [
+        "v.story-r.r-ar-or.1",
+        "v.story-r.r-ar-or.2"
+      ]
+    },
+    "r.er-ir-ur": {
+      "beat": "A bird on a perch shows er, ir and ur, which all make the same bossy sound.",
+      "lines": [
+        "v.story-r.r-er-ir-ur.1",
+        "v.story-r.r-er-ir-ur.2"
+      ]
+    },
+    "r.mix": {
+      "beat": "A carpenter builds a shelter using every bossy r pattern, and the apprentice reads the tool list.",
+      "lines": [
+        "v.story-r.r-mix.1",
+        "v.story-r.r-mix.2"
+      ]
+    }
+  },
+  "finale": [
+    "v.story-r.finale.1",
+    "v.story-r.finale.2"
+  ]
+}

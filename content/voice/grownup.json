@@ -1,0 +1,10 @@
+{
+  "v.grownup.about.method": {
+    "text": "Syllable Quest is built on Orton-Gillingham principles.",
+    "note": "Text for grown-ups on the About screen. It is not spoken in the game, so there is nothing to record."
+  },
+  "v.grownup.about.audience": {
+    "text": "Syllable Quest is for readers who need more practice with long words.",
+    "note": "Text for grown-ups on the About screen. It is not spoken in the game, so there is nothing to record."
+  }
+}

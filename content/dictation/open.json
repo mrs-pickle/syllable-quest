@@ -1,0 +1,275 @@
+[
+  {
+    "stage": "open.one",
+    "words": [
+      {
+        "w": "go"
+      },
+      {
+        "w": "me"
+      },
+      {
+        "w": "hi"
+      },
+      {
+        "w": "she"
+      },
+      {
+        "w": "he"
+      },
+      {
+        "w": "we",
+        "cue": "The e at the end, as in me"
+      },
+      {
+        "w": "no"
+      },
+      {
+        "w": "so"
+      },
+      {
+        "w": "be"
+      }
+    ],
+    "sentences": [
+      {
+        "id": "open-one-1",
+        "text": "Hi, she can go to the big tub.",
+        "targets": [
+          "hi",
+          "she",
+          "go"
+        ]
+      },
+      {
+        "id": "open-one-2",
+        "text": "We can go to the hut.",
+        "targets": [
+          "we",
+          "go"
+        ]
+      },
+      {
+        "id": "open-one-3",
+        "text": "He can run in the mud with me.",
+        "targets": [
+          "me",
+          "he"
+        ]
+      }
+    ]
+  },
+  {
+    "stage": "open.vcv",
+    "words": [
+      {
+        "w": "music",
+        "cue": "The c says k and the s says z"
+      },
+      {
+        "w": "robots"
+      },
+      {
+        "w": "robot"
+      },
+      {
+        "w": "hotel",
+        "cue": "One l, not two"
+      },
+      {
+        "w": "tulip"
+      },
+      {
+        "w": "pilot"
+      },
+      {
+        "w": "bacon"
+      },
+      {
+        "w": "moment"
+      },
+      {
+        "w": "basin"
+      }
+    ],
+    "sentences": [
+      {
+        "id": "open-vcv-1",
+        "text": "Two robots can help the pilot.",
+        "targets": [
+          "robots",
+          "pilot"
+        ]
+      },
+      {
+        "id": "open-vcv-2",
+        "text": "We get bacon and a tulip.",
+        "targets": [
+          "bacon",
+          "tulip"
+        ]
+      },
+      {
+        "id": "open-vcv-3",
+        "text": "The pilot has a hotel in the pit.",
+        "targets": [
+          "pilot",
+          "hotel"
+        ]
+      }
+    ]
+  },
+  {
+    "stage": "open.y",
+    "words": [
+      {
+        "w": "baby",
+        "cue": "A y at the end, as in happy"
+      },
+      {
+        "w": "happy",
+        "cue": "A y at the end, as in baby"
+      },
+      {
+        "w": "funny",
+        "cue": "A y at the end, as in baby"
+      },
+      {
+        "w": "puppy",
+        "cue": "A y at the end, as in baby"
+      },
+      {
+        "w": "penny",
+        "cue": "A y at the end, as in baby"
+      },
+      {
+        "w": "candy",
+        "cue": "A y at the end, as in baby"
+      },
+      {
+        "w": "tidy",
+        "cue": "A y at the end, and a short i in the middle"
+      },
+      {
+        "w": "sky",
+        "cue": "A y at the end for the long i sound"
+      },
+      {
+        "w": "fly",
+        "cue": "A y at the end for the long i sound"
+      },
+      {
+        "w": "lady",
+        "cue": "A y at the end, as in baby"
+      },
+      {
+        "w": "pony",
+        "cue": "A y at the end, as in baby"
+      },
+      {
+        "w": "bunny",
+        "cue": "A y at the end, as in baby"
+      },
+      {
+        "w": "silly",
+        "cue": "Two l letters, then a y at the end"
+      }
+    ],
+    "sentences": [
+      {
+        "id": "open-y-1",
+        "text": "My puppy is happy and funny.",
+        "targets": [
+          "my",
+          "puppy",
+          "happy"
+        ]
+      },
+      {
+        "id": "open-y-2",
+        "text": "The baby has a penny and a candy.",
+        "targets": [
+          "baby",
+          "penny"
+        ]
+      },
+      {
+        "id": "open-y-3",
+        "text": "The bunny is silly and tidy.",
+        "targets": [
+          "bunny",
+          "tidy"
+        ]
+      }
+    ]
+  },
+  {
+    "stage": "open.flex",
+    "words": [
+      {
+        "w": "cabin"
+      },
+      {
+        "w": "camel"
+      },
+      {
+        "w": "lemon"
+      },
+      {
+        "w": "melon"
+      },
+      {
+        "w": "robin"
+      },
+      {
+        "w": "seven"
+      },
+      {
+        "w": "wagon",
+        "cue": "A w, not wh"
+      },
+      {
+        "w": "planet"
+      },
+      {
+        "w": "salad"
+      },
+      {
+        "w": "habit"
+      },
+      {
+        "w": "metal"
+      },
+      {
+        "w": "travel"
+      }
+    ],
+    "sentences": [
+      {
+        "id": "open-flex-1",
+        "text": "A robin can sit on the wagon.",
+        "targets": [
+          "robin",
+          "wagon"
+        ]
+      },
+      {
+        "id": "open-flex-2",
+        "text": "The camel has a lemon and a melon.",
+        "targets": [
+          "camel",
+          "lemon",
+          "melon"
+        ]
+      },
+      {
+        "id": "open-flex-3",
+        "text": "We can visit the planet.",
+        "targets": [
+          "visit",
+          "planet"
+        ]
+      }
+    ]
+  }
+]

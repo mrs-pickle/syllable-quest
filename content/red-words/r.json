@@ -1,0 +1,8 @@
+[
+  {"w": "enough", "segs": [["e", "i"], ["n", "n"], ["ou", "u"], ["gh", "f"]], "stage": "r.ar-or", "drill": true, "tricky": [2, 3], "heart": "ou says /u/, gh says /f/"},
+  {"w": "door", "segs": [["d", "d"], ["oor", "or"]], "stage": "r.ar-or", "drill": true, "tricky": [1], "heart": "oor says /or/"},
+  {"w": "floor", "segs": [["f", "f"], ["l", "l"], ["oor", "or"]], "stage": "r.er-ir-ur", "drill": true, "tricky": [2], "heart": "oor says /or/"},
+  {"w": "sure", "segs": [["s", "sh"], ["ure", "er"]], "stage": "r.er-ir-ur", "drill": true, "tricky": [0, 1], "heart": "s says /sh/, ure says /ur/"},
+  {"w": "whose", "segs": [["wh", "h"], ["o", "oo"], ["se", "z"]], "stage": "r.mix", "drill": true, "tricky": [1, 2], "heart": "o says /oo/, se says /z/"},
+  {"w": "early", "segs": [["ea", "er"], ["r", "r"], ["l", "l"], ["y", "E"]], "stage": "r.mix", "drill": true, "tricky": [0], "heart": "ea says /ur/"}
+]

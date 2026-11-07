@@ -1,0 +1,141 @@
+[
+  {
+    "id": "open.one.A",
+    "stage": "open.one",
+    "land": "open",
+    "page": "open.1",
+    "title": "The Big Ship",
+    "text": "The ship landed at sunset. A bit of the Great Word Book was in a cactus on the hilltop. \"No!\" said the Keeper. \"Go uphill, and be quick.\" The Apprentice packed a picnic basket and a backpack. \"We can inspect it within an instant,\" said the Apprentice. \"So we collect it.\" The problem ended, and the Keeper rested.",
+    "focus": [
+      "we",
+      "go",
+      "so",
+      "be",
+      "no"
+    ]
+  },
+  {
+    "id": "open.one.B",
+    "stage": "open.one",
+    "land": "open",
+    "page": "open.2",
+    "title": "The Lock on the Path",
+    "text": "A big lock was shut on the path to the hilltop at sunset. \"We cannot unlock it,\" said the Keeper. \"Me?\" asked the Apprentice. \"No problem, so go,\" said the Keeper. Within an instant, the lock undid itself. The Apprentice and the Keeper hopped uphill with a picnic basket and a backpack.",
+    "focus": [
+      "we",
+      "me",
+      "go",
+      "so",
+      "no"
+    ]
+  },
+  {
+    "id": "open.vcv.A",
+    "stage": "open.vcv",
+    "land": "open",
+    "page": "open.3",
+    "title": "The Silent Robot",
+    "text": "The Keeper and the Apprentice rested at a local hotel. A robot was at the desk, and the robot was silent. \"Is it sad?\" asked the Apprentice. A label on the robot said, \"Music.\" The pilot helped. \"The robot cannot sing,\" said the pilot. \"It must have a bit of music.\"",
+    "focus": [
+      "robot",
+      "silent",
+      "local",
+      "hotel",
+      "music",
+      "pilot"
+    ]
+  },
+  {
+    "id": "open.vcv.B",
+    "stage": "open.vcv",
+    "land": "open",
+    "page": "open.4",
+    "title": "Music for the Robot",
+    "text": "The pilot and the Apprentice hunted for music. A pupil with a drum was at the motel. \"Can the robot have it?\" asked the Apprentice. \"Yes,\" said the pupil, \"and it is a bonus.\" The pupil tapped the drum. In a moment, the robot jumped up, clapped, and was singing. The robot was not silent.",
+    "focus": [
+      "pilot",
+      "music",
+      "pupil",
+      "motel",
+      "bonus",
+      "robot",
+      "moment",
+      "silent"
+    ]
+  },
+  {
+    "id": "open.y.A",
+    "stage": "open.y",
+    "land": "open",
+    "page": "open.5",
+    "title": "The Shy Pony",
+    "text": "The sky was hazy and windy. A lady with a puppy and a bunny was on the hilltop. A tiny pony with a bit of the Great Word Book was shy. The Apprentice said, \"I can help.\" \"My pony is grumpy,\" said the lady. \"Try the candy, and be happy.\"",
+    "focus": [
+      "sky",
+      "hazy",
+      "windy",
+      "lady",
+      "puppy",
+      "bunny",
+      "tiny",
+      "pony",
+      "shy",
+      "happy",
+      "candy"
+    ]
+  },
+  {
+    "id": "open.y.B",
+    "stage": "open.y",
+    "land": "open",
+    "page": "open.6",
+    "title": "Candy for the Pony",
+    "text": "The Apprentice filled a dusty basket with candy. The tiny pony was shy, but it was happy to try it. Then the pony jumped and dropped a bit of the Great Word Book. \"Yes!\" said the lady. \"My pony is not grumpy.\" The baby bunny hugged the puppy. The sky was not hazy.",
+    "focus": [
+      "candy",
+      "dusty",
+      "tiny",
+      "pony",
+      "shy",
+      "happy",
+      "try",
+      "baby",
+      "bunny",
+      "puppy",
+      "sky",
+      "hazy"
+    ]
+  },
+  {
+    "id": "open.flex.A",
+    "stage": "open.flex",
+    "land": "open",
+    "page": "open.7",
+    "title": "The Cabin on the Hill",
+    "text": "A lady with a camel and a wagon was at a cabin. The cabin was on a hilltop. The wagon was filled with lemon, melon, and salad. \"Visit, and rest,\" said the lady. \"Is a bit of the Great Word Book in the cabin?\" asked the Apprentice. \"Yes, in a metal box,\" said the lady, \"but it is locked.\"",
+    "focus": [
+      "cabin",
+      "camel",
+      "wagon",
+      "lemon",
+      "melon",
+      "salad",
+      "visit",
+      "metal"
+    ]
+  },
+  {
+    "id": "open.flex.B",
+    "stage": "open.flex",
+    "land": "open",
+    "page": "open.8",
+    "title": "The Metal Box",
+    "text": "A metal box was locked. \"No panic,\" said the Keeper. \"Flip it.\" The Apprentice flipped the metal box. The lock was on the bottom! With a rapid, comic jump, the lock undid itself. The pilot, the robot, the lady, and the camel clapped. The lemon, the melon, and the salad were a total bonus. A bit of the Great Word Book was in the box.",
+    "focus": [
+      "metal",
+      "panic",
+      "rapid",
+      "comic"
+    ]
+  }
+]

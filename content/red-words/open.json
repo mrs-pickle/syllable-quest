@@ -1,0 +1,10 @@
+[
+  {"w": "who", "segs": [["wh", "h"], ["o", "oo"]], "stage": "open.one", "drill": true, "tricky": [0, 1], "heart": "wh says /h/, the o says /oo/"},
+  {"w": "one", "segs": [["o", "w u"], ["n", "n"], ["e", ""]], "stage": "open.one", "drill": true, "tricky": [0, 2], "heart": "the o says /wu/, the e is silent"},
+  {"w": "two", "segs": [["t", "t"], ["wo", "oo"]], "stage": "open.vcv", "drill": true, "tricky": [1], "heart": "wo says /oo/"},
+  {"w": "come", "segs": [["c", "k"], ["o", "u"], ["m", "m"], ["e", ""]], "stage": "open.vcv", "drill": true, "tricky": [1, 3], "heart": "the o says /uh/, the e is silent"},
+  {"w": "some", "segs": [["s", "s"], ["o", "u"], ["m", "m"], ["e", ""]], "stage": "open.y", "drill": true, "tricky": [1, 3], "heart": "the o says /uh/, the e is silent"},
+  {"w": "does", "segs": [["d", "d"], ["oe", "u"], ["s", "z"]], "stage": "open.y", "drill": true, "tricky": [1, 2], "heart": "oe says /uh/, the s says /z/"},
+  {"w": "want", "segs": [["w", "w"], ["a", "o"], ["n", "n"], ["t", "t"]], "stage": "open.flex", "drill": true, "tricky": [1], "heart": "the a says /ŏ/"},
+  {"w": "put", "segs": [["p", "p"], ["u", "uu"], ["t", "t"]], "stage": "open.flex", "drill": true, "tricky": [1], "heart": "the u says /oo/ as in book"}
+]

@@ -1,0 +1,7 @@
+{
+  "v.map.welcome": { "text": "Here is the map, apprentice. Your quest is waiting whenever you are ready.", "note": "warm, unhurried" },
+  "v.map.land": { "text": "A lit landmark means you have won that place back. Keep going.", "note": "encouraging, calm" },
+  "v.map.book-open": { "text": "This is the Great Word Book. Pick a page to read again.", "note": "warm, quiet" },
+  "v.map.book-torn": { "text": "This page is still torn. Read its story page well to mend it on your quest.", "note": "kind, no pressure" },
+  "v.map.reread": { "text": "Read it again, as many times as you like. This is just for practice.", "note": "relaxed" }
+}

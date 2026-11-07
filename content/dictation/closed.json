@@ -1,0 +1,556 @@
+[
+  {
+    "stage": "closed.review",
+    "words": [
+      {
+        "w": "ship"
+      },
+      {
+        "w": "catch"
+      },
+      {
+        "w": "black"
+      },
+      {
+        "w": "fluff"
+      },
+      {
+        "w": "ball"
+      },
+      {
+        "w": "jump"
+      },
+      {
+        "w": "lamp"
+      },
+      {
+        "w": "crash"
+      },
+      {
+        "w": "drum"
+      },
+      {
+        "w": "stick"
+      },
+      {
+        "w": "bench"
+      },
+      {
+        "w": "shell"
+      },
+      {
+        "w": "tip"
+      },
+      {
+        "w": "plan"
+      }
+    ],
+    "sentences": [
+      {
+        "id": "closed.review.1",
+        "text": "The Apprentice can catch the ship.",
+        "targets": [
+          "catch",
+          "ship"
+        ]
+      },
+      {
+        "id": "closed.review.2",
+        "text": "A cat can catch the ship.",
+        "targets": [
+          "catch",
+          "ship"
+        ]
+      },
+      {
+        "id": "closed.review.3",
+        "text": "The big dog hid in the tub.",
+        "targets": [
+          "dog",
+          "tub"
+        ]
+      },
+      {
+        "id": "closed.review.4",
+        "text": "Jump up and grab the lamp.",
+        "targets": [
+          "jump",
+          "lamp"
+        ]
+      },
+      {
+        "id": "closed.review.5",
+        "text": "Fluff is in the black bag.",
+        "targets": [
+          "fluff",
+          "black"
+        ]
+      },
+      {
+        "id": "closed.review.6",
+        "text": "The ball is on the bench.",
+        "targets": [
+          "ball",
+          "bench"
+        ]
+      },
+      {
+        "id": "closed.review.7",
+        "text": "The Keeper has a red drum.",
+        "targets": [
+          "drum",
+          "red"
+        ]
+      }
+    ]
+  },
+  {
+    "stage": "closed.endings",
+    "words": [
+      {
+        "w": "jumped"
+      },
+      {
+        "w": "hugged"
+      },
+      {
+        "w": "cats"
+      },
+      {
+        "w": "dogs"
+      },
+      {
+        "w": "hopping"
+      },
+      {
+        "w": "filled"
+      },
+      {
+        "w": "rugs"
+      },
+      {
+        "w": "added",
+        "cue": "Double the d"
+      },
+      {
+        "w": "kids"
+      },
+      {
+        "w": "rested"
+      },
+      {
+        "w": "boxes"
+      },
+      {
+        "w": "hunting"
+      },
+      {
+        "w": "packs"
+      },
+      {
+        "w": "tapped"
+      }
+    ],
+    "sentences": [
+      {
+        "id": "closed.endings.1",
+        "text": "The Apprentice hopped and jumped.",
+        "targets": [
+          "hopped",
+          "jumped"
+        ]
+      },
+      {
+        "id": "closed.endings.2",
+        "text": "The cats and dogs hugged the Keeper.",
+        "targets": [
+          "cats",
+          "dogs",
+          "hugged"
+        ]
+      },
+      {
+        "id": "closed.endings.3",
+        "text": "You filled the boxes with hats.",
+        "targets": [
+          "filled",
+          "boxes"
+        ]
+      },
+      {
+        "id": "closed.endings.4",
+        "text": "The hens hopped in the sand.",
+        "targets": [
+          "hens",
+          "hopped"
+        ]
+      }
+    ]
+  },
+  {
+    "stage": "closed.compound",
+    "words": [
+      {
+        "w": "sunset"
+      },
+      {
+        "w": "backpack"
+      },
+      {
+        "w": "bathtub"
+      },
+      {
+        "w": "catnap"
+      },
+      {
+        "w": "handbag"
+      },
+      {
+        "w": "hilltop",
+        "cue": "Double the l"
+      },
+      {
+        "w": "nutshell"
+      },
+      {
+        "w": "sandbox"
+      },
+      {
+        "w": "upset"
+      },
+      {
+        "w": "uphill"
+      },
+      {
+        "w": "drumstick"
+      },
+      {
+        "w": "himself"
+      }
+    ],
+    "sentences": [
+      {
+        "id": "closed.compound.1",
+        "text": "The Apprentice packed a backpack and a handbag.",
+        "targets": [
+          "backpack",
+          "handbag"
+        ]
+      },
+      {
+        "id": "closed.compound.2",
+        "text": "Go uphill to the hilltop.",
+        "targets": [
+          "uphill",
+          "hilltop"
+        ]
+      },
+      {
+        "id": "closed.compound.3",
+        "text": "The bathtub is in the sandbox.",
+        "targets": [
+          "bathtub",
+          "sandbox"
+        ]
+      },
+      {
+        "id": "closed.compound.4",
+        "text": "At sunset the Keeper is on the hilltop.",
+        "targets": [
+          "sunset",
+          "hilltop"
+        ]
+      }
+    ]
+  },
+  {
+    "stage": "closed.vccv-double",
+    "words": [
+      {
+        "w": "rabbit"
+      },
+      {
+        "w": "muffin",
+        "cue": "Double the f"
+      },
+      {
+        "w": "mitten",
+        "cue": "Double the t"
+      },
+      {
+        "w": "ribbon"
+      },
+      {
+        "w": "bottom",
+        "cue": "Double the t"
+      },
+      {
+        "w": "sudden",
+        "cue": "Double the d"
+      },
+      {
+        "w": "pennant"
+      },
+      {
+        "w": "gossip",
+        "cue": "Double the s"
+      },
+      {
+        "w": "tennis",
+        "cue": "Double the s"
+      },
+      {
+        "w": "rubbish"
+      },
+      {
+        "w": "attic",
+        "cue": "Double the t. The c says k"
+      },
+      {
+        "w": "happen"
+      }
+    ],
+    "sentences": [
+      {
+        "id": "closed.vccv-double.1",
+        "text": "The rabbit hid in the muffin tin.",
+        "targets": [
+          "rabbit",
+          "muffin"
+        ]
+      },
+      {
+        "id": "closed.vccv-double.2",
+        "text": "They hid the mitten in the attic.",
+        "targets": [
+          "mitten",
+          "attic"
+        ]
+      },
+      {
+        "id": "closed.vccv-double.3",
+        "text": "The bottom of the box has a ribbon.",
+        "targets": [
+          "bottom",
+          "ribbon"
+        ]
+      }
+    ]
+  },
+  {
+    "stage": "closed.vccv",
+    "words": [
+      {
+        "w": "picnic",
+        "cue": "Use the c spelling"
+      },
+      {
+        "w": "napkin"
+      },
+      {
+        "w": "basket"
+      },
+      {
+        "w": "magnet"
+      },
+      {
+        "w": "helmet"
+      },
+      {
+        "w": "sandal",
+        "cue": "Use one l"
+      },
+      {
+        "w": "trumpet"
+      },
+      {
+        "w": "velvet"
+      },
+      {
+        "w": "problem"
+      },
+      {
+        "w": "plastic",
+        "cue": "Use the c spelling"
+      },
+      {
+        "w": "unlock"
+      },
+      {
+        "w": "unpack"
+      },
+      {
+        "w": "dentist"
+      }
+    ],
+    "sentences": [
+      {
+        "id": "closed.vccv.1",
+        "text": "The picnic basket has a napkin.",
+        "targets": [
+          "picnic",
+          "basket",
+          "napkin"
+        ]
+      },
+      {
+        "id": "closed.vccv.2",
+        "text": "Unlock the basket and the magnet.",
+        "targets": [
+          "unlock",
+          "basket",
+          "magnet"
+        ]
+      },
+      {
+        "id": "closed.vccv.3",
+        "text": "Were the sandal and the helmet in the box?",
+        "targets": [
+          "sandal",
+          "helmet"
+        ]
+      }
+    ]
+  },
+  {
+    "stage": "closed.vcccv",
+    "words": [
+      {
+        "w": "pumpkin"
+      },
+      {
+        "w": "sandwich",
+        "cue": "Say it slowly. Write the w and the ch"
+      },
+      {
+        "w": "hundred"
+      },
+      {
+        "w": "instant"
+      },
+      {
+        "w": "children"
+      },
+      {
+        "w": "tantrum"
+      },
+      {
+        "w": "ostrich",
+        "cue": "Use the ch spelling"
+      },
+      {
+        "w": "district"
+      },
+      {
+        "w": "subtract"
+      },
+      {
+        "w": "contract"
+      },
+      {
+        "w": "constant"
+      },
+      {
+        "w": "conflict"
+      }
+    ],
+    "sentences": [
+      {
+        "id": "closed.vcccv.1",
+        "text": "The children have a pumpkin.",
+        "targets": [
+          "children",
+          "pumpkin"
+        ]
+      },
+      {
+        "id": "closed.vcccv.2",
+        "text": "There is an ostrich in the district.",
+        "targets": [
+          "ostrich",
+          "district"
+        ]
+      },
+      {
+        "id": "closed.vcccv.3",
+        "text": "The children have a sandwich and a pumpkin.",
+        "targets": [
+          "children",
+          "sandwich",
+          "pumpkin"
+        ]
+      }
+    ]
+  },
+  {
+    "stage": "closed.three",
+    "words": [
+      {
+        "w": "fantastic",
+        "cue": "Use the c spelling"
+      },
+      {
+        "w": "attended",
+        "cue": "Double the t"
+      },
+      {
+        "w": "collected",
+        "cue": "Double the l"
+      },
+      {
+        "w": "connected"
+      },
+      {
+        "w": "invented"
+      },
+      {
+        "w": "expecting"
+      },
+      {
+        "w": "sandwiches",
+        "cue": "Say it slowly. Write the w and the ch"
+      },
+      {
+        "w": "backpacking"
+      },
+      {
+        "w": "subtracted"
+      },
+      {
+        "w": "distracted"
+      },
+      {
+        "w": "suspected"
+      },
+      {
+        "w": "commenting"
+      }
+    ],
+    "sentences": [
+      {
+        "id": "closed.three.1",
+        "text": "The Apprentice collected a fantastic sandwich.",
+        "targets": [
+          "collected",
+          "fantastic"
+        ]
+      },
+      {
+        "id": "closed.three.2",
+        "text": "Her backpacking trip was fantastic.",
+        "targets": [
+          "backpacking",
+          "fantastic"
+        ]
+      },
+      {
+        "id": "closed.three.3",
+        "text": "The Apprentice attended the camp, and collected the backpack.",
+        "targets": [
+          "attended",
+          "collected"
+        ]
+      }
+    ]
+  }
+]

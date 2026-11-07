@@ -1,0 +1,42 @@
+{
+  "land": "vce",
+  "intro": [
+    "v.story-vce.intro.1",
+    "v.story-vce.intro.2",
+    "v.story-vce.intro.3"
+  ],
+  "stages": {
+    "vce.one": {
+      "beat": "A silent e at the end of a word makes the vowel say its name, and a cake sits on a log.",
+      "lines": [
+        "v.story-vce.vce-one.1",
+        "v.story-vce.vce-one.2"
+      ]
+    },
+    "vce.soft": {
+      "beat": "Soft c and g sound like s and j before e, i or y, and the page by the lake shows how.",
+      "lines": [
+        "v.story-vce.vce-soft.1",
+        "v.story-vce.vce-soft.2"
+      ]
+    },
+    "vce.two": {
+      "beat": "A long word with silent e splits between a consonant and the next vowel, and the apprentice reads both parts.",
+      "lines": [
+        "v.story-vce.vce-two.1",
+        "v.story-vce.vce-two.2"
+      ]
+    },
+    "vce.mix": {
+      "beat": "Three-part words mix silent-e patterns, and the apprentice reads each piece one at a time.",
+      "lines": [
+        "v.story-vce.vce-mix.1",
+        "v.story-vce.vce-mix.2"
+      ]
+    }
+  },
+  "finale": [
+    "v.story-vce.finale.1",
+    "v.story-vce.finale.2"
+  ]
+}

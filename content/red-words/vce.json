@@ -1,0 +1,10 @@
+[
+  {"w": "could", "segs": [["c", "k"], ["ou", "uu"], ["l", "l"], ["d", "d"]], "stage": "vce.one", "drill": true, "tricky": [1], "heart": "ou says /oo/ as in book"},
+  {"w": "would", "segs": [["w", "w"], ["ou", "uu"], ["l", "l"], ["d", "d"]], "stage": "vce.one", "drill": true, "tricky": [1], "heart": "ou says /oo/ as in book"},
+  {"w": "should", "segs": [["sh", "sh"], ["ou", "uu"], ["l", "l"], ["d", "d"]], "stage": "vce.soft", "drill": true, "tricky": [1], "heart": "ou says /oo/ as in book"},
+  {"w": "again", "segs": [["a", "@"], ["g", "g"], ["ai", "e"], ["n", "n"]], "stage": "vce.soft", "drill": true, "tricky": [0, 2], "heart": "a says /uh/, ai says /ĕ/"},
+  {"w": "their", "segs": [["th", "dh"], ["eir", "air"]], "stage": "vce.two", "drill": true, "tricky": [1], "heart": "eir says /air/"},
+  {"w": "your", "segs": [["y", "y"], ["our", "or"]], "stage": "vce.two", "drill": true, "tricky": [1], "heart": "our says /or/"},
+  {"w": "people", "segs": [["p", "p"], ["eo", "E"], ["p", "p"], ["le", "@ l"]], "stage": "vce.mix", "drill": true, "tricky": [1], "heart": "eo says /ē/"},
+  {"w": "friend", "segs": [["f", "f"], ["r", "r"], ["ie", "e"], ["n", "n"], ["d", "d"]], "stage": "vce.mix", "drill": true, "tricky": [2], "heart": "ie says /ĕ/"}
+]

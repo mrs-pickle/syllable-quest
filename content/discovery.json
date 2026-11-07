@@ -1,0 +1,1576 @@
+{
+  "closed.review": {
+    "panels": [
+      {
+        "art": "ui-sq/clan-closed",
+        "text": "A {closed} syllable has one vowel and ends in a consonant. The consonant closes the door, so the vowel is short.",
+        "voice": "v.discovery.closed-review.1",
+        "examples": [
+          "cat",
+          "hop",
+          "sit",
+          "bug"
+        ],
+        "try": []
+      },
+      {
+        "art": "mouth/sh",
+        "text": "Two letters can make one sound. S and h say sh. C and h say ch.",
+        "voice": "v.discovery.closed-review.2",
+        "examples": [
+          "ship",
+          "shop",
+          "chip",
+          "chin"
+        ],
+        "try": []
+      },
+      {
+        "art": "mouth/th",
+        "text": "T and h say th. Put your tongue between your teeth and push the air out.",
+        "voice": "v.discovery.closed-review.3",
+        "examples": [
+          "path",
+          "math",
+          "moth",
+          "bath"
+        ],
+        "try": []
+      },
+      {
+        "art": "mouth/ng",
+        "text": "N and g say ng at the end of a word. N and k say nk. Listen for the sound in your nose.",
+        "voice": "v.discovery.closed-review.4",
+        "examples": [
+          "sing",
+          "king",
+          "long",
+          "sink",
+          "pink",
+          "bank"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/tile",
+        "text": "After a short vowel, a word often ends in ck, ff, ll, ss, zz, tch or dge. These keep the vowel short.",
+        "voice": "v.discovery.closed-review.5",
+        "examples": [
+          "duck",
+          "puff",
+          "bell",
+          "miss",
+          "buzz",
+          "catch",
+          "badge",
+          "ball"
+        ],
+        "try": [
+          "fix"
+        ]
+      }
+    ],
+    "try": [
+      "chip",
+      "catch"
+    ],
+    "recap": "v.discovery.closed-review.recap"
+  },
+  "closed.endings": {
+    "panels": [
+      {
+        "art": "ui-sq/plank",
+        "text": "After p, k, s, sh or ch, the ending -ed says t.",
+        "voice": "v.discovery.closed-endings.1",
+        "examples": [
+          "jumped",
+          "packed",
+          "wished",
+          "helped",
+          "missed",
+          "kicked"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/plank",
+        "text": "After b, g, m, n or l, the ending -ed says d.",
+        "voice": "v.discovery.closed-endings.2",
+        "examples": [
+          "hugged",
+          "filled",
+          "planned",
+          "grinned",
+          "begged",
+          "spilled"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/plank",
+        "text": "After t or d, the ending -ed adds a whole new part: hunt-ed, land-ed.",
+        "voice": "v.discovery.closed-endings.3",
+        "examples": [
+          "hunted",
+          "landed",
+          "lifted",
+          "melted",
+          "rested",
+          "tested"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/tile",
+        "text": "The ending -s says s after p, t or k, and z after most other sounds.",
+        "voice": "v.discovery.closed-endings.4",
+        "examples": [
+          "cats",
+          "cups",
+          "maps",
+          "dogs",
+          "kids",
+          "pigs",
+          "hens",
+          "rugs"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/tile",
+        "text": "After s, x, sh or ch, the ending -es adds a part: wish-es, box-es.",
+        "voice": "v.discovery.closed-endings.5",
+        "examples": [
+          "wishes",
+          "boxes",
+          "benches",
+          "catches",
+          "misses",
+          "dishes"
+        ],
+        "try": []
+      }
+    ],
+    "try": [
+      "hunted",
+      "dishes"
+    ],
+    "recap": "v.discovery.closed-endings.recap"
+  },
+  "closed.compound": {
+    "panels": [
+      {
+        "art": "ui-sq/plank",
+        "text": "Two small words can join to make one big word. Sun and set make sunset.",
+        "voice": "v.discovery.closed-compound.1",
+        "examples": [
+          "sunset",
+          "backpack",
+          "bathtub",
+          "catfish"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/plank",
+        "text": "Read one small word, then the other, then say them together.",
+        "voice": "v.discovery.closed-compound.2",
+        "examples": [
+          "handbag",
+          "hilltop",
+          "laptop",
+          "desktop"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/clan-closed",
+        "text": "Each part is a {closed} syllable, so each vowel is short.",
+        "voice": "v.discovery.closed-compound.3",
+        "examples": [
+          "lipstick",
+          "nutshell",
+          "sandbox",
+          "upset"
+        ],
+        "try": [
+          "catnap"
+        ]
+      }
+    ],
+    "try": [
+      "sunset",
+      "laptop"
+    ],
+    "recap": "v.discovery.closed-compound.recap"
+  },
+  "closed.vccv-double": {
+    "panels": [
+      {
+        "art": "ui-sq/plank",
+        "text": "Look at the middle of the word. Two matching consonants sit between two vowels: rab-bit.",
+        "voice": "v.discovery.closed-vccv-double.1",
+        "examples": [
+          "rabbit",
+          "mitten",
+          "muffin",
+          "ribbon"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/plank",
+        "text": "Draw a line between the twin letters. Read the first part, then the second.",
+        "voice": "v.discovery.closed-vccv-double.2",
+        "examples": [
+          "tennis",
+          "sudden",
+          "happen",
+          "bottom"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/clan-closed",
+        "text": "The twin consonant closes the first part, so the vowel is short. The twins say one sound.",
+        "voice": "v.discovery.closed-vccv-double.3",
+        "examples": [
+          "attic",
+          "common",
+          "gossip",
+          "mammal"
+        ],
+        "try": [
+          "comment"
+        ]
+      }
+    ],
+    "try": [
+      "rabbit",
+      "muffin"
+    ],
+    "recap": "v.discovery.closed-vccv-double.recap"
+  },
+  "closed.vccv": {
+    "panels": [
+      {
+        "art": "ui-sq/plank",
+        "text": "Two different consonants sit in the middle: nap-kin. Split between them.",
+        "voice": "v.discovery.closed-vccv.1",
+        "examples": [
+          "napkin",
+          "picnic",
+          "basket",
+          "helmet"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/plank",
+        "text": "Cover the second part and read the first. Then read the second. Then blend.",
+        "voice": "v.discovery.closed-vccv.2",
+        "examples": [
+          "magnet",
+          "velvet",
+          "insect",
+          "plastic"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/clan-closed",
+        "text": "Both parts are {closed} syllables, so both vowels are short.",
+        "voice": "v.discovery.closed-vccv.3",
+        "examples": [
+          "trumpet",
+          "problem",
+          "public",
+          "dentist"
+        ],
+        "try": [
+          "sandal"
+        ]
+      }
+    ],
+    "try": [
+      "basket",
+      "insect"
+    ],
+    "recap": "v.discovery.closed-vccv.recap"
+  },
+  "closed.vcccv": {
+    "panels": [
+      {
+        "art": "ui-sq/plank",
+        "text": "Three consonants sit in the middle. Keep a blend together: hun-dred, os-trich.",
+        "voice": "v.discovery.closed-vcccv.1",
+        "examples": [
+          "hundred",
+          "ostrich",
+          "children",
+          "tantrum"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/plank",
+        "text": "No blend in the middle? Split after the second consonant: sand-wich, pump-kin.",
+        "voice": "v.discovery.closed-vcccv.2",
+        "examples": [
+          "sandwich",
+          "pumpkin",
+          "instant",
+          "complex"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/clan-closed",
+        "text": "Each part is a {closed} syllable, so each vowel is short.",
+        "voice": "v.discovery.closed-vcccv.3",
+        "examples": [
+          "district",
+          "contrast",
+          "construct",
+          "inspect"
+        ],
+        "try": [
+          "subtract"
+        ]
+      }
+    ],
+    "try": [
+      "hundred",
+      "sandwich"
+    ],
+    "recap": "v.discovery.closed-vcccv.recap"
+  },
+  "closed.three": {
+    "panels": [
+      {
+        "art": "ui-sq/plank",
+        "text": "Some words have three parts. Each vowel sound is the heart of a part: fan-tas-tic.",
+        "voice": "v.discovery.closed-three.1",
+        "examples": [
+          "fantastic",
+          "intellect",
+          "expected",
+          "inspecting"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/plank",
+        "text": "Divide the word in two places. Split the first gap, then split the next gap.",
+        "voice": "v.discovery.closed-three.2",
+        "examples": [
+          "intellect",
+          "fantastic",
+          "collected",
+          "expected"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/clan-closed",
+        "text": "All three parts are {closed} syllables, so every vowel is short.",
+        "voice": "v.discovery.closed-three.3",
+        "examples": [
+          "attending",
+          "commented",
+          "connected",
+          "sandwiches"
+        ],
+        "try": [
+          "backpacking"
+        ]
+      }
+    ],
+    "try": [
+      "fantastic",
+      "expected"
+    ],
+    "recap": "v.discovery.closed-three.recap"
+  },
+  "open.one": {
+    "panels": [
+      {
+        "art": "ui-sq/clan-open",
+        "text": "An {open} syllable ends in a vowel. Nothing closes the door, so the vowel says its name.",
+        "voice": "v.discovery.open-one.1",
+        "examples": [
+          "be",
+          "he",
+          "me",
+          "we",
+          "she"
+        ],
+        "try": []
+      },
+      {
+        "art": "mouth/long-o",
+        "text": "The o says its name too: go, no, so.",
+        "voice": "v.discovery.open-one.2",
+        "examples": [
+          "go",
+          "no",
+          "so",
+          "lo"
+        ],
+        "try": []
+      },
+      {
+        "art": "mouth/long-i",
+        "text": "The i says its name in hi. Pro and fro are open too.",
+        "voice": "v.discovery.open-one.3",
+        "examples": [
+          "hi",
+          "pro",
+          "fro",
+          "pros"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/clan-closed",
+        "text": "Compare a closed word and an open word. Closed: short vowel. Open: the vowel says its name.",
+        "voice": "v.discovery.open-one.4",
+        "examples": [
+          "he",
+          "hen",
+          "be",
+          "bed",
+          "no",
+          "not"
+        ],
+        "try": [
+          "so"
+        ]
+      }
+    ],
+    "try": [
+      "she",
+      "go"
+    ],
+    "recap": "v.discovery.open-one.recap"
+  },
+  "open.vcv": {
+    "panels": [
+      {
+        "art": "ui-sq/plank",
+        "text": "One consonant sits between two vowels: ro-bot. Try splitting before the consonant.",
+        "voice": "v.discovery.open-vcv.1",
+        "examples": [
+          "robot",
+          "music",
+          "hotel",
+          "pilot"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/clan-open",
+        "text": "The first part is {open}, so its vowel says its name: ro, mu, ho.",
+        "voice": "v.discovery.open-vcv.2",
+        "examples": [
+          "robot",
+          "music",
+          "motel",
+          "basic",
+          "final"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/clan-closed",
+        "text": "The second part is closed, so its vowel is short: bot, sic, tel.",
+        "voice": "v.discovery.open-vcv.3",
+        "examples": [
+          "bonus",
+          "focus",
+          "total",
+          "tulip",
+          "silent"
+        ],
+        "try": [
+          "moment"
+        ]
+      }
+    ],
+    "try": [
+      "robot",
+      "music"
+    ],
+    "recap": "v.discovery.open-vcv.recap"
+  },
+  "open.y": {
+    "panels": [
+      {
+        "art": "mouth/long-e",
+        "text": "At the end of a longer word, y says ē: ba-by, hap-py, fun-ny.",
+        "voice": "v.discovery.open-y.1",
+        "examples": [
+          "baby",
+          "happy",
+          "funny",
+          "puppy",
+          "candy"
+        ],
+        "try": []
+      },
+      {
+        "art": "mouth/long-i",
+        "text": "At the end of a short word, y says ī: my, fly, try, sky.",
+        "voice": "v.discovery.open-y.2",
+        "examples": [
+          "my",
+          "by",
+          "fly",
+          "cry",
+          "sky",
+          "try",
+          "why"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/plank",
+        "text": "In a longer word, the y is a part of its own: ba-by, ti-ny, na-vy.",
+        "voice": "v.discovery.open-y.3",
+        "examples": [
+          "tiny",
+          "navy",
+          "lady",
+          "pony",
+          "lazy"
+        ],
+        "try": [
+          "tidy"
+        ]
+      }
+    ],
+    "try": [
+      "baby",
+      "fly"
+    ],
+    "recap": "v.discovery.open-y.recap"
+  },
+  "open.flex": {
+    "panels": [
+      {
+        "art": "ui-sq/plank",
+        "text": "Some words can be split two ways. Cabin: ca-bin or cab-in. Try one, then the other.",
+        "voice": "v.discovery.open-flex.1",
+        "examples": [
+          "cabin",
+          "camel",
+          "lemon",
+          "melon",
+          "robin"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/plank-wobble",
+        "text": "Try the open split first. If it is not a word you know, flip to the closed split.",
+        "voice": "v.discovery.open-flex.2",
+        "examples": [
+          "lemon",
+          "level",
+          "comet",
+          "limit",
+          "visit"
+        ],
+        "try": []
+      },
+      {
+        "art": "mouth/schwa",
+        "text": "A part you say softly may sound like uh: wag-on, lem-on, pet-al.",
+        "voice": "v.discovery.open-flex.3",
+        "examples": [
+          "wagon",
+          "lemon",
+          "petal",
+          "travel",
+          "talent"
+        ],
+        "try": [
+          "metal"
+        ]
+      }
+    ],
+    "try": [
+      "cabin",
+      "lemon"
+    ],
+    "recap": "v.discovery.open-flex.recap"
+  },
+  "vce.one": {
+    "panels": [
+      {
+        "art": "ui-sq/clan-vce",
+        "text": "A {vce} syllable has a vowel, a consonant and a silent e. The e is silent, and the vowel says its name.",
+        "voice": "v.discovery.vce-one.1",
+        "examples": [
+          "cake",
+          "bike",
+          "home",
+          "cube",
+          "kite"
+        ],
+        "try": []
+      },
+      {
+        "art": "mouth/long-a",
+        "text": "a-e says ā: cake, game, lake. e-e says ē: these.",
+        "voice": "v.discovery.vce-one.2",
+        "examples": [
+          "cake",
+          "game",
+          "lake",
+          "name",
+          "made",
+          "these",
+          "theme"
+        ],
+        "try": []
+      },
+      {
+        "art": "mouth/long-i",
+        "text": "i-e says ī: bike, five, line, smile.",
+        "voice": "v.discovery.vce-one.3",
+        "examples": [
+          "bike",
+          "five",
+          "line",
+          "smile",
+          "ride"
+        ],
+        "try": []
+      },
+      {
+        "art": "mouth/long-o",
+        "text": "o-e says ō: home, bone, note, stone.",
+        "voice": "v.discovery.vce-one.4",
+        "examples": [
+          "home",
+          "bone",
+          "note",
+          "stone",
+          "hope"
+        ],
+        "try": []
+      },
+      {
+        "art": "mouth/long-u",
+        "text": "u-e says ū as in cube and cute. It can also say oo as in rule and flute.",
+        "voice": "v.discovery.vce-one.5",
+        "examples": [
+          "cube",
+          "cute",
+          "tube",
+          "rule",
+          "flute"
+        ],
+        "try": [
+          "tune"
+        ]
+      }
+    ],
+    "try": [
+      "bike",
+      "tube"
+    ],
+    "recap": "v.discovery.vce-one.recap"
+  },
+  "vce.soft": {
+    "panels": [
+      {
+        "art": "ui-sq/tile",
+        "text": "C before e, i or y says s: cell, city, nice. This is soft c.",
+        "voice": "v.discovery.vce-soft.1",
+        "examples": [
+          "cell",
+          "city",
+          "cent",
+          "face",
+          "nice",
+          "ice"
+        ],
+        "try": []
+      },
+      {
+        "art": "mouth/j",
+        "text": "G before e, i or y can say j: gem, page, huge. This is soft g.",
+        "voice": "v.discovery.vce-soft.2",
+        "examples": [
+          "gem",
+          "page",
+          "cage",
+          "huge",
+          "stage",
+          "gently"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/tile",
+        "text": "At the end of a word, ce and ge keep a silent e: dance, fence, change, range.",
+        "voice": "v.discovery.vce-soft.3",
+        "examples": [
+          "dance",
+          "fence",
+          "change",
+          "range",
+          "since"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/tile",
+        "text": "Before a, o or u, c says k and g says g: cat, cup, gap, gum.",
+        "voice": "v.discovery.vce-soft.4",
+        "examples": [
+          "cat",
+          "cup",
+          "cap",
+          "gap",
+          "gum",
+          "get"
+        ],
+        "try": [
+          "place"
+        ]
+      }
+    ],
+    "try": [
+      "face",
+      "page"
+    ],
+    "recap": "v.discovery.vce-soft.recap"
+  },
+  "vce.two": {
+    "panels": [
+      {
+        "art": "ui-sq/clan-vce",
+        "text": "A {vce} syllable can end a long word: in-vite, un-safe, ex-cuse. It follows the same rule.",
+        "voice": "v.discovery.vce-two.1",
+        "examples": [
+          "invite",
+          "unsafe",
+          "include",
+          "excuse",
+          "homemade"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/plank",
+        "text": "Divide the word first. Then find the silent e at the end of the last part.",
+        "voice": "v.discovery.vce-two.2",
+        "examples": [
+          "compete",
+          "confuse",
+          "explode",
+          "reptile"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/tile",
+        "text": "In kn the k is silent: knife, knot. In wr the w is silent: write, wrap.",
+        "voice": "v.discovery.vce-two.3",
+        "examples": [
+          "knife",
+          "knot",
+          "knit",
+          "write",
+          "wrap",
+          "wrist"
+        ],
+        "try": [
+          "wreck"
+        ]
+      }
+    ],
+    "try": [
+      "invite",
+      "knot"
+    ],
+    "recap": "v.discovery.vce-two.recap"
+  },
+  "vce.mix": {
+    "panels": [
+      {
+        "art": "ui-sq/plank",
+        "text": "A long word can have three parts. Divide two times: cel-e-brate.",
+        "voice": "v.discovery.vce-mix.1",
+        "examples": [
+          "celebrate",
+          "candidate",
+          "lemonade",
+          "dynamite"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/clan-vce",
+        "text": "Look for the {vce} syllable at the end, then work backward: nav-i-gate.",
+        "voice": "v.discovery.vce-mix.2",
+        "examples": [
+          "navigate",
+          "relocate",
+          "motivate",
+          "escalate"
+        ],
+        "try": []
+      },
+      {
+        "art": "mouth/schwa",
+        "text": "Say the middle part softly. The loud parts are the first and the last.",
+        "voice": "v.discovery.vce-mix.3",
+        "examples": [
+          "dominate",
+          "dedicate",
+          "indicate",
+          "irritate"
+        ],
+        "try": [
+          "illustrate"
+        ]
+      }
+    ],
+    "try": [
+      "celebrate",
+      "navigate"
+    ],
+    "recap": "v.discovery.vce-mix.recap"
+  },
+  "team.ai-ay": {
+    "panels": [
+      {
+        "art": "ui-sq/clan-team",
+        "text": "A {team} syllable has two vowel letters that work together. In rain, a and i say ā.",
+        "voice": "v.discovery.team-ai-ay.1",
+        "examples": [
+          "rain",
+          "train",
+          "paint",
+          "mail"
+        ],
+        "try": []
+      },
+      {
+        "art": "mouth/long-a",
+        "text": "Ai goes in the middle of a word. Ay goes at the end. Both say ā.",
+        "voice": "v.discovery.team-ai-ay.2",
+        "examples": [
+          "rain",
+          "day",
+          "play",
+          "way",
+          "stay",
+          "tray"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/plank",
+        "text": "Teams stay together when you divide: rail-way, ex-plain, dis-play.",
+        "voice": "v.discovery.team-ai-ay.3",
+        "examples": [
+          "railway",
+          "explain",
+          "display",
+          "remain",
+          "maintain"
+        ],
+        "try": [
+          "relay"
+        ]
+      }
+    ],
+    "try": [
+      "paint",
+      "play"
+    ],
+    "recap": "v.discovery.team-ai-ay.recap"
+  },
+  "team.ee-ea": {
+    "panels": [
+      {
+        "art": "mouth/long-e",
+        "text": "Ee says ē: tree, feet, green.",
+        "voice": "v.discovery.team-ee-ea.1",
+        "examples": [
+          "tree",
+          "feet",
+          "green",
+          "sleep",
+          "seed",
+          "queen"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/clan-team",
+        "text": "Ea often says ē too: sea, team, leaf, beach.",
+        "voice": "v.discovery.team-ee-ea.2",
+        "examples": [
+          "sea",
+          "team",
+          "leaf",
+          "beach",
+          "dream",
+          "eat"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/tile",
+        "text": "Two spellings, one sound. Look at the spelling to know the word: see and sea, meet and meat.",
+        "voice": "v.discovery.team-ee-ea.3",
+        "examples": [
+          "see",
+          "sea",
+          "meet",
+          "meat",
+          "week",
+          "weak"
+        ],
+        "try": [
+          "cream"
+        ]
+      }
+    ],
+    "try": [
+      "green",
+      "beach"
+    ],
+    "recap": "v.discovery.team-ee-ea.recap"
+  },
+  "team.oa-igh": {
+    "panels": [
+      {
+        "art": "mouth/long-o",
+        "text": "Oa says ō, and so does oe at the end of a word: boat, coat, toe.",
+        "voice": "v.discovery.team-oa-igh.1",
+        "examples": [
+          "boat",
+          "coat",
+          "goat",
+          "road",
+          "toast",
+          "toe"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/tile",
+        "text": "Igh says ī. The gh is silent: light, right, high, bright.",
+        "voice": "v.discovery.team-oa-igh.2",
+        "examples": [
+          "light",
+          "right",
+          "high",
+          "bright",
+          "fight",
+          "sigh"
+        ],
+        "try": []
+      },
+      {
+        "art": "mouth/long-i",
+        "text": "Ie at the end of a word says ī: pie, tie, lie.",
+        "voice": "v.discovery.team-oa-igh.3",
+        "examples": [
+          "pie",
+          "tie",
+          "lie"
+        ],
+        "try": [
+          "float"
+        ]
+      }
+    ],
+    "try": [
+      "boat",
+      "light"
+    ],
+    "recap": "v.discovery.team-oa-igh.recap"
+  },
+  "team.oo-ew": {
+    "panels": [
+      {
+        "art": "mouth/oo-moon",
+        "text": "Oo, ew and ue can say oo as in moon: moon, blew, blue.",
+        "voice": "v.discovery.team-oo-ew.1",
+        "examples": [
+          "moon",
+          "zoo",
+          "food",
+          "blue",
+          "new",
+          "true"
+        ],
+        "try": []
+      },
+      {
+        "art": "mouth/oo-book",
+        "text": "Oo can also say the short sound in book: book, look, good, foot.",
+        "voice": "v.discovery.team-oo-ew.2",
+        "examples": [
+          "book",
+          "look",
+          "good",
+          "foot",
+          "wood",
+          "hook"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/tile",
+        "text": "Try one sound. If it is not a word you know, try the other: room, cook, boot, took.",
+        "voice": "v.discovery.team-oo-ew.3",
+        "examples": [
+          "room",
+          "cook",
+          "boot",
+          "took"
+        ],
+        "try": [
+          "broom"
+        ]
+      }
+    ],
+    "try": [
+      "moon",
+      "book"
+    ],
+    "recap": "v.discovery.team-oo-ew.recap"
+  },
+  "team.au-oi": {
+    "panels": [
+      {
+        "art": "mouth/aw",
+        "text": "Au and aw both say aw. Au sits inside a word, and aw ends a word: sauce, saw.",
+        "voice": "v.discovery.team-au-oi.1",
+        "examples": [
+          "cause",
+          "sauce",
+          "haul",
+          "saw",
+          "draw",
+          "paw",
+          "lawn"
+        ],
+        "try": []
+      },
+      {
+        "art": "mouth/oy",
+        "text": "Oi and oy both say oy. Oi sits inside a word, and oy ends a word: coin, boy.",
+        "voice": "v.discovery.team-au-oi.2",
+        "examples": [
+          "coin",
+          "oil",
+          "boil",
+          "boy",
+          "toy",
+          "joy"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/plank",
+        "text": "Aw and oy often end a part of a long word: aw-ful, en-joy, an-noy.",
+        "voice": "v.discovery.team-au-oi.3",
+        "examples": [
+          "awful",
+          "auto",
+          "enjoy",
+          "annoy",
+          "noisy"
+        ],
+        "try": [
+          "voice"
+        ]
+      }
+    ],
+    "try": [
+      "coin",
+      "draw"
+    ],
+    "recap": "v.discovery.team-au-oi.recap"
+  },
+  "team.ou-ow": {
+    "panels": [
+      {
+        "art": "mouth/ow",
+        "text": "Ou says ow, as in out: cloud, house, mouth, found.",
+        "voice": "v.discovery.team-ou-ow.1",
+        "examples": [
+          "out",
+          "cloud",
+          "house",
+          "mouth",
+          "found",
+          "loud"
+        ],
+        "try": []
+      },
+      {
+        "art": "mouth/ow",
+        "text": "Ow can say ow too: cow, down, town, brown, owl.",
+        "voice": "v.discovery.team-ou-ow.2",
+        "examples": [
+          "cow",
+          "down",
+          "town",
+          "brown",
+          "owl",
+          "how"
+        ],
+        "try": []
+      },
+      {
+        "art": "mouth/long-o",
+        "text": "Ow can also say ō: snow, grow, slow, yellow.",
+        "voice": "v.discovery.team-ou-ow.3",
+        "examples": [
+          "snow",
+          "grow",
+          "slow",
+          "yellow",
+          "show",
+          "blow"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/plank-wobble",
+        "text": "Ow has two sounds. Try ow first. If it is not a word you know, flip to ō.",
+        "voice": "v.discovery.team-ou-ow.4",
+        "examples": [
+          "cow",
+          "crow",
+          "brown",
+          "blown",
+          "down",
+          "grown",
+          "bow",
+          "row"
+        ],
+        "try": [
+          "throw"
+        ]
+      }
+    ],
+    "try": [
+      "town",
+      "grow"
+    ],
+    "recap": "v.discovery.team-ou-ow.recap"
+  },
+  "team.mix": {
+    "panels": [
+      {
+        "art": "mouth/e",
+        "text": "Ea can say short ĕ: head, bread, breath, thread.",
+        "voice": "v.discovery.team-mix.1",
+        "examples": [
+          "head",
+          "bread",
+          "breath",
+          "thread",
+          "spread",
+          "health"
+        ],
+        "try": []
+      },
+      {
+        "art": "mouth/f",
+        "text": "Ph says f: phone, photo, graph, dolphin.",
+        "voice": "v.discovery.team-mix.2",
+        "examples": [
+          "phone",
+          "photo",
+          "graph",
+          "dolphin",
+          "trophy"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/plank",
+        "text": "Two vowels side by side may belong to different parts: li-on, gi-ant, du-et.",
+        "voice": "v.discovery.team-mix.3",
+        "examples": [
+          "lion",
+          "giant",
+          "duet",
+          "poem",
+          "trial",
+          "create"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/tile",
+        "text": "Try the team sound first. If it is not a word, try the other sound or split between the vowels.",
+        "voice": "v.discovery.team-mix.4",
+        "examples": [
+          "meant",
+          "instead",
+          "sweat",
+          "loyal",
+          "royal"
+        ],
+        "try": [
+          "bread"
+        ]
+      }
+    ],
+    "try": [
+      "head",
+      "phone"
+    ],
+    "recap": "v.discovery.team-mix.recap"
+  },
+  "r.ar-or": {
+    "panels": [
+      {
+        "art": "ui-sq/clan-r",
+        "text": "An {r} syllable has a vowel followed by r. The r changes the vowel sound.",
+        "voice": "v.discovery.r-ar-or.1",
+        "examples": [
+          "car",
+          "star",
+          "farm",
+          "park",
+          "dark"
+        ],
+        "try": []
+      },
+      {
+        "art": "mouth/ar",
+        "text": "Ar says ar, as in car. Open your mouth wide.",
+        "voice": "v.discovery.r-ar-or.2",
+        "examples": [
+          "car",
+          "jar",
+          "barn",
+          "shark",
+          "garden",
+          "market"
+        ],
+        "try": []
+      },
+      {
+        "art": "mouth/or",
+        "text": "Or says or, as in fork. Round your lips.",
+        "voice": "v.discovery.r-ar-or.3",
+        "examples": [
+          "fork",
+          "corn",
+          "horn",
+          "storm",
+          "north",
+          "morning"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/plank",
+        "text": "In long words, the vowel and r stay together: gar-den, tar-get, for-est.",
+        "voice": "v.discovery.r-ar-or.4",
+        "examples": [
+          "garden",
+          "target",
+          "market",
+          "forest",
+          "harbor"
+        ],
+        "try": [
+          "party"
+        ]
+      }
+    ],
+    "try": [
+      "shark",
+      "fork"
+    ],
+    "recap": "v.discovery.r-ar-or.recap"
+  },
+  "r.er-ir-ur": {
+    "panels": [
+      {
+        "art": "mouth/er",
+        "text": "Er, ir and ur all say the same sound, er: fern, bird, turn.",
+        "voice": "v.discovery.r-er-ir-ur.1",
+        "examples": [
+          "fern",
+          "bird",
+          "turn",
+          "herd",
+          "girl",
+          "burn"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/tile",
+        "text": "Three spellings, one sound. Look at the spelling to know the word.",
+        "voice": "v.discovery.r-er-ir-ur.2",
+        "examples": [
+          "first",
+          "shirt",
+          "third",
+          "hurt",
+          "surf",
+          "burst",
+          "term",
+          "clerk"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/clan-r",
+        "text": "Er is the most common spelling at the end of a word: after, sister, winter.",
+        "voice": "v.discovery.r-er-ir-ur.3",
+        "examples": [
+          "after",
+          "sister",
+          "winter",
+          "number",
+          "paper",
+          "spider"
+        ],
+        "try": [
+          "dirty"
+        ]
+      }
+    ],
+    "try": [
+      "bird",
+      "after"
+    ],
+    "recap": "v.discovery.r-er-ir-ur.recap"
+  },
+  "r.mix": {
+    "panels": [
+      {
+        "art": "ui-sq/clan-r",
+        "text": "Long words can have an {r} part and others. Divide first: car-pen-ter.",
+        "voice": "v.discovery.r-mix.1",
+        "examples": [
+          "carpenter",
+          "computer",
+          "performer",
+          "thunderstorm",
+          "superstar"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/plank",
+        "text": "Keep each vowel and r together. Do not split them: gar-den-ing, mar-ket-ing.",
+        "voice": "v.discovery.r-mix.2",
+        "examples": [
+          "gardening",
+          "marketing",
+          "reporting",
+          "performing",
+          "darkening"
+        ],
+        "try": []
+      },
+      {
+        "art": "mouth/er",
+        "text": "The last part is often quiet: car-pen-ter, yes-ter-day. Say it softly.",
+        "voice": "v.discovery.r-mix.3",
+        "examples": [
+          "carpenter",
+          "november",
+          "september",
+          "yesterday",
+          "computer"
+        ],
+        "try": [
+          "thundering"
+        ]
+      }
+    ],
+    "try": [
+      "gardening",
+      "yesterday"
+    ],
+    "recap": "v.discovery.r-mix.recap"
+  },
+  "le.one": {
+    "panels": [
+      {
+        "art": "ui-sq/clan-le",
+        "text": "A {le} syllable is a consonant plus le at the end of a word: ta-ble.",
+        "voice": "v.discovery.le-one.1",
+        "examples": [
+          "table",
+          "cable",
+          "maple",
+          "title",
+          "eagle"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/plank",
+        "text": "Count back three letters from the end. That last part is a consonant plus le: can-dle, pur-ple.",
+        "voice": "v.discovery.le-one.2",
+        "examples": [
+          "candle",
+          "purple",
+          "handle",
+          "bundle",
+          "simple",
+          "sample"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/clan-open",
+        "text": "If the part before is open, its vowel says its name. If it is closed, it is short: ta-ble, can-dle.",
+        "voice": "v.discovery.le-one.3",
+        "examples": [
+          "table",
+          "maple",
+          "title",
+          "candle",
+          "humble",
+          "temple"
+        ],
+        "try": [
+          "noble"
+        ]
+      }
+    ],
+    "try": [
+      "table",
+      "candle"
+    ],
+    "recap": "v.discovery.le-one.recap"
+  },
+  "le.double": {
+    "panels": [
+      {
+        "art": "ui-sq/plank",
+        "text": "A double consonant before le: lit-tle. Split between the twins.",
+        "voice": "v.discovery.le-double.1",
+        "examples": [
+          "little",
+          "bubble",
+          "puddle",
+          "apple",
+          "bottle"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/clan-closed",
+        "text": "The twin letters close the first part, so its vowel is short: bub, pud, lit.",
+        "voice": "v.discovery.le-double.2",
+        "examples": [
+          "middle",
+          "giggle",
+          "puzzle",
+          "kettle",
+          "cuddle",
+          "wiggle"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/tile",
+        "text": "Compare: maple and apple. One consonant, the vowel says its name. Twins, the vowel is short.",
+        "voice": "v.discovery.le-double.3",
+        "examples": [
+          "maple",
+          "apple",
+          "title",
+          "little",
+          "table",
+          "bottle"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/tile",
+        "text": "Ck counts as a double: buckle, tickle, pickle.",
+        "voice": "v.discovery.le-double.4",
+        "examples": [
+          "buckle",
+          "tickle",
+          "pickle",
+          "freckle",
+          "knuckle"
+        ],
+        "try": [
+          "tackle"
+        ]
+      }
+    ],
+    "try": [
+      "puddle",
+      "buckle"
+    ],
+    "recap": "v.discovery.le-double.recap"
+  },
+  "le.mix": {
+    "panels": [
+      {
+        "art": "ui-sq/plank",
+        "text": "Now you know six kinds of syllables: {closed}, {open}, {vce}, {team}, {r} and {le}.",
+        "voice": "v.discovery.le-mix.1",
+        "examples": [
+          "possible",
+          "terrible",
+          "article",
+          "principle",
+          "portable"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/clan-le",
+        "text": "Spec-ta-cle has a {closed} part, an {open} part and a {le} part.",
+        "voice": "v.discovery.le-mix.2",
+        "examples": [
+          "spectacle",
+          "particle",
+          "tentacle",
+          "obstacle"
+        ],
+        "try": []
+      },
+      {
+        "art": "ui-sq/plank-wobble",
+        "text": "Read it like a bridge: divide, name each part, read each part, then blend. If it is not a word, flip a vowel and try again.",
+        "voice": "v.discovery.le-mix.3",
+        "examples": [
+          "visible",
+          "edible",
+          "multiple",
+          "gullible",
+          "sensible"
+        ],
+        "try": [
+          "icicle"
+        ]
+      }
+    ],
+    "try": [
+      "possible",
+      "spectacle"
+    ],
+    "recap": "v.discovery.le-mix.recap"
+  }
+}

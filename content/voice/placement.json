@@ -1,0 +1,7 @@
+{
+  "v.placement.sound": { "text": "Look at the letters on the card. Say the sound they make.", "note": "calm, clear" },
+  "v.placement.word": { "text": "Read this word out loud. Take your time.", "note": "calm, unhurried" },
+  "v.placement.thanks": { "text": "Thanks. Next one.", "note": "warm, even; the same every time" },
+  "v.placement.paper": { "text": "Now your grown-up will say some words. Write each one on your paper.", "note": "calm, clear" },
+  "v.placement.done": { "text": "Thank you, apprentice. That is all for now.", "note": "warm" }
+}

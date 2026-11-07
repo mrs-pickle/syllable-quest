@@ -1,0 +1,8 @@
+[
+  {"w": "great", "segs": [["gr", "g r"], ["ea", "A"], ["t", "t"]], "stage": "le.one", "drill": true, "tricky": [1], "heart": "ea says /ā/"},
+  {"w": "break", "segs": [["br", "b r"], ["ea", "A"], ["k", "k"]], "stage": "le.one", "drill": true, "tricky": [1], "heart": "ea says /ā/"},
+  {"w": "special", "segs": [["s", "s"], ["p", "p"], ["e", "e"], ["ci", "sh"], ["a", "@"], ["l", "l"]], "stage": "le.double", "drill": true, "tricky": [3], "heart": "ci says /sh/"},
+  {"w": "minute", "segs": [["m", "m"], ["i", "i"], ["n", "n"], ["u", "i"], ["t", "t"], ["e", ""]], "stage": "le.double", "drill": true, "tricky": [3, 5], "heart": "u says /ĭ/, the e is silent"},
+  {"w": "although", "segs": [["al", "aw"], ["th", "dh"], ["ough", "O"]], "stage": "le.mix", "drill": true, "tricky": [2], "heart": "ough says /ō/"},
+  {"w": "thought", "segs": [["th", "th"], ["ough", "aw"], ["t", "t"]], "stage": "le.mix", "drill": true, "tricky": [1], "heart": "ough says /aw/"}
+]

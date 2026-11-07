@@ -1,0 +1,8 @@
+{
+  "v.storypage.preview": { "text": "First, read each word to your grown-up. Take your time.", "note": "calm, unhurried" },
+  "v.storypage.echo": { "text": "I will read a sentence, and then you read it back to me.", "note": "calm, warm" },
+  "v.storypage.read": { "text": "Now read the story page out loud. Look closely at each part of every long word.", "note": "calm, encouraging" },
+  "v.storypage.restoring": { "text": "Look! The torn page is coming back together.", "note": "warm, a little wondering" },
+  "v.storypage.pass": { "text": "The page is whole again, apprentice. You read it with care. Well done.", "note": "warm, proud" },
+  "v.storypage.growth": { "text": "A mistake means a pattern we haven't practiced enough yet. This page will be ready next time.", "note": "calm, kind" }
+}

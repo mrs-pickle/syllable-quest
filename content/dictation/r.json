@@ -1,0 +1,66 @@
+[
+  {
+    "stage": "r.ar-or",
+    "words": [
+      { "w": "farm", "cue": "Start with f, not ph" },
+      { "w": "horn" },
+      { "w": "storm", "cue": "Start with s, then t" },
+      { "w": "park" },
+      { "w": "cart" },
+      { "w": "barn" },
+      { "w": "morning" },
+      { "w": "dark" },
+      { "w": "shark" },
+      { "w": "north", "cue": "Start with n, not kn" }
+    ],
+    "sentences": [
+      { "id": "r.ar-or.1", "text": "The farm has a red barn.", "targets": ["farm", "barn"] },
+      { "id": "r.ar-or.2", "text": "The horn blew in the morning.", "targets": ["horn", "morning"] },
+      { "id": "r.ar-or.3", "text": "A storm came to the park in the morning.", "targets": ["storm", "park", "morning"] },
+      { "id": "r.ar-or.4", "text": "Put the cart in the barn.", "targets": ["cart", "barn"] },
+      { "id": "r.ar-or.5", "text": "The dark forest has a short path.", "targets": ["dark", "forest", "short"] }
+    ]
+  },
+  {
+    "stage": "r.er-ir-ur",
+    "words": [
+      { "w": "bird", "cue": "Use the i-r spelling" },
+      { "w": "first", "cue": "Use the i-r spelling" },
+      { "w": "girl", "cue": "Use the i-r spelling" },
+      { "w": "shirt", "cue": "Use the i-r spelling" },
+      { "w": "sister", "cue": "Use the e-r spelling" },
+      { "w": "letter", "cue": "Use the e-r spelling" },
+      { "w": "winter", "cue": "Use the e-r spelling" },
+      { "w": "turn", "cue": "Use the u-r spelling" },
+      { "w": "burn", "cue": "Use the u-r spelling" },
+      { "w": "curl", "cue": "Use the u-r spelling" }
+    ],
+    "sentences": [
+      { "id": "r.er-ir-ur.1", "text": "The bird is on the fern.", "targets": ["bird", "fern"] },
+      { "id": "r.er-ir-ur.2", "text": "Her sister can turn first.", "targets": ["sister", "turn", "first"] },
+      { "id": "r.er-ir-ur.3", "text": "The girl has a shirt in the summer.", "targets": ["girl", "shirt", "summer"] },
+      { "id": "r.er-ir-ur.4", "text": "The thunder came after the storm.", "targets": ["thunder", "after"] },
+      { "id": "r.er-ir-ur.5", "text": "Curl up under the big tree.", "targets": ["curl", "under"] }
+    ]
+  },
+  {
+    "stage": "r.mix",
+    "words": [
+      { "w": "computer", "cue": "Middle u, end e-r" },
+      { "w": "carpenter", "cue": "Middle e, end e-r" },
+      { "w": "september", "cue": "Start with s, then e, e, and e-r" },
+      { "w": "november", "cue": "Start with n, then o, e, and e-r" },
+      { "w": "yesterday", "cue": "Use s, not c, and e-r at the end" },
+      { "w": "internet", "cue": "Middle e-r, last e" },
+      { "w": "performer", "cue": "Start with f, end e-r" },
+      { "w": "perfectly", "cue": "Start with f, end l-y" },
+      { "w": "bartender", "cue": "Middle e, end e-r" },
+      { "w": "thunderstorm", "cue": "Middle u, then e-r, then storm" }
+    ],
+    "sentences": [
+      { "id": "r.mix.1", "text": "Yesterday the computer broke in September.", "targets": ["yesterday", "computer", "september"] },
+      { "id": "r.mix.2", "text": "The carpenter fixed the fence in November.", "targets": ["carpenter", "november"] },
+      { "id": "r.mix.3", "text": "The performer was perfectly on time.", "targets": ["performer", "perfectly"] }
+    ]
+  }
+]

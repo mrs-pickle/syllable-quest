@@ -1,0 +1,898 @@
+{
+  "closed.review": {
+    "soundcheck": [
+      { "text": "Does the child say the short vowel sound before the rest of the word?" },
+      { "text": "Did the child hear the sound at the end, or only the start?" },
+      { "text": "Which card made the child stop and think?" }
+    ],
+    "bridge": [
+      { "text": "Look at the vowel. Is the door open or shut?", "classroom": "Look at the vowel. Is it short or long?" },
+      { "text": "Which letters sit between the two vowels?" },
+      { "text": "Where could the split go so each part has one vowel?" }
+    ],
+    "clansort": [
+      { "text": "Which vowel sound is in this plank?" },
+      { "text": "Does this plank have a vowel shut in by a consonant, like a Shut Door?", "classroom": "Does this plank have a vowel shut in by a consonant, like a closed syllable?" },
+      { "text": "Which banner fits a plank that ends in a consonant?" }
+    ],
+    "trickster": [
+      { "text": "Which letter in this word does not say its usual sound?" },
+      { "text": "Can the child read the whole word without the tricky part first?" },
+      { "text": "Which part of the word is the tricky part?" }
+    ],
+    "wordbook": [
+      { "text": "Did the child say each sound before writing?" },
+      { "text": "Which sound did the child write first?" },
+      { "text": "Did the child check the word on the page after writing it?" }
+    ],
+    "storypage": [
+      { "text": "Did the child read the focus word before the sentence?" },
+      { "text": "Which word on the page made the child stop?" },
+      { "text": "Did the child use the sounds to check a word they were unsure of?" }
+    ]
+  },
+  "closed.endings": {
+    "soundcheck": [
+      { "text": "Does the child hear the ending sound, like the s in cats?" },
+      { "text": "Which card makes the ending sound, and does the child say it?" },
+      { "text": "Can the child hear the extra sound at the end of jumped?" }
+    ],
+    "bridge": [
+      { "text": "Is the ending on its own part, or stuck to the base word?" },
+      { "text": "Does the ending add a sound to the word?" },
+      { "text": "Where should the split go before the ending?" }
+    ],
+    "clansort": [
+      { "text": "Which part of this plank is the ending?" },
+      { "text": "Does this plank hold a whole word, or only the base?" },
+      { "text": "Which vowel sound is in the base of this plank?" }
+    ],
+    "trickster": [
+      { "text": "Which letters make the ending sound?" },
+      { "text": "Can the child find the base word inside this word?" },
+      { "text": "Did the child read the base word before adding the ending?" }
+    ],
+    "wordbook": [
+      { "text": "Did the child write the ending after the base word?" },
+      { "text": "Did the child listen for the ending sound before writing?" },
+      { "text": "Which ending did the child write?" }
+    ],
+    "storypage": [
+      { "text": "Did the child read the base word, then add the ending?" },
+      { "text": "Which word on the page has an ending?" },
+      { "text": "Did the child stop at the ending or go past it?" }
+    ]
+  },
+  "closed.compound": {
+    "soundcheck": [
+      { "text": "Can the child hear the two small words in this card?" },
+      { "text": "Does the child blend the first word before the second?" },
+      { "text": "Which sound comes first in this blend?" }
+    ],
+    "bridge": [
+      { "text": "Can you find a small word at the start of this word?" },
+      { "text": "Where does the first small word stop?" },
+      { "text": "Does the child know both parts as real words?" }
+    ],
+    "clansort": [
+      { "text": "Which small word is in this plank?" },
+      { "text": "Is this plank the first part or the second part?" },
+      { "text": "Which vowel sound is in this small word?" }
+    ],
+    "trickster": [
+      { "text": "Does the child see two small words inside this long word?" },
+      { "text": "Which half of the word is the tricky part?" },
+      { "text": "Can the child read the first small word on its own?" }
+    ],
+    "wordbook": [
+      { "text": "Did the child write the first small word, then the second?" },
+      { "text": "Did the child say each small word before writing?" },
+      { "text": "Did the child leave out a letter between the two?" }
+    ],
+    "storypage": [
+      { "text": "Did the child spot the two small words inside the long word?" },
+      { "text": "Did the child read each small word, then the whole word?" },
+      { "text": "Which compound word on the page did the child read last?" }
+    ]
+  },
+  "closed.vccv-double": {
+    "soundcheck": [
+      { "text": "Can the child hear the two same letters as one sound?" },
+      { "text": "Does the child hear the short vowel before the twin letters?" },
+      { "text": "Which card has a twin consonant in it?" }
+    ],
+    "bridge": [
+      { "text": "Are the two middle letters the same?" },
+      { "text": "Where does the split fall between the twins?" },
+      { "text": "Does each part have one short vowel?" }
+    ],
+    "clansort": [
+      { "text": "Does this plank end with a twin consonant?" },
+      { "text": "Is the vowel in this plank short?" },
+      { "text": "Which vowel sound does this plank make?" }
+    ],
+    "trickster": [
+      { "text": "Which letters in this word are the twins?" },
+      { "text": "Does the child see the twins in the middle?" },
+      { "text": "Can the child read the first part before the second?" }
+    ],
+    "wordbook": [
+      { "text": "Did the child write both letters of the twins?" },
+      { "text": "Did the child hear just one sound from the twins?" },
+      { "text": "Did the child say the short vowel before writing?" }
+    ],
+    "storypage": [
+      { "text": "Did the child stop at the twins before reading the next part?" },
+      { "text": "Which word on the page has twin letters?" },
+      { "text": "Did the child read the first part with a short vowel?" }
+    ]
+  },
+  "closed.vccv": {
+    "soundcheck": [
+      { "text": "Can the child hear two different consonants in the middle?" },
+      { "text": "Which card has two consonants between the vowels?" },
+      { "text": "Does the child say the short vowel before the consonants?" }
+    ],
+    "bridge": [
+      { "text": "Are the two middle letters different from each other?" },
+      { "text": "Where does the split fall between the two consonants?" },
+      { "text": "Does each part have one vowel sound?" }
+    ],
+    "clansort": [
+      { "text": "Which plank ends with a consonant from the middle?" },
+      { "text": "Is the vowel in this plank short?" },
+      { "text": "Which consonant closes this plank?" }
+    ],
+    "trickster": [
+      { "text": "Which letters sit between the two vowels?" },
+      { "text": "Can the child read the first part on its own?" },
+      { "text": "Which letter in this word says a different sound here?" }
+    ],
+    "wordbook": [
+      { "text": "Did the child write each consonant in the middle?" },
+      { "text": "Did the child say the first part before writing the second?" },
+      { "text": "Did the child listen for both middle sounds?" }
+    ],
+    "storypage": [
+      { "text": "Did the child split the word before reading it?" },
+      { "text": "Which word on the page has two middle consonants?" },
+      { "text": "Did the child read both parts with a short vowel?" }
+    ]
+  },
+  "closed.vcccv": {
+    "soundcheck": [
+      { "text": "Can the child hear the three middle consonants?" },
+      { "text": "Which card has a blend between the vowels?" },
+      { "text": "Does the child blend the first part on its own?" }
+    ],
+    "bridge": [
+      { "text": "Which consonant starts the next part?" },
+      { "text": "Where does the split fall inside the middle group?" },
+      { "text": "Does the first part end in a consonant?" }
+    ],
+    "clansort": [
+      { "text": "Which consonant closes this plank?" },
+      { "text": "Does this plank end with a blend?" },
+      { "text": "Is the vowel in this plank short?" }
+    ],
+    "trickster": [
+      { "text": "Which three letters sit in the middle of this word?" },
+      { "text": "Can the child find the blend in the middle?" },
+      { "text": "Which part of the word does the child read first?" }
+    ],
+    "wordbook": [
+      { "text": "Did the child write all three middle letters?" },
+      { "text": "Did the child say the blend before writing it?" },
+      { "text": "Did the child split the word before writing it?" }
+    ],
+    "storypage": [
+      { "text": "Did the child stop at the blend before reading on?" },
+      { "text": "Which long word on the page did the child need help with?" },
+      { "text": "Did the child read the first part, then the second?" }
+    ]
+  },
+  "closed.three": {
+    "soundcheck": [
+      { "text": "Can the child hear three short vowels in one word?" },
+      { "text": "Which card has the most short vowels?" },
+      { "text": "Does the child say each part before blending?" }
+    ],
+    "bridge": [
+      { "text": "How many vowel sounds does the child hear?" },
+      { "text": "Where does the first split go?" },
+      { "text": "Does each part have one short vowel?" }
+    ],
+    "clansort": [
+      { "text": "Which part of this long word is this plank?" },
+      { "text": "Does this plank have one short vowel?" },
+      { "text": "Is the vowel in this plank short?" }
+    ],
+    "trickster": [
+      { "text": "How many parts does this word have?" },
+      { "text": "Can the child read the first part on its own?" },
+      { "text": "Which letters does the child see in each part?" }
+    ],
+    "wordbook": [
+      { "text": "Did the child write one part at a time?" },
+      { "text": "Did the child say each part before writing it?" },
+      { "text": "Did the child count the parts before writing?" }
+    ],
+    "storypage": [
+      { "text": "Did the child stop at each part of the long word?" },
+      { "text": "Which long word on the page did the child try first?" },
+      { "text": "Did the child read the whole word after the parts?" }
+    ]
+  },
+  "open.one": {
+    "soundcheck": [
+      { "text": "Does the child hear the long vowel at the end of this card?" },
+      { "text": "Is the vowel at the end of the word left open, with no consonant after it?" },
+      { "text": "Which card has the vowel at the end?" }
+    ],
+    "bridge": [
+      { "text": "Is the vowel at the end of this word long or short?" },
+      { "text": "Is there a consonant after the vowel?" },
+      { "text": "Does this word's vowel sound open out, with nothing to shut it?" }
+    ],
+    "clansort": [
+      { "text": "Does this plank end on a vowel sound, like an Open Door?", "classroom": "Does this plank end on a vowel sound, like an open syllable?" },
+      { "text": "Which banner shows a vowel with no consonant after it?" },
+      { "text": "Is the vowel in this plank long?" }
+    ],
+    "trickster": [
+      { "text": "Can the child see that the vowel is at the end?" },
+      { "text": "Which letter here makes the long sound?" },
+      { "text": "Can the child say the word aloud before the arm slide?" }
+    ],
+    "wordbook": [
+      { "text": "Did the child write the vowel at the end?" },
+      { "text": "Did the child hear the long vowel sound?" },
+      { "text": "Did the child say the word slowly before writing it?" }
+    ],
+    "storypage": [
+      { "text": "Did the child read the vowel at the end as a long sound?" },
+      { "text": "Which word on the page ends on a vowel?" },
+      { "text": "Did the child stop after the vowel, or go on to a consonant?" }
+    ]
+  },
+  "open.vcv": {
+    "soundcheck": [
+      { "text": "Does the child hear a long vowel in the first part?" },
+      { "text": "Which card has one consonant between two vowels?" },
+      { "text": "Does the child say the first vowel sound long?" }
+    ],
+    "bridge": [
+      { "text": "Is there one consonant between the two vowels?" },
+      { "text": "Should the split go before or after that consonant?" },
+      { "text": "Does the first part end on a vowel?" }
+    ],
+    "clansort": [
+      { "text": "Does this plank end on a long vowel?" },
+      { "text": "Which vowel sound is in this plank?" },
+      { "text": "Which banner has an open vowel at the end?" }
+    ],
+    "trickster": [
+      { "text": "Which vowel is long in this word?" },
+      { "text": "Which letters does the child see before the split?" },
+      { "text": "Can the child read the first part on its own?" }
+    ],
+    "wordbook": [
+      { "text": "Did the child write both vowels?" },
+      { "text": "Did the child listen for the long first vowel?" },
+      { "text": "Did the child say each part before writing?" }
+    ],
+    "storypage": [
+      { "text": "Did the child stop after the first long vowel?" },
+      { "text": "Which word on the page has two vowels with one consonant between?" },
+      { "text": "Did the child read both parts?" }
+    ]
+  },
+  "open.y": {
+    "soundcheck": [
+      { "text": "Does the child hear the y at the end say a long e sound?" },
+      { "text": "Which card has a y at the end?" },
+      { "text": "Does the child say the final y as a long e?" }
+    ],
+    "bridge": [
+      { "text": "What sound does the y make at the end?" },
+      { "text": "Is the y at the end of a part, or in the middle?" },
+      { "text": "Does the first part end on a vowel?" }
+    ],
+    "clansort": [
+      { "text": "Does this plank end with a y that says a long e?" },
+      { "text": "Which banner fits a plank with a y at the end?" },
+      { "text": "Is the vowel in this plank short?" }
+    ],
+    "trickster": [
+      { "text": "Which letter at the end says a long sound?" },
+      { "text": "Can the child find the y at the end of the word?" },
+      { "text": "Which part of the word does the child read first?" }
+    ],
+    "wordbook": [
+      { "text": "Did the child write the y at the end?" },
+      { "text": "Did the child hear the long e in the y?" },
+      { "text": "Did the child check the end of the word?" }
+    ],
+    "storypage": [
+      { "text": "Did the child read the y at the end as a long e?" },
+      { "text": "Which word on the page ends with a y?" },
+      { "text": "Did the child split the word before the y?" }
+    ]
+  },
+  "open.flex": {
+    "soundcheck": [
+      { "text": "Does the child hear two ways to split this word?" },
+      { "text": "Which card has a vowel that could be short or long?" },
+      { "text": "Does the child say both sounds before choosing?" }
+    ],
+    "bridge": [
+      { "text": "Which split makes a word the child knows?" },
+      { "text": "Does the first vowel sound short in this split?" },
+      { "text": "Could this word split in another place?" }
+    ],
+    "clansort": [
+      { "text": "Is the vowel in this plank short or long?" },
+      { "text": "Does this plank end with a consonant, or on a vowel?" },
+      { "text": "Could this plank be the other part of the word?" }
+    ],
+    "trickster": [
+      { "text": "Which vowel in this word could be short or long?" },
+      { "text": "Can the child try the other split?" },
+      { "text": "Which part of the word does the child check first?" }
+    ],
+    "wordbook": [
+      { "text": "Did the child write both parts of the word?" },
+      { "text": "Did the child listen for both vowel sounds?" },
+      { "text": "Did the child check which word the spelling makes?" }
+    ],
+    "storypage": [
+      { "text": "Did the child try the other sound when the first did not fit?" },
+      { "text": "Which word on the page could be read two ways?" },
+      { "text": "Did the child check the meaning after reading?" }
+    ]
+  },
+  "vce.one": {
+    "soundcheck": [
+      { "text": "Does the child hear the long vowel in this card?" },
+      { "text": "Which card has a silent e at the end?" },
+      { "text": "Does the child say the vowel as its name, like the a in cake?" }
+    ],
+    "bridge": [
+      { "text": "Is the e at the end making a sound?" },
+      { "text": "Which vowel does the silent e help?" },
+      { "text": "Does the silent e belong to the box before it?" }
+    ],
+    "clansort": [
+      { "text": "Does this plank end in a silent e, like a Silent E plank?", "classroom": "Does this plank end in a silent e, like a vowel-consonant-e plank?" },
+      { "text": "Which banner fits a plank with an e at the end?" },
+      { "text": "Is the vowel in this plank long?" }
+    ],
+    "trickster": [
+      { "text": "Which letter at the end is silent?" },
+      { "text": "Does the child see the vowel before the e?" },
+      { "text": "Can the child say the long vowel before the silent e?" }
+    ],
+    "wordbook": [
+      { "text": "Did the child write the silent e at the end?" },
+      { "text": "Did the child hear the long vowel?" },
+      { "text": "Did the child leave the e off by mistake?" }
+    ],
+    "storypage": [
+      { "text": "Did the child read the vowel as a long sound?" },
+      { "text": "Which word on the page ends with a silent e?" },
+      { "text": "Did the child skip the silent e when reading?" }
+    ]
+  },
+  "vce.soft": {
+    "soundcheck": [
+      { "text": "Does the child hear the soft c as an s sound?" },
+      { "text": "Which card has a c or g before e, i, or y?" },
+      { "text": "Does the child say the soft g as a j sound?" }
+    ],
+    "bridge": [
+      { "text": "Which letter comes before the e?" },
+      { "text": "Does this c or g sound soft?" },
+      { "text": "Which vowel does the silent e help here?" }
+    ],
+    "clansort": [
+      { "text": "Does this plank have a soft c or g?" },
+      { "text": "Which vowel does the silent e help in this plank?" },
+      { "text": "Is this plank a Silent E plank?", "classroom": "Is this plank a vowel-consonant-e plank?" }
+    ],
+    "trickster": [
+      { "text": "Which letter is soft here?" },
+      { "text": "Does the child see the e after the g or c?" },
+      { "text": "Can the child say the soft sound before reading on?" }
+    ],
+    "wordbook": [
+      { "text": "Did the child write the soft c or g with the right letter?" },
+      { "text": "Did the child hear the s or j sound?" },
+      { "text": "Did the child check the letter after the c or g?" }
+    ],
+    "storypage": [
+      { "text": "Did the child read the soft c or g correctly?" },
+      { "text": "Which word on the page has a soft c or g?" },
+      { "text": "Did the child stop at the soft sound before going on?" }
+    ]
+  },
+  "vce.two": {
+    "soundcheck": [
+      { "text": "Does the child hear the silent e in the second part?" },
+      { "text": "Which card has a silent e in a long word?" },
+      { "text": "Does the child say the long vowel in the second part?" }
+    ],
+    "bridge": [
+      { "text": "Which part of this word has a silent e?" },
+      { "text": "Where does the split fall before the silent e part?" },
+      { "text": "Does the first part end on an open vowel?" }
+    ],
+    "clansort": [
+      { "text": "Which plank has a silent e at its end?" },
+      { "text": "Is this plank the second part of a long word?" },
+      { "text": "Does this plank have a long vowel with a silent e?" }
+    ],
+    "trickster": [
+      { "text": "Which letter at the end of the second part is silent?" },
+      { "text": "Can the child see the silent e after the consonant?" },
+      { "text": "Does the child read the first part before the second?" }
+    ],
+    "wordbook": [
+      { "text": "Did the child write the e at the end of the second part?" },
+      { "text": "Did the child split the word before writing it?" },
+      { "text": "Did the child hear the long vowel in the second part?" }
+    ],
+    "storypage": [
+      { "text": "Did the child read the silent e part as one piece?" },
+      { "text": "Which long word on the page has a silent e?" },
+      { "text": "Did the child read each part before the whole word?" }
+    ]
+  },
+  "vce.mix": {
+    "soundcheck": [
+      { "text": "Does the child hear three parts in this card?" },
+      { "text": "Which card has a silent e in one of its parts?" },
+      { "text": "Does the child say each part before blending?" }
+    ],
+    "bridge": [
+      { "text": "How many vowel sounds do you hear in this word?" },
+      { "text": "Which part has the silent e?" },
+      { "text": "Where does the second split go?" }
+    ],
+    "clansort": [
+      { "text": "Which part of the long word is this plank?" },
+      { "text": "Does this plank have a silent e at its end?" },
+      { "text": "Is the vowel in this plank long or short?" }
+    ],
+    "trickster": [
+      { "text": "Which part of the word is the tricky part?" },
+      { "text": "Can the child read each part on its own?" },
+      { "text": "Which e is silent in this word?" }
+    ],
+    "wordbook": [
+      { "text": "Did the child write all three parts?" },
+      { "text": "Did the child say each part before writing it?" },
+      { "text": "Did the child leave out a silent e in any part?" }
+    ],
+    "storypage": [
+      { "text": "Did the child read the first part, then the next?" },
+      { "text": "Which long word on the page has the most parts?" },
+      { "text": "Did the child stop at each part before reading the whole word?" }
+    ]
+  },
+  "team.ai-ay": {
+    "soundcheck": [
+      { "text": "Does the child hear the long a sound in this card?" },
+      { "text": "Which card has ai or ay in it?" },
+      { "text": "Does the child say the two letters as one sound?" }
+    ],
+    "bridge": [
+      { "text": "Are the two vowel letters making one sound?" },
+      { "text": "Which letters in this word make one long sound?" },
+      { "text": "Does the team sit inside one part of the word?" }
+    ],
+    "clansort": [
+      { "text": "Does this plank have two vowels that work as a team, like the Two Oars?", "classroom": "Does this plank have a vowel team?" },
+      { "text": "Which team sound is in this plank?" },
+      { "text": "Is this plank the first or second part?" }
+    ],
+    "trickster": [
+      { "text": "Which two letters make one sound together?" },
+      { "text": "Can the child see the team in the middle of the word?" },
+      { "text": "Which vowel team does the child read first?" }
+    ],
+    "wordbook": [
+      { "text": "Did the child write both letters of the team?" },
+      { "text": "Did the child hear one long sound for both?" },
+      { "text": "Did the child choose ai or ay correctly?" }
+    ],
+    "storypage": [
+      { "text": "Did the child read the team as one sound?" },
+      { "text": "Which word on the page has ai or ay?" },
+      { "text": "Did the child stop at the team before reading on?" }
+    ]
+  },
+  "team.ee-ea": {
+    "soundcheck": [
+      { "text": "Does the child hear the long e sound in this card?" },
+      { "text": "Which card has ee or ea in it?" },
+      { "text": "Does the child say the two letters as one sound?" }
+    ],
+    "bridge": [
+      { "text": "Do the two letters make one long e sound?" },
+      { "text": "Which team sits in the first part?" },
+      { "text": "Where does the split fall after the team?" }
+    ],
+    "clansort": [
+      { "text": "Does this plank have a team that says long e, like the Two Oars?", "classroom": "Does this plank have a vowel team that says long e?" },
+      { "text": "Which team plank has a long e sound?" },
+      { "text": "Is this plank the first part or the second?" }
+    ],
+    "trickster": [
+      { "text": "Which two letters make one long sound?" },
+      { "text": "Can the child find the team in the first part?" },
+      { "text": "Does the child say the team sound before the rest?" }
+    ],
+    "wordbook": [
+      { "text": "Did the child write both letters of the team?" },
+      { "text": "Did the child hear the long e in the team?" },
+      { "text": "Did the child choose ee or ea?" }
+    ],
+    "storypage": [
+      { "text": "Did the child read the team as one long sound?" },
+      { "text": "Which word on the page has ee or ea?" },
+      { "text": "Did the child go on after the team?" }
+    ]
+  },
+  "team.oa-igh": {
+    "soundcheck": [
+      { "text": "Does the child hear the long o or long i sound in this card?" },
+      { "text": "Which card has oa, oe, igh or ie in it?" },
+      { "text": "Does the child say the team as one sound?" }
+    ],
+    "bridge": [
+      { "text": "Which letters make one long sound?" },
+      { "text": "Does the team sit inside one part of the word?" },
+      { "text": "Where does the split fall after the team?" }
+    ],
+    "clansort": [
+      { "text": "Does this plank have a team that says long o or long i?" },
+      { "text": "Which team sound is in this plank?" },
+      { "text": "Is this plank the first part or the second?" }
+    ],
+    "trickster": [
+      { "text": "Which letters make the long o or long i together?" },
+      { "text": "Can the child see the team in the word?" },
+      { "text": "Which team does the child read first?" }
+    ],
+    "wordbook": [
+      { "text": "Did the child write both letters of the team?" },
+      { "text": "Did the child hear one long sound?" },
+      { "text": "Did the child choose the right spelling for the sound?" }
+    ],
+    "storypage": [
+      { "text": "Did the child read the team as one sound?" },
+      { "text": "Which word on the page has oa, oe, igh or ie?" },
+      { "text": "Did the child stop at the team before going on?" }
+    ]
+  },
+  "team.oo-ew": {
+    "soundcheck": [
+      { "text": "Does the child hear the oo sound in this card?" },
+      { "text": "Which card has oo, ew or ue in it?" },
+      { "text": "Does the child say the team as one sound?" }
+    ],
+    "bridge": [
+      { "text": "Do the two letters make one oo sound?" },
+      { "text": "Which team sits in the second part?" },
+      { "text": "Where does the split fall after the first part?" }
+    ],
+    "clansort": [
+      { "text": "Does this plank have a team with an oo sound?" },
+      { "text": "Which team plank fits the oo sound?" },
+      { "text": "Is this plank the first or the second part?" }
+    ],
+    "trickster": [
+      { "text": "Which two letters make the oo sound?" },
+      { "text": "Can the child find the team in the word?" },
+      { "text": "Does the child read the team as one sound?" }
+    ],
+    "wordbook": [
+      { "text": "Did the child write both letters of the team?" },
+      { "text": "Did the child hear the oo sound?" },
+      { "text": "Did the child choose oo, ew or ue?" }
+    ],
+    "storypage": [
+      { "text": "Did the child read the team as one sound?" },
+      { "text": "Which word on the page has oo, ew or ue?" },
+      { "text": "Did the child go on after the team?" }
+    ]
+  },
+  "team.au-oi": {
+    "soundcheck": [
+      { "text": "Does the child hear the aw sound in this card?" },
+      { "text": "Which card has au, aw, oi or oy in it?" },
+      { "text": "Does the child say the team as one sound?" }
+    ],
+    "bridge": [
+      { "text": "Do the two letters make one sound?" },
+      { "text": "Where does the team sit in the word?" },
+      { "text": "Does the split fall after the team?" }
+    ],
+    "clansort": [
+      { "text": "Does this plank have an aw or oy sound?" },
+      { "text": "Is this plank the first part of the word?" },
+      { "text": "Which team does this plank hold?" }
+    ],
+    "trickster": [
+      { "text": "Which two letters make the aw sound?" },
+      { "text": "Can the child find the team in the word?" },
+      { "text": "Does the child read the team as one sound?" }
+    ],
+    "wordbook": [
+      { "text": "Did the child write both letters of the team?" },
+      { "text": "Did the child hear the aw sound?" },
+      { "text": "Did the child choose oi or oy, au or aw?" }
+    ],
+    "storypage": [
+      { "text": "Did the child read the team as one sound?" },
+      { "text": "Which word on the page has au, aw, oi or oy?" },
+      { "text": "Did the child go on after the team?" }
+    ]
+  },
+  "team.ou-ow": {
+    "soundcheck": [
+      { "text": "Does the child hear the ou sound in this card?" },
+      { "text": "Which card has ou or ow in it?" },
+      { "text": "Does the child say the team as one sound?" }
+    ],
+    "bridge": [
+      { "text": "Do the two letters make one sound?" },
+      { "text": "Which team sits in the first part?" },
+      { "text": "Where does the split fall after the team?" }
+    ],
+    "clansort": [
+      { "text": "Does this plank have an ou or ow sound?" },
+      { "text": "Which team does this plank hold?" },
+      { "text": "Is this plank the first or second part?" }
+    ],
+    "trickster": [
+      { "text": "Which two letters make the ou sound?" },
+      { "text": "Can the child find the ow in the word?" },
+      { "text": "Does the child read the team as one sound?" }
+    ],
+    "wordbook": [
+      { "text": "Did the child write both letters of the team?" },
+      { "text": "Did the child hear the ou sound?" },
+      { "text": "Did the child choose ou or ow?" }
+    ],
+    "storypage": [
+      { "text": "Did the child read the team as one sound?" },
+      { "text": "Which word on the page has ou or ow?" },
+      { "text": "Did the child go on after the team?" }
+    ]
+  },
+  "team.mix": {
+    "soundcheck": [
+      { "text": "Does the child hear two vowel teams in one card?" },
+      { "text": "Which card has a team in its first part?" },
+      { "text": "Does the child say each team as one sound?" }
+    ],
+    "bridge": [
+      { "text": "Which letters in this word make one sound?" },
+      { "text": "Where does the split fall in this word?" },
+      { "text": "Do both vowel teams keep their sounds?" }
+    ],
+    "clansort": [
+      { "text": "Which team plank has the long sound?" },
+      { "text": "Is this plank the first or second part?" },
+      { "text": "Which vowel team does this plank hold?" }
+    ],
+    "trickster": [
+      { "text": "Which letters are a team in this word?" },
+      { "text": "Can the child find both teams in the word?" },
+      { "text": "Does the child read the first team as one sound?" }
+    ],
+    "wordbook": [
+      { "text": "Did the child write both teams?" },
+      { "text": "Did the child hear one sound for each team?" },
+      { "text": "Did the child check each team's spelling?" }
+    ],
+    "storypage": [
+      { "text": "Did the child read each team as one sound?" },
+      { "text": "Which long word on the page has two teams?" },
+      { "text": "Did the child stop at each team before reading on?" }
+    ]
+  },
+  "r.ar-or": {
+    "soundcheck": [
+      { "text": "Does the r change the vowel sound in this card?" },
+      { "text": "Which card has ar or or in it?" },
+      { "text": "Does the child say the r-controlled vowel as one sound?" }
+    ],
+    "bridge": [
+      { "text": "Does the r after the vowel change its sound?", "classroom": "Is this an r-controlled vowel, with the r changing its sound?" },
+      { "text": "Is this vowel a Bossy R, so the R takes the sound?", "classroom": "Is this vowel r-controlled, so the r takes the sound?" },
+      { "text": "Does the split fall before the consonant after the r?" }
+    ],
+    "clansort": [
+      { "text": "Does this plank have a Bossy R, like ar or or?", "classroom": "Does this plank have an r-controlled vowel, like ar or or?" },
+      { "text": "Which banner fits a plank with the r sound?" },
+      { "text": "Is this plank the first or second part?" }
+    ],
+    "trickster": [
+      { "text": "Which letter after the vowel changes its sound?" },
+      { "text": "Can the child find the r in the word?" },
+      { "text": "Does the child read the ar or or as one sound?" }
+    ],
+    "wordbook": [
+      { "text": "Did the child write the r after the vowel?" },
+      { "text": "Did the child hear the r change the vowel?" },
+      { "text": "Did the child choose ar or or correctly?" }
+    ],
+    "storypage": [
+      { "text": "Did the child read the r-controlled vowel as one sound?" },
+      { "text": "Which word on the page has ar or or?" },
+      { "text": "Did the child go on after the r sound?" }
+    ]
+  },
+  "r.er-ir-ur": {
+    "soundcheck": [
+      { "text": "Does the child hear the same sound in er, ir and ur in this card?" },
+      { "text": "Which card has er, ir or ur in it?" },
+      { "text": "Does the child say the three spellings as one sound?" }
+    ],
+    "bridge": [
+      { "text": "Which letters make the same sound here?" },
+      { "text": "Does the r change the vowel sound in this part?" },
+      { "text": "Where does the split fall after the r?" }
+    ],
+    "clansort": [
+      { "text": "Does this plank have a Bossy R, with er, ir or ur?", "classroom": "Does this plank have an r-controlled vowel, with er, ir or ur?" },
+      { "text": "Which banner fits a plank with the er sound?" },
+      { "text": "Is this plank the first or second part?" }
+    ],
+    "trickster": [
+      { "text": "Which three spellings say the same sound?" },
+      { "text": "Can the child find the r in the word?" },
+      { "text": "Does the child read the r part as one sound?" }
+    ],
+    "wordbook": [
+      { "text": "Did the child write er, ir or ur correctly?" },
+      { "text": "Did the child hear the same sound in all three?" },
+      { "text": "Did the child check the spelling of the r part?" }
+    ],
+    "storypage": [
+      { "text": "Did the child read the r part as one sound?" },
+      { "text": "Which word on the page has er, ir or ur?" },
+      { "text": "Did the child go on after the r part?" }
+    ]
+  },
+  "r.mix": {
+    "soundcheck": [
+      { "text": "Does the r change a vowel in this card?" },
+      { "text": "Which card has two r-controlled parts?" },
+      { "text": "Does the child say each r part as one sound?" }
+    ],
+    "bridge": [
+      { "text": "Which vowel does the r change in this word?" },
+      { "text": "Where does the second split go?" },
+      { "text": "Does each part keep its r sound?" }
+    ],
+    "clansort": [
+      { "text": "Which part of this long word has a Bossy R?", "classroom": "Which part of this long word has an r-controlled vowel?" },
+      { "text": "Is this plank the first or second part?" },
+      { "text": "Which vowel does this plank hold?" }
+    ],
+    "trickster": [
+      { "text": "Which r in this word changes the vowel?" },
+      { "text": "Can the child find each r-controlled part?" },
+      { "text": "Does the child read the first part before the next?" }
+    ],
+    "wordbook": [
+      { "text": "Did the child write each r-controlled part?" },
+      { "text": "Did the child hear the r sound in each part?" },
+      { "text": "Did the child check each part of the word?" }
+    ],
+    "storypage": [
+      { "text": "Did the child stop at each r part before reading on?" },
+      { "text": "Which long word on the page has two r parts?" },
+      { "text": "Did the child read the whole word after the parts?" }
+    ]
+  },
+  "le.one": {
+    "soundcheck": [
+      { "text": "Does the child hear the le sound at the end of this card?" },
+      { "text": "Which card ends with a consonant and le?" },
+      { "text": "Does the child say the consonant before the le?" }
+    ],
+    "bridge": [
+      { "text": "Which letters at the end make the last sound?" },
+      { "text": "Does the split fall before the consonant and le?" },
+      { "text": "Is the last part a consonant with le?" }
+    ],
+    "clansort": [
+      { "text": "Does this plank end in a Little Tail, a consonant and le?", "classroom": "Does this plank end in a consonant-le?" },
+      { "text": "Which vowel sound is in this plank?" },
+      { "text": "Is this plank the first or second part?" }
+    ],
+    "trickster": [
+      { "text": "Which letters at the end make the le sound?" },
+      { "text": "Can the child find the consonant before the le?" },
+      { "text": "Does the child read the last part as one sound?" }
+    ],
+    "wordbook": [
+      { "text": "Did the child write the le at the end?" },
+      { "text": "Did the child hear the le sound at the end?" },
+      { "text": "Did the child put the consonant before the le?" }
+    ],
+    "storypage": [
+      { "text": "Did the child read the le ending as one sound?" },
+      { "text": "Which word on the page ends with a consonant and le?" },
+      { "text": "Did the child go on after the le?" }
+    ]
+  },
+  "le.double": {
+    "soundcheck": [
+      { "text": "Does the child hear the twins before the le?" },
+      { "text": "Which card has twin consonants before le?" },
+      { "text": "Does the child say the twins as one sound?" }
+    ],
+    "bridge": [
+      { "text": "Which twins sit before the le?" },
+      { "text": "Where does the split fall between the twins?" },
+      { "text": "Does the first part keep a short vowel?" }
+    ],
+    "clansort": [
+      { "text": "Does this plank end with twins and le, a Little Tail?", "classroom": "Does this plank end with twins and a consonant-le?" },
+      { "text": "Is the vowel in this plank short?" },
+      { "text": "Which banner fits a plank with twin letters?" }
+    ],
+    "trickster": [
+      { "text": "Which two letters before the le are the same?" },
+      { "text": "Can the child find the twins?" },
+      { "text": "Does the child read the le ending as one sound?" }
+    ],
+    "wordbook": [
+      { "text": "Did the child write both twins before the le?" },
+      { "text": "Did the child hear the le sound?" },
+      { "text": "Did the child keep the vowel short before the twins?" }
+    ],
+    "storypage": [
+      { "text": "Did the child read the twins and le as one ending?" },
+      { "text": "Which word on the page has twins before le?" },
+      { "text": "Did the child go on after the le?" }
+    ]
+  },
+  "le.mix": {
+    "soundcheck": [
+      { "text": "Does the child hear different kinds of syllables in this card?" },
+      { "text": "Which card has a le ending among other parts?" },
+      { "text": "Does the child say each part before blending?" }
+    ],
+    "bridge": [
+      { "text": "Which part of this word has the le?" },
+      { "text": "How many parts does this long word have?" },
+      { "text": "Does each part keep its own vowel sound?" }
+    ],
+    "clansort": [
+      { "text": "Does this plank end with a Little Tail, or is it another kind?", "classroom": "Does this plank end with a consonant-le, or is it another kind?" },
+      { "text": "Which banner fits this plank?" },
+      { "text": "Is this plank the first, middle or last part of the word?" }
+    ],
+    "trickster": [
+      { "text": "Which parts of this long word are tricky?" },
+      { "text": "Can the child read each part on its own?" },
+      { "text": "Does the child say the le part as one sound?" }
+    ],
+    "wordbook": [
+      { "text": "Did the child write each part of the long word?" },
+      { "text": "Did the child say each part before writing it?" },
+      { "text": "Did the child check the le ending?" }
+    ],
+    "storypage": [
+      { "text": "Did the child read each part, then the whole word?" },
+      { "text": "Which long word on the page has the most parts?" },
+      { "text": "Did the child go on after the last part?" }
+    ]
+  }
+}

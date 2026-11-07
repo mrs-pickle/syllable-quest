@@ -1,0 +1,128 @@
+[
+  {
+    "id": "vce.one.A",
+    "stage": "vce.one",
+    "land": "vce",
+    "page": "vce.1",
+    "title": "Cake on a Log",
+    "text": "A rabbit and a robot were sitting in a sandbox by the lake. The Keeper came with a picnic basket and a cake. \"Take the cake, and make a plan,\" said the Keeper. The Apprentice tapped the silent end of cake. \"The a is long!\" Happy rabbit! Happy robot! Happy picnic!",
+    "focus": [
+      "lake",
+      "cake",
+      "take",
+      "make",
+      "came"
+    ]
+  },
+  {
+    "id": "vce.one.B",
+    "stage": "vce.one",
+    "land": "vce",
+    "page": "vce.2",
+    "title": "Rope in the Hole",
+    "text": "At sunset, a note was in a tiny hole in a stone. An upset robot was hopping. A dusty rabbit was jumping. The hole is tiny, so a hand cannot fit! The Keeper made a rope. The Apprentice made a ring in the rope and gave a tug. Up came the note! Happy robot! Happy rabbit! Happy Apprentice!",
+    "focus": [
+      "note",
+      "hole",
+      "stone",
+      "rope",
+      "made",
+      "came"
+    ]
+  },
+  {
+    "id": "vce.soft.A",
+    "stage": "vce.soft",
+    "land": "vce",
+    "page": "vce.3",
+    "title": "A Fancy City",
+    "text": "The Apprentice came to a fancy city. Happy, silly, tiny mice were sitting on a hilltop. A pumpkin, a magnet, a trumpet, and a helmet were in a sandbox. A nice page was in a cage by the lake. \"Since the cage is tiny, slide the page,\" said the Keeper.",
+    "focus": [
+      "fancy",
+      "city",
+      "cage",
+      "page",
+      "nice",
+      "since"
+    ]
+  },
+  {
+    "id": "vce.soft.B",
+    "stage": "vce.soft",
+    "land": "vce",
+    "page": "vce.4",
+    "title": "The Race",
+    "text": "The mice were in a race on the hilltop. The prize was a ribbon. A tiny, fancy bandit was in the path twice. The Apprentice was running, jumping, and hopping past a dusty rabbit. Silly rabbit! \"Tap city and age,\" said the Keeper.",
+    "focus": [
+      "race",
+      "twice",
+      "city",
+      "age",
+      "fancy"
+    ]
+  },
+  {
+    "id": "vce.two.A",
+    "stage": "vce.two",
+    "land": "vce",
+    "page": "vce.5",
+    "title": "The Long Note",
+    "text": "The Keeper handed the Apprentice a useful note. It said, \"Invite a rabbit and include a robot!\" The Apprentice was confused. \"Tap a long one in two,\" said the Keeper. The Apprentice tapped it, and the note was complete. The picnic basket was complete, and the rabbit was happy.",
+    "focus": [
+      "useful",
+      "invite",
+      "include",
+      "complete",
+      "confused"
+    ]
+  },
+  {
+    "id": "vce.two.B",
+    "stage": "vce.two",
+    "land": "vce",
+    "page": "vce.6",
+    "title": "Knots and Wrecks",
+    "text": "A wren was sitting on a wrecked bridge. \"Unsafe!\" wrote the wren. A hopeful rabbit in a costume knocked. \"Unwrap the knot!\" wrote the wren. The Keeper wrapped a useful, homemade rope. Safe at sunset! Happy Apprentice! The wren rewrote the note.",
+    "focus": [
+      "wren",
+      "wrecked",
+      "knot",
+      "knocked",
+      "unwrap",
+      "unsafe",
+      "rewrote"
+    ]
+  },
+  {
+    "id": "vce.mix.A",
+    "stage": "vce.mix",
+    "land": "vce",
+    "page": "vce.7",
+    "title": "The Deepest Path",
+    "text": "The path was thin. \"Navigate,\" said the Keeper. The Apprentice tapped it, one bit at a time. \"Concentrate!\" said the Keeper. The Apprentice tapped activate, then illustrate, then dedicate. \"Improvise!\" A rabbit, a robot, and a puppy were sitting on a hilltop. A basket of lemonade was with them. \"Celebrate!\" said the Keeper.",
+    "focus": [
+      "navigate",
+      "concentrate",
+      "activate",
+      "dedicate",
+      "illustrate",
+      "improvise",
+      "lemonade",
+      "celebrate"
+    ]
+  },
+  {
+    "id": "vce.mix.B",
+    "stage": "vce.mix",
+    "land": "vce",
+    "page": "vce.8",
+    "title": "The Forest Pages",
+    "text": "In the end, the Apprentice and the Keeper lifted up the Great Word Book. The pages were back! The rabbit made lemonade. The mice were jumping with a trumpet. The robot was in a handstand. \"Celebrate!\" said the Keeper. \"Navigate home, and dedicate a page to a friend!\" Happy rabbit! Happy robot! Happy puppy!",
+    "focus": [
+      "celebrate",
+      "lemonade",
+      "navigate",
+      "dedicate"
+    ]
+  }
+]

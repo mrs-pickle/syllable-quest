@@ -1,0 +1,94 @@
+[
+  {
+    "stage": "team.ai-ay",
+    "words": [
+      {"w": "rain", "cue": "Use the ai spelling."}, {"w": "play"}, {"w": "snail", "cue": "Use the ai spelling."}, {"w": "train"}, {"w": "tray"},
+      {"w": "mail"}, {"w": "pay"}, {"w": "day"}, {"w": "wait", "cue": "Use the ai spelling."}, {"w": "paint"}
+    ],
+    "sentences": [
+      {"id": "team.ai-ay.1", "text": "The snail can wait for the train.", "targets": ["snail", "wait", "train"]},
+      {"id": "team.ai-ay.2", "text": "It is a rainy day to play.", "targets": ["rainy", "day", "play"]},
+      {"id": "team.ai-ay.3", "text": "The cat can pay for the mail.", "targets": ["pay", "mail"]},
+      {"id": "team.ai-ay.4", "text": "The tray is on the train.", "targets": ["tray", "train"]}
+    ]
+  },
+  {
+    "stage": "team.ee-ea",
+    "words": [
+      {"w": "tree", "cue": "Use the ee spelling."}, {"w": "green", "cue": "Use the ee spelling."}, {"w": "sleep", "cue": "Use the ee spelling."}, {"w": "seat", "cue": "Use the ea spelling."}, {"w": "feet", "cue": "Use the ee spelling."},
+      {"w": "teeth", "cue": "Use the ee spelling."}, {"w": "leaf", "cue": "Use the ea spelling."}, {"w": "meal", "cue": "Use the ea spelling."}, {"w": "beach", "cue": "Use the ea spelling."}, {"w": "queen", "cue": "Use the ee spelling."}
+    ],
+    "sentences": [
+      {"id": "team.ee-ea.1", "text": "The green tree is tall.", "targets": ["green", "tree"]},
+      {"id": "team.ee-ea.2", "text": "I can sleep in the seat.", "targets": ["sleep", "seat"]},
+      {"id": "team.ee-ea.3", "text": "We eat a meal on the beach.", "targets": ["eat", "meal", "beach"]},
+      {"id": "team.ee-ea.4", "text": "Keep your feet on the sand.", "targets": ["keep", "feet"]},
+      {"id": "team.ee-ea.5", "text": "The queen has a green leaf.", "targets": ["queen", "green", "leaf"]}
+    ]
+  },
+  {
+    "stage": "team.oa-igh",
+    "words": [
+      {"w": "boat", "cue": "Use the oa spelling."}, {"w": "high", "cue": "Use the igh spelling."}, {"w": "coat", "cue": "Use the oa spelling."}, {"w": "goat", "cue": "Use the oa spelling."}, {"w": "light", "cue": "Use the igh spelling."},
+      {"w": "road", "cue": "Use the oa spelling."}, {"w": "toast", "cue": "Use the oa spelling."}, {"w": "pie", "cue": "Use the ie spelling."}, {"w": "right", "cue": "Use the igh spelling."}, {"w": "tie", "cue": "Use the ie spelling."}
+    ],
+    "sentences": [
+      {"id": "team.oa-igh.1", "text": "The goat is on the road.", "targets": ["goat", "road"]},
+      {"id": "team.oa-igh.2", "text": "Put on your coat and go to the boat.", "targets": ["coat", "boat"]},
+      {"id": "team.oa-igh.3", "text": "The sun is high, and the light is bright.", "targets": ["high", "light", "bright"]},
+      {"id": "team.oa-igh.4", "text": "Tie the boat to the pole.", "targets": ["tie", "boat"]}
+    ]
+  },
+  {
+    "stage": "team.oo-ew",
+    "words": [
+      {"w": "moon", "cue": "Use the oo spelling."}, {"w": "zoo", "cue": "Use the oo spelling."}, {"w": "food", "cue": "Use the oo spelling."}, {"w": "blue", "cue": "Use the ue spelling."}, {"w": "new", "cue": "Use the ew spelling."},
+      {"w": "room", "cue": "Use the oo spelling."}, {"w": "spoon", "cue": "Use the oo spelling."}, {"w": "book"}, {"w": "true", "cue": "Use the ue spelling."}, {"w": "tooth", "cue": "Use the oo spelling."}
+    ],
+    "sentences": [
+      {"id": "team.oo-ew.1", "text": "The moon is up at noon.", "targets": ["moon", "noon"]},
+      {"id": "team.oo-ew.2", "text": "Look at the blue zoo.", "targets": ["look", "blue", "zoo"]},
+      {"id": "team.oo-ew.3", "text": "I can see food in the room.", "targets": ["food", "room"]},
+      {"id": "team.oo-ew.4", "text": "Put the spoon on the book.", "targets": ["spoon", "book"]}
+    ]
+  },
+  {
+    "stage": "team.au-oi",
+    "words": [
+      {"w": "coin"}, {"w": "boy"}, {"w": "toy"}, {"w": "point"}, {"w": "saw", "cue": "Use the aw spelling."},
+      {"w": "paw"}, {"w": "claw"}, {"w": "straw", "cue": "Use the aw spelling."}, {"w": "yawn"}, {"w": "crawl"}
+    ],
+    "sentences": [
+      {"id": "team.au-oi.1", "text": "The boy has a toy.", "targets": ["boy", "toy"]},
+      {"id": "team.au-oi.2", "text": "The baby can crawl and yawn.", "targets": ["crawl", "yawn"]},
+      {"id": "team.au-oi.3", "text": "Put the coin on the straw.", "targets": ["coin", "straw"]},
+      {"id": "team.au-oi.4", "text": "The boy can point to the toy.", "targets": ["point", "boy", "toy"]}
+    ]
+  },
+  {
+    "stage": "team.ou-ow",
+    "words": [
+      {"w": "cow"}, {"w": "house", "cue": "Use the ou spelling."}, {"w": "snow", "cue": "Use the ow spelling."}, {"w": "cloud"}, {"w": "down"},
+      {"w": "owl"}, {"w": "town"}, {"w": "mouth"}, {"w": "rainbow", "cue": "Use the ow spelling."}, {"w": "pillow", "cue": "Use the ow spelling."}
+    ],
+    "sentences": [
+      {"id": "team.ou-ow.1", "text": "The cow is in the house.", "targets": ["cow", "house"]},
+      {"id": "team.ou-ow.2", "text": "The snow is on the ground.", "targets": ["snow", "ground"]},
+      {"id": "team.ou-ow.3", "text": "The owl can count to ten.", "targets": ["owl", "count"]},
+      {"id": "team.ou-ow.4", "text": "Do not shout at the cow.", "targets": ["shout", "cow"]}
+    ]
+  },
+  {
+    "stage": "team.mix",
+    "words": [
+      {"w": "head", "cue": "Use the ea spelling."}, {"w": "dolphin", "cue": "The ph says f."}, {"w": "bread", "cue": "Use the ea spelling."}, {"w": "breath", "cue": "Use the ea spelling."}, {"w": "lion", "cue": "Say the -ion ending slowly."},
+      {"w": "explaining", "cue": "Say the ex-plain-ing parts slowly."}, {"w": "complaining", "cue": "Say the com-plain-ing parts slowly."}, {"w": "health", "cue": "Use the ea spelling."}, {"w": "trophy", "cue": "The ph says f; the y says ee."}, {"w": "phone", "cue": "The ph says f."}
+    ],
+    "sentences": [
+      {"id": "team.mix.1", "text": "The lion and the dolphin can swim.", "targets": ["lion", "dolphin"]},
+      {"id": "team.mix.2", "text": "Put the phone on your head.", "targets": ["phone", "head"]},
+      {"id": "team.mix.3", "text": "The giant is happy and loyal.", "targets": ["giant", "loyal"]},
+      {"id": "team.mix.4", "text": "The lion is explaining the trick.", "targets": ["lion", "explaining"]}
+    ]
+  }
+]

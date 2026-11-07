@@ -1,0 +1,40 @@
+{
+  "land": "le",
+  "intro": [
+    "v.story-le.intro.1",
+    "v.story-le.intro.2",
+    "v.story-le.intro.3"
+  ],
+  "stages": {
+    "le.one": {
+      "beat": "A table by the lake ends in consonant-le, and the apprentice hears the last syllable as one sound.",
+      "lines": [
+        "v.story-le.le-one.1",
+        "v.story-le.le-one.2"
+      ]
+    },
+    "le.double": {
+      "beat": "A little fish has twin letters before le, and the apprentice splits the word before the twins.",
+      "lines": [
+        "v.story-le.le-double.1",
+        "v.story-le.le-double.2"
+      ]
+    },
+    "le.mix": {
+      "beat": "A candle on a table by the lake path mixes many syllable types, and the apprentice reads the whole lake path.",
+      "lines": [
+        "v.story-le.le-mix.1",
+        "v.story-le.le-mix.2"
+      ]
+    }
+  },
+  "finale": [
+    "v.story-le.finale.1",
+    "v.story-le.finale.2"
+  ],
+  "end": [
+    "v.story-le.end.1",
+    "v.story-le.end.2",
+    "v.story-le.end.3"
+  ]
+}

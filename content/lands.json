@@ -1,0 +1,138 @@
+[
+  {
+    "id": "closed",
+    "name": "Closed Canyon",
+    "classroomName": "Closed Canyon",
+    "crest": "crest/closed",
+    "color": "#9e5a3a",
+    "landmarks": [
+      { "stage": "closed.review", "id": "signpost", "art": "lm/closed-review-on" },
+      { "stage": "closed.endings", "id": "stone-bridge", "art": "lm/closed-endings-on" },
+      { "stage": "closed.compound", "id": "cairn", "art": "lm/closed-compound-on" },
+      { "stage": "closed.vccv-double", "id": "twin-gate", "art": "lm/closed-vccv-double-on" },
+      { "stage": "closed.vccv", "id": "lantern-post", "art": "lm/closed-vccv-on" },
+      { "stage": "closed.vcccv", "id": "mine-cart", "art": "lm/closed-vcccv-on" },
+      { "stage": "closed.three", "id": "campfire", "art": "lm/closed-three-on" }
+    ],
+    "intro": [
+      "v.story-closed.intro.1",
+      "v.story-closed.intro.2",
+      "v.story-closed.intro.3"
+    ],
+    "finale": [
+      "v.story-closed.finale.1",
+      "v.story-closed.finale.2"
+    ]
+  },
+  {
+    "id": "open",
+    "name": "Open Sky Isles",
+    "classroomName": "Open Syllable Isles",
+    "crest": "crest/open",
+    "color": "#3f8fcb",
+    "landmarks": [
+      { "stage": "open.one", "id": "windmill", "art": "lm/open-one-on" },
+      { "stage": "open.vcv", "id": "balloon", "art": "lm/open-vcv-on" },
+      { "stage": "open.y", "id": "weathervane", "art": "lm/open-y-on" },
+      { "stage": "open.flex", "id": "seesaw", "art": "lm/open-flex-on" }
+    ],
+    "intro": [
+      "v.story-open.intro.1",
+      "v.story-open.intro.2",
+      "v.story-open.intro.3"
+    ],
+    "finale": [
+      "v.story-open.finale.1",
+      "v.story-open.finale.2"
+    ]
+  },
+  {
+    "id": "vce",
+    "name": "Silent-E Forest",
+    "classroomName": "Vowel-Consonant-E Forest",
+    "crest": "crest/vce",
+    "color": "#3d7d4f",
+    "landmarks": [
+      { "stage": "vce.one", "id": "treehouse", "art": "lm/vce-one-on" },
+      { "stage": "vce.soft", "id": "mushroom-house", "art": "lm/vce-soft-on" },
+      { "stage": "vce.two", "id": "well", "art": "lm/vce-two-on" },
+      { "stage": "vce.mix", "id": "lookout-tower", "art": "lm/vce-mix-on" }
+    ],
+    "intro": [
+      "v.story-vce.intro.1",
+      "v.story-vce.intro.2",
+      "v.story-vce.intro.3"
+    ],
+    "finale": [
+      "v.story-vce.finale.1",
+      "v.story-vce.finale.2"
+    ]
+  },
+  {
+    "id": "team",
+    "name": "Vowel Team Harbor",
+    "classroomName": "Vowel Team Harbor",
+    "crest": "crest/team",
+    "color": "#356b86",
+    "landmarks": [
+      { "stage": "team.ai-ay", "id": "lighthouse", "art": "lm/team-ai-ay-on" },
+      { "stage": "team.ee-ea", "id": "sailboat", "art": "lm/team-ee-ea-on" },
+      { "stage": "team.oa-igh", "id": "buoy", "art": "lm/team-oa-igh-on" },
+      { "stage": "team.oo-ew", "id": "boathouse", "art": "lm/team-oo-ew-on" },
+      { "stage": "team.au-oi", "id": "bell-frame", "art": "lm/team-au-oi-on" },
+      { "stage": "team.ou-ow", "id": "harbor-crane", "art": "lm/team-ou-ow-on" },
+      { "stage": "team.mix", "id": "tall-ship", "art": "lm/team-mix-on" }
+    ],
+    "intro": [
+      "v.story-team.intro.1",
+      "v.story-team.intro.2",
+      "v.story-team.intro.3"
+    ],
+    "finale": [
+      "v.story-team.finale.1",
+      "v.story-team.finale.2"
+    ]
+  },
+  {
+    "id": "r",
+    "name": "Bossy-R Mountains",
+    "classroomName": "R-Controlled Mountains",
+    "crest": "crest/r",
+    "color": "#554f73",
+    "landmarks": [
+      { "stage": "r.ar-or", "id": "mountain-hut", "art": "lm/r-ar-or-on" },
+      { "stage": "r.er-ir-ur", "id": "cable-car", "art": "lm/r-er-ir-ur-on" },
+      { "stage": "r.mix", "id": "summit-flag", "art": "lm/r-mix-on" }
+    ],
+    "intro": [
+      "v.story-r.intro.1",
+      "v.story-r.intro.2",
+      "v.story-r.intro.3"
+    ],
+    "finale": [
+      "v.story-r.finale.1",
+      "v.story-r.finale.2"
+    ]
+  },
+  {
+    "id": "le",
+    "name": "Little Tail Lake",
+    "classroomName": "Consonant-le Lake",
+    "crest": "crest/le",
+    "color": "#2f8a94",
+    "landmarks": [
+      { "stage": "le.one", "id": "rowboat-dock", "art": "lm/le-one-on" },
+      { "stage": "le.double", "id": "lily-pads", "art": "lm/le-double-on" },
+      { "stage": "le.mix", "id": "stilt-house", "art": "lm/le-mix-on" }
+    ],
+    "intro": [
+      "v.story-le.intro.1",
+      "v.story-le.intro.2",
+      "v.story-le.intro.3"
+    ],
+    "finale": [
+      "v.story-le.finale.1",
+      "v.story-le.finale.2"
+    ]
+  }
+]

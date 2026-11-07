@@ -1,0 +1,9 @@
+{
+  "v.trickster.look": { "text": "This word is a tricky one. Look closely at the underlined part.", "note": "warm, a little playful" },
+  "v.trickster.arm.1": { "text": "Stand up and hold one arm out in front of you.", "note": "friendly, clear" },
+  "v.trickster.arm.2": { "text": "Tap down your arm, one tap for each letter, and say each letter as you tap.", "note": "friendly, clear" },
+  "v.trickster.arm.3": { "text": "Now slide your hand down your arm and say the whole word.", "note": "friendly, clear" },
+  "v.trickster.arm.4": { "text": "Say the word once more. Think about the tricky part.", "note": "friendly, clear" },
+  "v.trickster.nice": { "text": "Nice tracing. Press Next when you are ready to read it.", "note": "warm, even" },
+  "v.trickster.read": { "text": "Now read the word out loud.", "note": "calm, encouraging" }
+}

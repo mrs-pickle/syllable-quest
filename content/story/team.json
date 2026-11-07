@@ -1,0 +1,63 @@
+{
+  "land": "team",
+  "intro": [
+    "v.story-team.intro.1",
+    "v.story-team.intro.2",
+    "v.story-team.intro.3"
+  ],
+  "stages": {
+    "team.ai-ay": {
+      "beat": "A lady on the bay waves a sail marked ai and ay, and the apprentice learns the long a sound.",
+      "lines": [
+        "v.story-team.team-ai-ay.1",
+        "v.story-team.team-ai-ay.2"
+      ]
+    },
+    "team.ee-ea": {
+      "beat": "Seaweed and beans show ee and ea, which both say long e.",
+      "lines": [
+        "v.story-team.team-ee-ea.1",
+        "v.story-team.team-ee-ea.2"
+      ]
+    },
+    "team.oa-igh": {
+      "beat": "A raincoat, a boat and a high kite show oa, oe, igh and ie for the long vowel sounds.",
+      "lines": [
+        "v.story-team.team-oa-igh.1",
+        "v.story-team.team-oa-igh.2"
+      ]
+    },
+    "team.oo-ew": {
+      "beat": "A balloon and a blue sky show oo and ew, which can say the long oo sound.",
+      "lines": [
+        "v.story-team.team-oo-ew.1",
+        "v.story-team.team-oo-ew.2"
+      ]
+    },
+    "team.au-oi": {
+      "beat": "A hawk and a coin on the deck show au, aw, oi and oy.",
+      "lines": [
+        "v.story-team.team-au-oi.1",
+        "v.story-team.team-au-oi.2"
+      ]
+    },
+    "team.ou-ow": {
+      "beat": "A brown owl and a rainbow show ou and ow, which can say two different sounds.",
+      "lines": [
+        "v.story-team.team-ou-ow.1",
+        "v.story-team.team-ou-ow.2"
+      ]
+    },
+    "team.mix": {
+      "beat": "A harbor breakfast mixes every team pattern, and the apprentice reads the whole menu.",
+      "lines": [
+        "v.story-team.team-mix.1",
+        "v.story-team.team-mix.2"
+      ]
+    }
+  },
+  "finale": [
+    "v.story-team.finale.1",
+    "v.story-team.finale.2"
+  ]
+}

@@ -1,0 +1,514 @@
+{
+  "v.discovery.ui-start": {
+    "text": "A new pattern to discover, apprentice. Look closely at what comes next.",
+    "note": "warm, curious"
+  },
+  "v.discovery.ui-try": {
+    "text": "Now you try. Read this word out loud.",
+    "note": "calm, clear"
+  },
+  "v.discovery.ui-recap": {
+    "text": "Let's remember what we found.",
+    "note": "warm, even"
+  },
+  "v.discovery.ui-done": {
+    "text": "That is the pattern. Now you know how it works.",
+    "note": "warm, even"
+  },
+  "v.discovery.closed-review.1": {
+    "text": "A syllable with one vowel that ends in a consonant is closed. The consonant closes the door, so the vowel is short. Listen: cat, hop, sit.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.closed-review.2": {
+    "text": "Two letters can make one sound. S and h together say sh, as in ship. C and h together say ch, as in chip.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.closed-review.3": {
+    "text": "T and h say th. Put your tongue between your teeth and push the air out.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.closed-review.4": {
+    "text": "At the end of a word, n and g together say ng. N and k say nk. Listen for the sound in your nose.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.closed-review.5": {
+    "text": "After a short vowel, a word often ends in ck, ff, ll, ss, zz, tch or dge. They do not change the sound. Read: duck, puff, bell, catch, badge.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.closed-review.recap": {
+    "text": "Remember: a closed syllable ends in a consonant, so the vowel is short. Two letters can make one sound, like sh, ch, th and ng.",
+    "note": "warm, even"
+  },
+  "v.discovery.closed-endings.1": {
+    "text": "An ending is added to the end of a word. After a p, k, s, sh or ch sound, the ending e d says t. Jumped, packed, wished.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.closed-endings.2": {
+    "text": "After a b, g, m, n or l sound, the ending e d says d. Hugged, filled, planned, grinned.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.closed-endings.3": {
+    "text": "After a t or a d, the ending e d adds a whole new part that says ed. Hunt-ed. Land-ed. Listen for two parts.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.closed-endings.4": {
+    "text": "The ending s says s after a p, t or k sound, as in cats. After most other sounds it says z, as in dogs.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.closed-endings.5": {
+    "text": "After s, x, sh or ch, we add e s, and it is a whole new part. Wish-es. Box-es. Bench-es. Catch-es.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.closed-endings.recap": {
+    "text": "Remember: the ending e d can say t, d or ed. The ending s can say s or z. After s, x, sh or ch, es adds a part. The ending i n g keeps its own sound.",
+    "note": "warm, even"
+  },
+  "v.discovery.closed-compound.1": {
+    "text": "Two small words can join to make one big word. Sun and set make sunset.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.closed-compound.2": {
+    "text": "Each small word is its own part. Read the first one, read the second one, then say them together.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.closed-compound.3": {
+    "text": "Each small word is a closed syllable. The consonant closes the door, so each vowel is short.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.closed-compound.recap": {
+    "text": "Remember: a compound word is two small words joined. Read each part, then say them together.",
+    "note": "warm, even"
+  },
+  "v.discovery.closed-vccv-double.1": {
+    "text": "Look at the middle of the word. Two matching consonants sit between two vowels. Split between the twins: rab-bit.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.closed-vccv-double.2": {
+    "text": "Draw a line between the twin letters. Read the first part, then the second part, then blend them: mit-ten, muf-fin.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.closed-vccv-double.3": {
+    "text": "The first consonant closes the door of the first part, so its vowel is short. The twin letters say just one sound.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.closed-vccv-double.recap": {
+    "text": "Remember: when two matching consonants sit in the middle, split between them. The first consonant closes the door, so the vowel is short.",
+    "note": "warm, even"
+  },
+  "v.discovery.closed-vccv.1": {
+    "text": "Two different consonants sit between the vowels. Split between them: nap-kin.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.closed-vccv.2": {
+    "text": "Cover the second part and read the first. Then cover the first and read the second. Then blend the parts together.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.closed-vccv.3": {
+    "text": "Both parts end in a consonant, so the doors are closed and both vowels are short.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.closed-vccv.recap": {
+    "text": "Remember: with two different consonants in the middle, split between them. Both parts are closed, so both vowels are short.",
+    "note": "warm, even"
+  },
+  "v.discovery.closed-vcccv.1": {
+    "text": "Sometimes three consonants sit in the middle. Keep a blend or a digraph together. Hun-dred. Os-trich.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.closed-vcccv.2": {
+    "text": "If there is no blend in the middle, split after the second consonant. Sand-wich. Pump-kin.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.closed-vcccv.3": {
+    "text": "Each part ends in a consonant, so each vowel is short. Read the parts, then blend.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.closed-vcccv.recap": {
+    "text": "Remember: with three consonants in the middle, keep a blend together. If there is no blend, split after the second consonant.",
+    "note": "warm, even"
+  },
+  "v.discovery.closed-three.1": {
+    "text": "Some words have three parts. Each vowel sound is the heart of a part. Fan-tas-tic.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.closed-three.2": {
+    "text": "To read a long word, divide it in two places. Split the first gap, then split the next gap.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.closed-three.3": {
+    "text": "All three parts are closed, so every vowel is short. Read each part, then blend them all.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.closed-three.recap": {
+    "text": "Remember: a long word may have three parts. Divide two times. All three are closed, so every vowel is short.",
+    "note": "warm, even"
+  },
+  "v.discovery.open-one.1": {
+    "text": "An open syllable ends in a vowel. Nothing closes the door, so the vowel says its name. Be, he, me, we.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.open-one.2": {
+    "text": "The o says its name too: go, no, so.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.open-one.3": {
+    "text": "The i says its name in hi. Pro and fro are open too.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.open-one.4": {
+    "text": "Compare a closed word and an open word. Closed has a short vowel. Open says its name.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.open-one.recap": {
+    "text": "Remember: if a syllable ends in a vowel, the door is open and the vowel says its name.",
+    "note": "warm, even"
+  },
+  "v.discovery.open-vcv.1": {
+    "text": "One consonant sits between two vowels. Try splitting before the consonant: ro-bot.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.open-vcv.2": {
+    "text": "The first part ends in a vowel, so its door is open and the vowel says its name: ro, mu, ho.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.open-vcv.3": {
+    "text": "The second part ends in a consonant, so its vowel is short: bot, sic, tel.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.open-vcv.recap": {
+    "text": "Remember: one consonant between two vowels, split before it. The first part is open and says its name. The second part is closed and is short.",
+    "note": "warm, even"
+  },
+  "v.discovery.open-y.1": {
+    "text": "At the end of a longer word, the letter y says long e. Ba-by. Hap-py. Fun-ny.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.open-y.2": {
+    "text": "At the end of a short word, the letter y says long i. My. Fly. Try. Sky.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.open-y.3": {
+    "text": "In a longer word, the y makes a part of its own. Ba-by. Ti-ny. Na-vy.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.open-y.recap": {
+    "text": "Remember: at the end of a short word, y says long i. At the end of a longer word, y says long e.",
+    "note": "warm, even"
+  },
+  "v.discovery.open-flex.1": {
+    "text": "Some words can be split two ways. Cabin can be ca-bin or cab-in. Try one way, then try the other.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.open-flex.2": {
+    "text": "Try the open split first, so the vowel says its name. If it does not sound like a word you know, flip to the closed split, so the vowel is short.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.open-flex.3": {
+    "text": "A part you say softly may sound like uh. Wag-on. Lem-on. Pet-al. Listen for the quiet part.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.open-flex.recap": {
+    "text": "Remember: if a split does not sound like a word, flip it. Open says its name, closed is short. A quiet part may say uh.",
+    "note": "warm, even"
+  },
+  "v.discovery.vce-one.1": {
+    "text": "A silent e syllable has a vowel, a consonant, then an e at the end. The e is silent, and it makes the vowel say its name.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.vce-one.2": {
+    "text": "The letters a, consonant, e say long a, as in cake. The letters e, consonant, e say long e, as in these.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.vce-one.3": {
+    "text": "i-e says long i: bike, five, line, smile.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.vce-one.4": {
+    "text": "o-e says long o: home, bone, note, stone.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.vce-one.5": {
+    "text": "The letters u, consonant, e say long u, as in cube and cute. They can also say oo, as in rule and flute.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.vce-one.recap": {
+    "text": "Remember: vowel, consonant, silent e. The e is silent, and the vowel says its name.",
+    "note": "warm, even"
+  },
+  "v.discovery.vce-soft.1": {
+    "text": "The letter c before e, i or y says s. Cell. City. Nice. We call it soft c.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.vce-soft.2": {
+    "text": "The letter g before e, i or y can say j. Gem. Page. Huge. We call it soft g.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.vce-soft.3": {
+    "text": "At the end of a word, c e and g e keep a silent e. It keeps the c soft and the g soft. Dance. Fence. Change.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.vce-soft.4": {
+    "text": "Before a, o or u, c says k and g says g. Cat. Cup. Gap. Gum.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.vce-soft.recap": {
+    "text": "Remember: c before e, i or y says s, and g before e, i or y can say j. Before a, o or u they stay hard.",
+    "note": "warm, even"
+  },
+  "v.discovery.vce-two.1": {
+    "text": "A silent e syllable can be the end of a long word. In-vite. Un-safe. Ex-cuse. The same rule: the vowel says its name.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.vce-two.2": {
+    "text": "Divide the word first. Then look for the silent e at the end of the last part. Com-pete. Con-fuse. Ex-plode.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.vce-two.3": {
+    "text": "In the letters k n, the k is silent. Knife. Knot. In w r, the w is silent. Write. Wrap.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.vce-two.recap": {
+    "text": "Remember: a silent e part can finish a long word. In kn the k is silent, and in wr the w is silent.",
+    "note": "warm, even"
+  },
+  "v.discovery.vce-mix.1": {
+    "text": "A long word can have three parts. Divide two times. Cel-e-brate.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.vce-mix.2": {
+    "text": "Look for the silent e part at the end of the word, then work backward. Nav-i-gate.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.vce-mix.3": {
+    "text": "Say the middle part softly. The loud parts are the first and the last. Dom-i-nate. Ded-i-cate.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.vce-mix.recap": {
+    "text": "Remember: divide a long word into parts, find the silent e part at the end, and say the middle part softly.",
+    "note": "warm, even"
+  },
+  "v.discovery.team-ai-ay.1": {
+    "text": "A vowel team syllable has two vowel letters working together as a team to say one sound. In rain, a and i together say long a.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.team-ai-ay.2": {
+    "text": "A i goes in the middle of a word. A y goes at the end. Both say long a.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.team-ai-ay.3": {
+    "text": "When you divide a long word, the team stays together. Rail-way. Ex-plain. Dis-play.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.team-ai-ay.recap": {
+    "text": "Remember: a i in the middle and a y at the end are a team. They say long a.",
+    "note": "warm, even"
+  },
+  "v.discovery.team-ee-ea.1": {
+    "text": "Ee says long e: tree, feet, green.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.team-ee-ea.2": {
+    "text": "E a often says long e too. Sea. Team. Leaf. Beach.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.team-ee-ea.3": {
+    "text": "Two spellings can make the same sound. Look at the spelling to know the word. See and sea. Meet and meat. Week and weak.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.team-ee-ea.recap": {
+    "text": "Remember: e e and e a are teams. They often say long e.",
+    "note": "warm, even"
+  },
+  "v.discovery.team-oa-igh.1": {
+    "text": "O a says long o. So does o e at the end of a word. Boat. Coat. Toe.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.team-oa-igh.2": {
+    "text": "The letters i g h say long i. The g and the h are silent. Light. Right. High. Bright.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.team-oa-igh.3": {
+    "text": "I e at the end of a word says long i. Pie. Tie. Lie.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.team-oa-igh.recap": {
+    "text": "Remember: o a and o e say long o. I g h and i e say long i.",
+    "note": "warm, even"
+  },
+  "v.discovery.team-oo-ew.1": {
+    "text": "The teams o o, e w and u e can say oo, as in moon. Moon. Blew. Blue.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.team-oo-ew.2": {
+    "text": "O o can also say the short sound you hear in book. Book. Look. Good. Foot.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.team-oo-ew.3": {
+    "text": "Try one sound. If it does not sound like a word you know, try the other sound. Room. Cook. Boot. Took.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.team-oo-ew.recap": {
+    "text": "Remember: o o has two sounds, oo as in moon and a short sound as in book. Try one, then the other.",
+    "note": "warm, even"
+  },
+  "v.discovery.team-au-oi.1": {
+    "text": "A u and a w both say aw. A u sits inside a word, and a w ends a word. Sauce. Haul. Saw. Draw.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.team-au-oi.2": {
+    "text": "O i and o y both say oy. O i sits inside a word, and o y ends a word. Coin. Oil. Boy. Toy.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.team-au-oi.3": {
+    "text": "A w and o y often end a part in a long word. Aw-ful. En-joy. An-noy.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.team-au-oi.recap": {
+    "text": "Remember: a u and a w say aw. O i and o y say oy. The letters inside a word are u and i. The letters at the end are w and y.",
+    "note": "warm, even"
+  },
+  "v.discovery.team-ou-ow.1": {
+    "text": "O u says ow, as in out. Cloud. House. Mouth. Found.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.team-ou-ow.2": {
+    "text": "O w can say ow too. Cow. Down. Town. Brown. Owl.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.team-ou-ow.3": {
+    "text": "O w can also say long o. Snow. Grow. Slow. Yellow.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.team-ou-ow.4": {
+    "text": "Ow has two sounds. Try ow first. If it does not sound like a word you know, flip to long o. Cow and crow. Brown and blown.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.team-ou-ow.recap": {
+    "text": "Remember: o u says ow. O w has two sounds, ow and long o. Try one, and flip if it is not a word.",
+    "note": "warm, even"
+  },
+  "v.discovery.team-mix.1": {
+    "text": "E a can also say short short e. Head. Bread. Breath. Thread.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.team-mix.2": {
+    "text": "P h says f. Phone. Photo. Graph. Dolphin.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.team-mix.3": {
+    "text": "Sometimes two vowels side by side are not a team. They belong to different parts. Li-on. Gi-ant. Du-et.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.team-mix.4": {
+    "text": "Try the team sound first. If it does not sound like a word you know, try the other sound, or split between the two vowels.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.team-mix.recap": {
+    "text": "Remember: e a can say long e or short e. P h says f. Two vowels may split into two parts.",
+    "note": "warm, even"
+  },
+  "v.discovery.r-ar-or.1": {
+    "text": "An r syllable has a vowel followed by r. The r changes the vowel sound, so it is not short and it is not long.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.r-ar-or.2": {
+    "text": "Ar says ar, as in car. Open your mouth wide.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.r-ar-or.3": {
+    "text": "Or says or, as in fork. Round your lips.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.r-ar-or.4": {
+    "text": "In long words, the vowel and the r stay together when you divide. Gar-den. Tar-get. For-est.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.r-ar-or.recap": {
+    "text": "Remember: a vowel followed by r makes a new sound. A r says ar and o r says or.",
+    "note": "warm, even"
+  },
+  "v.discovery.r-er-ir-ur.1": {
+    "text": "E r, i r and u r all say the same sound. Fern. Bird. Turn.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.r-er-ir-ur.2": {
+    "text": "There are three spellings for one sound. You cannot hear which one it is, so look at the letters. First. Shirt. Third. Hurt. Surf. Burst.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.r-er-ir-ur.3": {
+    "text": "E r is the most common spelling at the end of a word. After. Sister. Winter. Number.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.r-er-ir-ur.recap": {
+    "text": "Remember: e r, i r and u r all say the same sound. A word ending in the sound usually uses the letters e r.",
+    "note": "warm, even"
+  },
+  "v.discovery.r-mix.1": {
+    "text": "Long words can have an r part and other parts. Divide first, then name each part. Car-pen-ter.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.r-mix.2": {
+    "text": "Keep each vowel and r together. Do not split them. Gar-den-ing. Mar-ket-ing. Re-port-ing.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.r-mix.3": {
+    "text": "The last part is often quiet. Car-pen-ter. Yes-ter-day. Say it softly.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.r-mix.recap": {
+    "text": "Remember: divide a long word, keep each vowel and r together, and say the last part softly.",
+    "note": "warm, even"
+  },
+  "v.discovery.le-one.1": {
+    "text": "A consonant plus l e at the end of a word is a part of its own. Ta-ble.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.le-one.2": {
+    "text": "Count back three letters from the end of the word. That last part is the consonant plus l e. Can-dle. Pur-ple.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.le-one.3": {
+    "text": "If the part before ends in a vowel, it says its name: ta-ble. If it ends in a consonant, the vowel is short: can-dle.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.le-one.recap": {
+    "text": "Remember: count back three letters from the end. Consonant plus l e is the last part.",
+    "note": "warm, even"
+  },
+  "v.discovery.le-double.1": {
+    "text": "A double consonant before l e. Split between the twins. Lit-tle. Bub-ble. Pud-dle.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.le-double.2": {
+    "text": "The twin letters close the door of the first part, so its vowel is short. Bub. Pud. Lit.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.le-double.3": {
+    "text": "Compare maple and apple. With one consonant, the vowel says its name. With twin consonants, the vowel is short.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.le-double.4": {
+    "text": "The letters c k count as a double. Buckle. Tickle. Pickle. The vowel is short.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.le-double.recap": {
+    "text": "Remember: twin consonants before l e close the first part, so the vowel is short. C k counts as a double.",
+    "note": "warm, even"
+  },
+  "v.discovery.le-mix.1": {
+    "text": "Now you know six kinds of syllables. Each one tells you how to read the vowel.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.le-mix.2": {
+    "text": "Spec-ta-cle has three parts. The first is closed, the second is open, and the last is a consonant plus l e.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.le-mix.3": {
+    "text": "Read a long word like a bridge. Divide it, name each part, read each part, then blend. If it does not sound like a word, flip a vowel sound and try again.",
+    "note": "warm, even, unhurried"
+  },
+  "v.discovery.le-mix.recap": {
+    "text": "Remember: divide, name each part, read each part, then blend. If it is not a word, flip a vowel sound and try again.",
+    "note": "warm, even"
+  }
+}

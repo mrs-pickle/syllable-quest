@@ -1,0 +1,16 @@
+[
+  {"w": "water", "segs": [["w", "w"], ["a", "aw"], ["t", "t"], ["er", "er"]], "stage": "team.ai-ay", "drill": true, "tricky": [1], "heart": "a says /aw/"},
+  {"w": "any", "segs": [["a", "e"], ["n", "n"], ["y", "E"]], "stage": "team.ai-ay", "drill": true, "tricky": [0, 2], "heart": "a says /ĕ/, y says /ē/"},
+  {"w": "many", "segs": [["m", "m"], ["a", "e"], ["n", "n"], ["y", "E"]], "stage": "team.ee-ea", "drill": true, "tricky": [1, 3], "heart": "a says /ĕ/, y says /ē/"},
+  {"w": "done", "segs": [["d", "d"], ["o", "u"], ["n", "n"], ["e", ""]], "stage": "team.ee-ea", "drill": true, "tricky": [1, 3], "heart": "the o says /uh/, the e is silent"},
+  {"w": "once", "segs": [["o", "w u"], ["n", "n"], ["ce", "s"]], "stage": "team.oa-igh", "drill": true, "tricky": [0, 2], "heart": "o says /wu/, ce says /s/"},
+  {"w": "eye", "segs": [["eye", "I"]], "stage": "team.oa-igh", "drill": true, "tricky": [0], "heart": "eye says /ī/"},
+  {"w": "busy", "segs": [["b", "b"], ["u", "i"], ["s", "s"], ["y", "E"]], "stage": "team.oo-ew", "drill": true, "tricky": [1, 3], "heart": "u says /ĭ/, y says /ē/"},
+  {"w": "laugh", "segs": [["l", "l"], ["au", "a"], ["gh", "f"]], "stage": "team.oo-ew", "drill": true, "tricky": [1, 2], "heart": "au says /ă/, gh says /f/"},
+  {"w": "ocean", "segs": [["o", "O"], ["ce", "sh"], ["a", "@"], ["n", "n"]], "stage": "team.au-oi", "drill": true, "tricky": [1], "heart": "ce says /sh/"},
+  {"w": "island", "segs": [["i", "I"], ["s", ""], ["l", "l"], ["a", "@"], ["n", "n"], ["d", "d"]], "stage": "team.au-oi", "drill": true, "tricky": [0, 1], "heart": "i says /ī/, the s is silent"},
+  {"w": "answer", "segs": [["a", "a"], ["n", "n"], ["sw", "s"], ["er", "@ r"]], "stage": "team.ou-ow", "drill": true, "tricky": [2], "heart": "the w is silent"},
+  {"w": "heart", "segs": [["h", "h"], ["ear", "ar"], ["t", "t"]], "stage": "team.ou-ow", "drill": true, "tricky": [1], "heart": "ear says /ar/"},
+  {"w": "through", "segs": [["th", "th"], ["r", "r"], ["ough", "oo"]], "stage": "team.mix", "drill": true, "tricky": [2], "heart": "ough says /oo/"},
+  {"w": "though", "segs": [["th", "dh"], ["ough", "O"]], "stage": "team.mix", "drill": true, "tricky": [1], "heart": "ough says /ō/"}
+]

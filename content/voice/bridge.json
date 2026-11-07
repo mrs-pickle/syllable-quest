@@ -1,0 +1,14 @@
+{
+  "v.bridge.tap-vowels": { "text": "Tap every vowel sound in the word. A team of letters is one sound.", "note": "calm, clear" },
+  "v.bridge.try-vowel": { "text": "Look again. Which letters make a vowel sound?", "note": "warm, a question" },
+  "v.bridge.vowels-glow": { "text": "The vowel sounds are glowing. Tap them.", "note": "warm, even" },
+  "v.bridge.silent-e": { "text": "This e is silent. It helps the vowel before it.", "note": "matter of fact" },
+  "v.bridge.pick-split": { "text": "Now tap the gap where the word breaks into parts.", "note": "calm, clear" },
+  "v.bridge.split-again": { "text": "Not that gap yet. Look at the consonants between the vowels.", "note": "warm, a question" },
+  "v.bridge.split-shown": { "text": "Watch. This is where the word breaks.", "note": "warm, even" },
+  "v.bridge.flip": { "text": "Some words break two ways. Flip the split and listen for the real word.", "note": "curious" },
+  "v.bridge.name-planks": { "text": "Now name each plank. Which clan does it belong to?", "note": "calm, clear" },
+  "v.bridge.which-clan": { "text": "Look at the vowel. How is it held? Then pick the clan.", "note": "warm, a question" },
+  "v.bridge.read-planks": { "text": "Read each plank, one at a time.", "note": "calm, clear" },
+  "v.bridge.walk": { "text": "Walk the bridge. Read the whole word.", "note": "warm, encouraging" }
+}

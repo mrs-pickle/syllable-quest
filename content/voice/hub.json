@@ -1,0 +1,7 @@
+{
+  "v.hub.new": { "text": "New student" },
+  "v.hub.continue": { "text": "Continue" },
+  "v.hub.grownups": { "text": "Grown-ups" },
+  "v.hub.who": { "text": "Who is playing?", "note": "friendly, a real question" },
+  "v.hub.coat": { "text": "Pick the coat your apprentice will wear.", "note": "warm, curious" }
+}

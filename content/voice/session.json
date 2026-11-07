@@ -1,0 +1,6 @@
+{
+  "v.session.begin": { "text": "Here is today's quest. We will take it one step at a time." },
+  "v.session.next": { "text": "Press Next when you are ready." },
+  "v.session.slow": { "text": "Look closely, apprentice.", "note": "calm, kind, not a scolding" },
+  "v.session.done": { "text": "That is the whole quest for today, apprentice. Well done." }
+}

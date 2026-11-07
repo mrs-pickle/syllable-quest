@@ -1,0 +1,69 @@
+[
+  {
+    "stage": "le.one",
+    "words": [
+      { "w": "table", "cue": "The a is open, it says its name." },
+      { "w": "candle" },
+      { "w": "cable", "cue": "The a is open, it says its name." },
+      { "w": "purple", "cue": "Write the ur sound as u, r." },
+      { "w": "turtle", "cue": "Write the ur sound as u, r." },
+      { "w": "maple", "cue": "The a is open, it says its name." },
+      { "w": "simple", "cue": "The s is a single s here." },
+      { "w": "gentle", "cue": "The e is short, as in bed." },
+      { "w": "bundle" },
+      { "w": "title", "cue": "The i is open, it says its name." }
+    ],
+    "sentences": [
+      { "id": "le25a", "text": "The cable is on the table.", "targets": ["cable", "table"] },
+      { "id": "le25b", "text": "I have a purple candle.", "targets": ["purple", "candle"] },
+      { "id": "le25c", "text": "The turtle hid by the maple log.", "targets": ["turtle", "maple"] },
+      { "id": "le25d", "text": "It is a simple title.", "targets": ["simple", "title"] }
+    ]
+  },
+  {
+    "stage": "le.double",
+    "words": [
+      { "w": "little", "cue": "Double the t after the short i." },
+      { "w": "middle", "cue": "Double the d after the short i." },
+      { "w": "puddle", "cue": "Double the d after the short u." },
+      { "w": "puzzle", "cue": "Double the z after the short u." },
+      { "w": "kettle", "cue": "The e is short, then double the t." },
+      { "w": "pebble", "cue": "The e is short, as in bed." },
+      { "w": "bottle", "cue": "Double the t after the short o." },
+      { "w": "apple" },
+      { "w": "bubble" },
+      { "w": "rattle", "cue": "Double the t after the short a." },
+      { "w": "tickle", "cue": "Double the k after the short i." },
+      { "w": "nibble", "cue": "Double the b after the short i." }
+    ],
+    "sentences": [
+      { "id": "le26a", "text": "The little dog has a puzzle.", "targets": ["little", "puzzle"] },
+      { "id": "le26b", "text": "The kettle is in the middle of the table.", "targets": ["kettle", "middle"] },
+      { "id": "le26c", "text": "A little pebble is in the puddle.", "targets": ["pebble", "puddle"] },
+      { "id": "le26d", "text": "The bottle is by the apple.", "targets": ["bottle", "apple"] }
+    ]
+  },
+  {
+    "stage": "le.mix",
+    "words": [
+      { "w": "possible", "cue": "Double the s after the short o." },
+      { "w": "terrible", "cue": "Double the r after the short e." },
+      { "w": "visible", "cue": "The s is a single s here." },
+      { "w": "audible" },
+      { "w": "sensible", "cue": "The s is a single s here." },
+      { "w": "principle", "cue": "The c says s before i." },
+      { "w": "icicle", "cue": "The first c says s; the second c says k." },
+      { "w": "obstacle", "cue": "The c says k, as in cat." },
+      { "w": "article", "cue": "The c says k, as in cat." },
+      { "w": "probable", "cue": "The a is open, it says its name." },
+      { "w": "edible", "cue": "The e is short, as in bed." },
+      { "w": "multiple" }
+    ],
+    "sentences": [
+      { "id": "le27a", "text": "It is possible to see the icicle.", "targets": ["possible", "icicle"] },
+      { "id": "le27b", "text": "The sensible boat stayed visible in the storm.", "targets": ["sensible", "visible"] },
+      { "id": "le27c", "text": "The audible hum was terrible.", "targets": ["audible", "terrible"] },
+      { "id": "le27d", "text": "The obstacle is visible on the road.", "targets": ["obstacle", "visible"] }
+    ]
+  }
+]

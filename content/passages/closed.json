@@ -1,0 +1,224 @@
+[
+  {
+    "id": "closed.review.A",
+    "stage": "closed.review",
+    "land": "closed",
+    "page": "closed.1",
+    "title": "The First Page",
+    "text": "The Keeper and the Apprentice jog up the hill in Closed Canyon. The sun is hot, and the path is long. The Keeper and the Apprentice stop to rest on a big rock. Then the Keeper and the Apprentice spot a red bit in a gap. It is a bit of the Great Word Book! Quick, grab it! Yes, the Keeper and the Apprentice pack it in the pack. The Apprentice is hot and wet, but not sad. The pack is a mess, but it is a big win!",
+    "focus": [
+      "rock",
+      "gap",
+      "grab",
+      "pack",
+      "mess",
+      "win"
+    ]
+  },
+  {
+    "id": "closed.review.B",
+    "stage": "closed.review",
+    "land": "closed",
+    "page": "closed.2",
+    "title": "A Frog on the Page",
+    "text": "A red bit is in the sand, at the back of a big rock. The Apprentice and the Keeper dig and dig. Is it a bug? Is it a nut? No, it is a bit of the Great Word Book! But a frog is on top of it. Hop, frog, hop! Not a hop. The Apprentice can tap the frog on the back. Yes! Hop, hop, hop! The frog is in the mud, and the bit is back with the Keeper.",
+    "focus": [
+      "frog",
+      "dig",
+      "nut",
+      "tap",
+      "mud",
+      "bug"
+    ]
+  },
+  {
+    "id": "closed.endings.A",
+    "stage": "closed.endings",
+    "land": "closed",
+    "page": "closed.3",
+    "title": "Dust on the Hill",
+    "text": "Dust was lifting on the hill! A red bit was tapping and hopping on the path. The Keeper and the Apprentice jumped up. Running fast, the Apprentice snapped it up. It was a bit of the Great Word Book, with an ending on it. The Keeper said, \"An ending is a tip. Jump is jumped. Help is helped.\" The Apprentice grinned and packed the bit with the rest.",
+    "focus": [
+      "lifting",
+      "jumped",
+      "snapped",
+      "helped",
+      "packed",
+      "grinned"
+    ]
+  },
+  {
+    "id": "closed.endings.B",
+    "stage": "closed.endings",
+    "land": "closed",
+    "page": "closed.4",
+    "title": "Camp on the Hill",
+    "text": "The Keeper and the Apprentice camped on the hill. Bugs buzzed, and the Keeper rested. Then dust was lifting, and a red bit was tapping on the tent. The Apprentice hopped up, jumped, and snapped it up. It was a bit of the Great Word Book, with an ending on it. The Keeper asked, \"Can you spot it? The ending is a tip.\" The Apprentice grinned and said, \"I get it! Camp, then camped!\"",
+    "focus": [
+      "camped",
+      "buzzed",
+      "rested",
+      "hopped",
+      "jumped",
+      "snapped"
+    ]
+  },
+  {
+    "id": "closed.compound.A",
+    "stage": "closed.compound",
+    "land": "closed",
+    "page": "closed.5",
+    "title": "The Pitfall Bridge",
+    "text": "Running uphill at sunup, the Keeper and the Apprentice stopped at a pitfall. A bridge was at the edge, with a mat on it. The mat said handstand. Upset, the Apprentice tapped hand, then stand. Handstand! Sunspot, backpack, desktop, hotdog: the Apprentice tapped them, and the bridge lifted itself up.",
+    "focus": [
+      "sunup",
+      "uphill",
+      "pitfall",
+      "handstand",
+      "backpack",
+      "desktop"
+    ]
+  },
+  {
+    "id": "closed.compound.B",
+    "stage": "closed.compound",
+    "land": "closed",
+    "page": "closed.6",
+    "title": "Hotdog Trouble",
+    "text": "At sunset, the Apprentice was thinking of a hotdog in a backpack. A cobweb was on the hilltop, and a nutshell was in the cobweb. In the nutshell was a bit of the Great Word Book! \"Cobweb is cob and web,\" said the Keeper. \"Nutshell is nut and shell.\" The Apprentice tapped cobweb, nutshell, hilltop, and backpack.",
+    "focus": [
+      "sunset",
+      "hotdog",
+      "backpack",
+      "cobweb",
+      "hilltop",
+      "nutshell"
+    ]
+  },
+  {
+    "id": "closed.vccv-double.A",
+    "stage": "closed.vccv-double",
+    "land": "closed",
+    "page": "closed.7",
+    "title": "The Rabbit in a Mitten",
+    "text": "At the bottom, a rabbit in a mitten was begging for a muffin. The Keeper handed it a muffin, and the Apprentice added a ribbon. \"Rabbit, mitten, muffin, ribbon,\" said the Keeper. \"Hop in the gap!\" The rabbit grinned. \"A bit of the Great Word Book is in the attic,\" said the rabbit. \"That is common gossip!\"",
+    "focus": [
+      "rabbit",
+      "mitten",
+      "muffin",
+      "bottom",
+      "attic",
+      "ribbon"
+    ]
+  },
+  {
+    "id": "closed.vccv-double.B",
+    "stage": "closed.vccv-double",
+    "land": "closed",
+    "page": "closed.8",
+    "title": "The Mammoth Fossil",
+    "text": "At a hut, the Apprentice jumped up on a mammoth fossil. On top was a pennant, with a bit of the Great Word Book. A sudden win! \"A mammoth is a mammal,\" said the Keeper. The Apprentice tapped mammoth, fossil, pennant, and mammal, hopping in the gap. Gossip was common, and so was traffic.",
+    "focus": [
+      "mammoth",
+      "fossil",
+      "pennant",
+      "sudden",
+      "mammal",
+      "traffic"
+    ]
+  },
+  {
+    "id": "closed.vccv.A",
+    "stage": "closed.vccv",
+    "land": "closed",
+    "page": "closed.9",
+    "title": "The Picnic Bandit",
+    "text": "On a flat rock, the Keeper packed a picnic basket. In it were a napkin, a muffin and a hotdog. A bandit picked up the basket and hid in a cactus. In the napkin was a bit of the Great Word Book! The Apprentice tapped napkin, basket, picnic, bandit, and cactus, and hopped in the gap. The bandit begged for a muffin.",
+    "focus": [
+      "picnic",
+      "basket",
+      "napkin",
+      "bandit",
+      "cactus"
+    ]
+  },
+  {
+    "id": "closed.vccv.B",
+    "stage": "closed.vccv",
+    "land": "closed",
+    "page": "closed.10",
+    "title": "The Magnet Plan",
+    "text": "A bit of the Great Word Book was in a tin in a cactus. A problem! The Apprentice was in a helmet, and the Keeper was lifting a magnet. The magnet lifted the tin, and an insect jumped. The Apprentice tapped insect, magnet, helmet, and cactus. \"Problem fixed,\" said the Keeper.",
+    "focus": [
+      "magnet",
+      "helmet",
+      "insect",
+      "cactus",
+      "problem"
+    ]
+  },
+  {
+    "id": "closed.vcccv.A",
+    "stage": "closed.vcccv",
+    "land": "closed",
+    "page": "closed.11",
+    "title": "The Ostrich Tantrum",
+    "text": "A hundred children were clapping in the camp district. An ostrich was on a pumpkin, in a tantrum! In the pumpkin was a bit of the Great Word Book. \"Distract the ostrich with a sandwich!\" said the Keeper. The Apprentice tapped sandwich, pumpkin, and children, and hopped in the gap. The ostrich snapped up the sandwich, and the Apprentice picked up the bit.",
+    "focus": [
+      "hundred",
+      "pumpkin",
+      "sandwich",
+      "children",
+      "district",
+      "ostrich"
+    ]
+  },
+  {
+    "id": "closed.vcccv.B",
+    "stage": "closed.vcccv",
+    "land": "closed",
+    "page": "closed.12",
+    "title": "The Cliff Wall",
+    "text": "A bit of the Great Word Book was on a complex cliff wall. The Apprentice was upset. In contrast, the Keeper was constant: not sad, not upset, just thinking. \"Inspect the cliff, then construct a plan,\" said the Keeper. The Apprentice grinned and tapped complex, contrast, inspect, construct, and constant. The wall was an instant win!",
+    "focus": [
+      "complex",
+      "contrast",
+      "inspect",
+      "construct",
+      "constant",
+      "instant"
+    ]
+  },
+  {
+    "id": "closed.three.A",
+    "stage": "closed.three",
+    "land": "closed",
+    "page": "closed.13",
+    "title": "Fantastic",
+    "text": "Backpacking up the cliff, the Apprentice inspected a mat. It said fantastic. \"Fantastic!\" commented the Keeper. The Apprentice tapped fantastic, collecting, connecting, and commenting. Then the Apprentice collected a bit of the Great Word Book. It was connecting with the rest!",
+    "focus": [
+      "fantastic",
+      "backpacking",
+      "inspected",
+      "commented",
+      "collected",
+      "connecting"
+    ]
+  },
+  {
+    "id": "closed.three.B",
+    "stage": "closed.three",
+    "land": "closed",
+    "page": "closed.14",
+    "title": "The Last Bit",
+    "text": "Inspecting a sandwich, the Apprentice suspected a trap. \"Expecting a trap?\" commented the Keeper. The bandit was gossiping and not attending. The Apprentice collected the bit of the Great Word Book in the sandwich. The Keeper instructed, \"Connecting, collecting, inspecting: fantastic!\" Closed Canyon was fixed.",
+    "focus": [
+      "inspecting",
+      "suspected",
+      "expecting",
+      "commented",
+      "gossiping",
+      "attending"
+    ]
+  }
+]

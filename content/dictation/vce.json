@@ -1,0 +1,92 @@
+[
+  {
+    "stage": "vce.one",
+    "words": [
+      { "w": "bake", "cue": "Use the a-e spelling for the long a." },
+      { "w": "bike", "cue": "Use the i-e spelling for the long i." },
+      { "w": "cake", "cue": "Use the a-e spelling for the long a." },
+      { "w": "home", "cue": "Use the o-e spelling for the long o." },
+      { "w": "kite", "cue": "Use the i-e spelling for the long i." },
+      { "w": "mule", "cue": "Use the u-e spelling for the long u." },
+      { "w": "rope", "cue": "Use the o-e spelling for the long o." },
+      { "w": "safe", "cue": "Use the a-e spelling for the long a." },
+      { "w": "hope", "cue": "Use the o-e spelling for the long o." },
+      { "w": "ride", "cue": "Use the i-e spelling for the long i." },
+      { "w": "pole", "cue": "Use the o-e spelling for the long o." },
+      { "w": "cube", "cue": "Use the u-e spelling for the long u." }
+    ],
+    "sentences": [
+      { "id": "vce.one.1", "text": "The kid can bake a cake at home.", "targets": ["bake", "cake", "home"] },
+      { "id": "vce.one.2", "text": "The mule can ride a bike.", "targets": ["mule", "ride", "bike"] },
+      { "id": "vce.one.3", "text": "The kite is on a pole.", "targets": ["kite", "pole"] },
+      { "id": "vce.one.4", "text": "I hope the cake is safe.", "targets": ["hope", "cake", "safe"] }
+    ]
+  },
+  {
+    "stage": "vce.soft",
+    "words": [
+      { "w": "cage", "cue": "Use the a-e spelling for the long a." },
+      { "w": "page", "cue": "Use the a-e spelling for the long a." },
+      { "w": "face", "cue": "Use the a-e spelling for the long a, and c for the s sound before e." },
+      { "w": "nice", "cue": "Use the i-e spelling for the long i, and c for the s sound before e." },
+      { "w": "dance", "cue": "Use c for the s sound, before the e." },
+      { "w": "rice", "cue": "Use the i-e spelling for the long i, and c for the s sound before e." },
+      { "w": "huge", "cue": "Use the u-e spelling for the long u." },
+      { "w": "place", "cue": "Use the a-e spelling for the long a, and c for the s sound before e." },
+      { "w": "race", "cue": "Use the a-e spelling for the long a, and c for the s sound before e." },
+      { "w": "ice", "cue": "Use the i-e spelling for the long i, and c for the s sound before e." }
+    ],
+    "sentences": [
+      { "id": "vce.soft.1", "text": "The cage is in the place.", "targets": ["cage", "place"] },
+      { "id": "vce.soft.2", "text": "A huge dance is on the sand.", "targets": ["huge", "dance"] },
+      { "id": "vce.soft.3", "text": "Rice is nice for a big lunch.", "targets": ["rice", "nice"] },
+      { "id": "vce.soft.4", "text": "Her page has a race.", "targets": ["page", "race"] }
+    ]
+  },
+  {
+    "stage": "vce.two",
+    "words": [
+      { "w": "invite", "cue": "Use the i-e spelling for the long i." },
+      { "w": "compete", "cue": "Use the e-e spelling for the long e." },
+      { "w": "include", "cue": "Use c for the k sound." },
+      { "w": "delete", "cue": "Use the e-e spelling for the long e." },
+      { "w": "excuse", "cue": "Use the u-e spelling for the long u, and s for the z sound." },
+      { "w": "costume", "cue": "Use s, not c, for the s sound." },
+      { "w": "remake", "cue": "Use e for the first long e, and the a-e spelling for the long a." },
+      { "w": "unsafe", "cue": "Use s for the s sound, and the a-e spelling for the long a." },
+      { "w": "explode", "cue": "Use the o-e spelling for the long o." },
+      { "w": "knife", "cue": "Use kn at the start for the n sound, and the i-e spelling for the long i." },
+      { "w": "wrote", "cue": "Use wr at the start for the r sound, and the o-e spelling for the long o." },
+      { "w": "unwise", "cue": "Use the i-e spelling for the long i, and s for the z sound." }
+    ],
+    "sentences": [
+      { "id": "vce.two.1", "text": "Do not delete the costume.", "targets": ["delete", "costume"] },
+      { "id": "vce.two.2", "text": "I invite the kids to compete at the lake.", "targets": ["invite", "compete"] },
+      { "id": "vce.two.3", "text": "The knife is unsafe for a kid.", "targets": ["knife", "unsafe"] },
+      { "id": "vce.two.4", "text": "Wren wrote a note for the kid.", "targets": ["wren", "wrote"] }
+    ]
+  },
+  {
+    "stage": "vce.mix",
+    "words": [
+      { "w": "celebrate", "cue": "Use c for the s sound before e, and the a-e spelling for the long a at the end." },
+      { "w": "dedicate", "cue": "Use the a-e spelling for the long a at the end." },
+      { "w": "lemonade", "cue": "Use the a-e spelling for the long a at the end." },
+      { "w": "navigate", "cue": "Use the a-e spelling for the long a at the end." },
+      { "w": "motivate", "cue": "Use the plain o for the long o, and the a-e spelling for the long a at the end." },
+      { "w": "relocate", "cue": "Use e for the long e, the plain o for the long o, and the a-e spelling for the long a at the end." },
+      { "w": "irritate", "cue": "Use rr for the r sound, and the a-e spelling for the long a at the end." },
+      { "w": "dominate", "cue": "Use the a-e spelling for the long a at the end." },
+      { "w": "demonstrate", "cue": "Use s for the s sound, and the a-e spelling for the long a at the end." },
+      { "w": "illustrate", "cue": "Use ll for the l sound, s for the s sound, and the a-e spelling for the long a at the end." },
+      { "w": "impolite", "cue": "Use the i-e spelling for the long i at the end." },
+      { "w": "indicate", "cue": "Use the a-e spelling for the long a at the end." }
+    ],
+    "sentences": [
+      { "id": "vce.mix.1", "text": "The people celebrate with lemonade.", "targets": ["celebrate", "lemonade"] },
+      { "id": "vce.mix.2", "text": "Can you motivate the kids to dedicate a page?", "targets": ["motivate", "dedicate"] },
+      { "id": "vce.mix.3", "text": "Illustrate the map and relocate the cat.", "targets": ["illustrate", "relocate"] },
+      { "id": "vce.mix.4", "text": "Do not irritate the dog or dominate the cat.", "targets": ["irritate", "dominate"] }
+    ]
+  }
+]

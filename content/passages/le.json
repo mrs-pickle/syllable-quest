@@ -1,0 +1,104 @@
+[
+  {
+    "id": "le.one.A",
+    "stage": "le.one",
+    "land": "le",
+    "page": "le.1",
+    "title": "The Table by the Lake",
+    "text": "The Apprentice and the Keeper came to Little Tail Lake. A table stood under a maple, with a yellow candle and a silver basket. \"Tap the table and say it part by part,\" said the Keeper. A rumble shook the lake, and the candle could tumble! The Apprentice made a quick catch, with no fumble and no tumble. The purple napkin and the basket were safe too.",
+    "focus": [
+      "table",
+      "candle",
+      "tumble",
+      "fumble",
+      "purple"
+    ]
+  },
+  {
+    "id": "le.one.B",
+    "stage": "le.one",
+    "land": "le",
+    "page": "le.2",
+    "title": "A Bundle in the Maple",
+    "text": "The Apprentice found a bundle in a maple by the water. It was a paper page of the Great Word Book! \"Say the title,\" said the Keeper. The title was A Noble Fable. The page came with a simple staple at the bottom. The Apprentice was gentle and would not crumple it. Then the Apprentice packed the page in a yellow basket under the table.",
+    "focus": [
+      "bundle",
+      "maple",
+      "title",
+      "simple",
+      "noble",
+      "fable",
+      "staple",
+      "gentle",
+      "crumple"
+    ]
+  },
+  {
+    "id": "le.double.A",
+    "stage": "le.double",
+    "land": "le",
+    "page": "le.3",
+    "title": "The Little Fish",
+    "text": "A little yellow fish came up in a ripple by the water. It could wiggle and giggle. The Apprentice dropped a paddle in the water, and a bubble rose up. \"Look for the twin in each one,\" said the Keeper. The little fish gave a jiggle, then hid under a pebble in the middle. The Apprentice was happy. A fish can giggle, but it cannot paddle!",
+    "focus": [
+      "little",
+      "ripple",
+      "wiggle",
+      "giggle",
+      "paddle",
+      "bubble",
+      "jiggle",
+      "pebble"
+    ]
+  },
+  {
+    "id": "le.double.B",
+    "stage": "le.double",
+    "land": "le",
+    "page": "le.4",
+    "title": "The Kettle and the Puzzle",
+    "text": "A yellow kettle and a puzzle stood on a table at the picnic. The kettle gave a sudden rattle, and the Apprentice jumped. A paper page was in a puddle, with a scribble at the bottom. \"Tap the twin first,\" said the Keeper. The Apprentice tapped each twin, and the paper page came back. It was a little puzzle, but a happy win!",
+    "focus": [
+      "kettle",
+      "rattle",
+      "puzzle",
+      "puddle",
+      "scribble",
+      "little"
+    ]
+  },
+  {
+    "id": "le.mix.A",
+    "stage": "le.mix",
+    "land": "le",
+    "page": "le.5",
+    "title": "The Path at the Lake",
+    "text": "Summer at Little Tail Lake was a spectacle. The Apprentice saw an icicle, a barnacle, a tentacle and a terrible obstacle. \"Is it possible to get past?\" asked the Apprentice. \"It is probable if you are sensible,\" said the Keeper. The Apprentice made a simple plan, one part at a time. Soon the water was visible, and the obstacle was no problem!",
+    "focus": [
+      "spectacle",
+      "icicle",
+      "barnacle",
+      "tentacle",
+      "terrible",
+      "obstacle",
+      "possible",
+      "probable",
+      "sensible",
+      "visible"
+    ]
+  },
+  {
+    "id": "le.mix.B",
+    "stage": "le.mix",
+    "land": "le",
+    "page": "le.6",
+    "title": "The Final Page",
+    "text": "A portable basket and a yellow candle stood on a table by the path. In it was the final page of the Great Word Book. \"This article has multiple rules, but it is possible,\" said the Keeper. The Apprentice tapped the title, then the middle, then the bottom. It was a terrible puzzle, but each part was simple. Then the final page was safe in the Great Word Book, under the maple.",
+    "focus": [
+      "portable",
+      "multiple",
+      "article",
+      "possible"
+    ]
+  }
+]

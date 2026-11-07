@@ -1,0 +1,42 @@
+{
+  "land": "open",
+  "intro": [
+    "v.story-open.intro.1",
+    "v.story-open.intro.2",
+    "v.story-open.intro.3"
+  ],
+  "stages": {
+    "open.one": {
+      "beat": "A ship brings a torn page to the first island, where a single open vowel says its name.",
+      "lines": [
+        "v.story-open.open-one.1",
+        "v.story-open.open-one.2"
+      ]
+    },
+    "open.vcv": {
+      "beat": "A robot at a local hotel on the path shows a two-part word that splits after the open first vowel.",
+      "lines": [
+        "v.story-open.open-vcv.1",
+        "v.story-open.open-vcv.2"
+      ]
+    },
+    "open.y": {
+      "beat": "A y at the end of a word sings a long e sound, and a baby bunny is the example.",
+      "lines": [
+        "v.story-open.open-y.1",
+        "v.story-open.open-y.2"
+      ]
+    },
+    "open.flex": {
+      "beat": "A split that looks right does not fit the sound, so the apprentice flips it and the word clicks.",
+      "lines": [
+        "v.story-open.open-flex.1",
+        "v.story-open.open-flex.2"
+      ]
+    }
+  },
+  "finale": [
+    "v.story-open.finale.1",
+    "v.story-open.finale.2"
+  ]
+}

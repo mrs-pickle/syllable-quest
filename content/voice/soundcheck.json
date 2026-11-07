@@ -1,0 +1,8 @@
+{
+  "v.soundcheck.start": { "text": "Sound Check, apprentice. Let's warm up the sounds we know.", "note": "warm, even" },
+  "v.soundcheck.see": { "text": "Look at the letters on the card. Say the sound they make.", "note": "calm, clear" },
+  "v.soundcheck.hear": { "text": "Listen to the sound. Then write a spelling for it in your Word Book.", "note": "calm, clear" },
+  "v.soundcheck.blend": { "text": "These letters slide together to make a made-up word. Read it out loud.", "note": "calm, clear" },
+  "v.soundcheck.mouth": { "text": "Look at the mouth picture. See where the lips and tongue go, then say it that way.", "note": "calm, unhurried" },
+  "v.soundcheck.grownup": { "text": "Your grown-up will say this one for you.", "note": "calm, even" }
+}

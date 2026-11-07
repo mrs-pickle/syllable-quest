@@ -1,0 +1,12 @@
+[
+  { "name": "Keeper", "stage": 0 },
+  { "name": "Apprentice", "stage": 0 },
+  { "name": "Great Word Book", "stage": 0 },
+  { "name": "Closed Canyon", "stage": 0 },
+  { "name": "Open Sky Isles", "stage": 7 },
+  { "name": "Silent-E Forest", "stage": 11 },
+  { "name": "Vowel Team Harbor", "stage": 15 },
+  { "name": "Bossy-R Mountains", "stage": 22 },
+  { "name": "Little Tail Lake", "stage": 25 },
+  { "name": "City of Builders", "stage": 27 }
+]

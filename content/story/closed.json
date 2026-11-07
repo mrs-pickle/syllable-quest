@@ -1,0 +1,68 @@
+{
+  "land": "closed",
+  "intro": [
+    "v.story-closed.intro.1",
+    "v.story-closed.intro.2",
+    "v.story-closed.intro.3"
+  ],
+  "prologue": [
+    "v.story-closed.prologue.1",
+    "v.story-closed.prologue.2",
+    "v.story-closed.prologue.3"
+  ],
+  "stages": {
+    "closed.review": {
+      "beat": "The apprentice finds the first torn page, hidden behind a rock on the canyon path.",
+      "lines": [
+        "v.story-closed.closed-review.1",
+        "v.story-closed.closed-review.2"
+      ]
+    },
+    "closed.endings": {
+      "beat": "A gust of wind blows a page onto the trail, with a small ending stuck to it.",
+      "lines": [
+        "v.story-closed.closed-endings.1",
+        "v.story-closed.closed-endings.2"
+      ]
+    },
+    "closed.compound": {
+      "beat": "Two small words join into one bridge over a gully, and the apprentice reads each part.",
+      "lines": [
+        "v.story-closed.closed-compound.1",
+        "v.story-closed.closed-compound.2"
+      ]
+    },
+    "closed.vccv-double": {
+      "beat": "Twin consonants sit in the middle of a word and split into one letter each.",
+      "lines": [
+        "v.story-closed.closed-vccv-double.1",
+        "v.story-closed.closed-vccv-double.2"
+      ]
+    },
+    "closed.vccv": {
+      "beat": "Two different consonants in the middle of a word split apart, as in a camp napkin.",
+      "lines": [
+        "v.story-closed.closed-vccv.1",
+        "v.story-closed.closed-vccv.2"
+      ]
+    },
+    "closed.vcccv": {
+      "beat": "Three consonants sit in the middle, and the apprentice keeps a blend together or splits after the second consonant.",
+      "lines": [
+        "v.story-closed.closed-vcccv.1",
+        "v.story-closed.closed-vcccv.2"
+      ]
+    },
+    "closed.three": {
+      "beat": "A long word on the final cliff has three closed syllables, and the apprentice reads it in three parts.",
+      "lines": [
+        "v.story-closed.closed-three.1",
+        "v.story-closed.closed-three.2"
+      ]
+    }
+  },
+  "finale": [
+    "v.story-closed.finale.1",
+    "v.story-closed.finale.2"
+  ]
+}
