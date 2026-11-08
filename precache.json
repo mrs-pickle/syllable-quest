@@ -1,5 +1,5 @@
 {
-  "version": "c863a9e32c534624478e2cd451aa2d16a39fde20abc1edde5ffe78cf517fd4d9",
+  "version": "a35f5506310e5dfd3625781270da4d2ef17841dd6a62cd5bce9fded046e8167f",
   "files": [
     "assets/art/apprentice/black-cheer.webp",
     "assets/art/apprentice/black-point.webp",
@@ -3281,7 +3281,7 @@
   "packs": [
     {
       "id": "core",
-      "hash": "c863a9e32c534624478e2cd451aa2d16a39fde20abc1edde5ffe78cf517fd4d9",
+      "hash": "a35f5506310e5dfd3625781270da4d2ef17841dd6a62cd5bce9fded046e8167f",
       "files": [
         "assets/art/apprentice/black-cheer.webp",
         "assets/art/apprentice/black-point.webp",

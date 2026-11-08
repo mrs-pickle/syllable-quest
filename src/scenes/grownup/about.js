@@ -27,7 +27,7 @@ export const NOTICES = Object.freeze([
   "Created to align with UFLI Foundations' scope and sequence. The game's stories, sentences, art and audio are original and were not created or endorsed by UFLI.",
   'Andika (SIL Open Font License 1.1): the typeface used for all text.',
   'Kokoro-82M (Apache-2.0): the speech model used to make many of the single-word clips, on the build computer.',
-  'The narration (story lines, passages, sentences and word meanings) was made with ElevenLabs text to speech, in a voice cloned with permission from a family member.',
+  "The narrator's voice was made by Mom, with ElevenLabs text to speech (story lines, passages, sentences and word meanings).",
   'The letter sounds are real recordings, made for the game by a family member.',
   'CMUdict (BSD-2-Clause): the pronunciation dictionary used to check word pronunciations.',
 ]);
